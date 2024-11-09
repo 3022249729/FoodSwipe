@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FoodSwipe</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="centered-container">
+        {% if session %}
+        <h1>Welcome {{session.userinfo.name}}!</h1>
+        <p><a href="/logout">Logout</a></p>
+        <div id="restaurant-info"></div>
+        {% else %}
+        <h1>Welcome to FoodSwipe!</h1>
+        <p>Please login to get started!</p>
+        <p><a href="/login">Login</a></p>
+        {% endif %}
+    </div>
+</body>
+</html>
