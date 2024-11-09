@@ -1,3 +1,4 @@
+
 from flask import Flask, render_template, request, session, url_for, redirect, jsonify
 from flask_socketio import SocketIO, emit, join_room
 from dotenv import find_dotenv, load_dotenv
@@ -66,6 +67,7 @@ def callback():
     return redirect("/")
 
 
+
 @app.route('/create_session', methods=['POST'])
 def create_session():
     data = request.get_json()
@@ -127,6 +129,5 @@ def get_restaurants(latitude, longitude, radius=5000):
     return restaurants
 
     
-
 if __name__ == '__main__':
     socketio.run(app, host="0.0.0.0" ,port=3000, debug=True)
