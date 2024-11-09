@@ -1,0 +1,25 @@
+version: '3'
+services:
+  flask:
+    build:
+      context: ./flask-app
+      dockerfile: Dockerfile.flask
+    ports:
+      - "5000:5000"
+    networks:
+      - app-network
+
+  streamlit:
+    build:
+      context: ./streamlit-app
+      dockerfile: Dockerfile.streamlit
+    ports:
+      - "8501:8501"
+    networks:
+      - app-network
+    depends_on:
+      - flask
+
+networks:
+  app-network:
+    driver: bridge
