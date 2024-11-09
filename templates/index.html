@@ -30,7 +30,7 @@
                 function getNextRestaurant() {
                     $.get("/get_restaurant", function(data) {
                         $("#restaurant-name").text(data.name);
-                        $("#restaurant-image").attr("src", data.image_url);
+                        $("#restaurant-image").attr("src", data.photo_url);
                         $("#restaurant-rating").text("Rating: " + data.rating);
                         $("#restaurant-address").text("Address: " + data.address);
                     });
