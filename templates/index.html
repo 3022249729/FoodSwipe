@@ -2,19 +2,57 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FoodSwipe</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <div class="centered-container">
         {% if session %}
-        <h1>Welcome {{session.userinfo.name}}!</h1>
-        <p><a href="/logout">Logout</a></p>
-        <div id="restaurant-info"></div>
+            <header>
+                <h1>Welcome, {{session.userinfo.name}}!</h1>
+            </header>
+            <main id="restaurant-info">
+                <h2 id="restaurant-name"></h2>
+                <img id="restaurant-image" src="" alt="Restaurant Image">
+                <p id="restaurant-rating"></p>
+                <p id="restaurant-address"></p>
+            </main>
+            <div id="swipe-buttons">
+                <button id="swipe-left">No</button>
+                <button id="swipe-right">Yes</button>
+            </div>
+            <nav>
+                <a href="/logout">Logout</a>
+            </nav>
+            <script>
+                function getNextRestaurant() {
+                    $.get("/get_restaurant", function(data) {
+                        $("#restaurant-name").text(data.name);
+                        $("#restaurant-image").attr("src", data.image_url);
+                        $("#restaurant-rating").text("Rating: " + data.rating);
+                        $("#restaurant-address").text("Address: " + data.address);
+                    });
+                }
+
+                $(document).ready(function() {
+                    getNextRestaurant();
+
+                    $("#swipe-left, #swipe-right").click(function() {
+                        // Here you can add logic to save the user's choice
+                        getNextRestaurant();
+                    });
+                });
+            </script>
         {% else %}
-        <h1>Welcome to FoodSwipe!</h1>
-        <p>Please login to get started!</p>
-        <p><a href="/login">Login</a></p>
+            <header>
+                <h1>Welcome to FoodSwipe!</h1>
+            </header>
+            <main>
+                <p>Please login to get started!</p>
+                <p><a href="/login">Login</a></p>
+            </main>
         {% endif %}
     </div>
 </body>
