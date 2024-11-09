@@ -67,7 +67,6 @@ def callback():
     return redirect("/")
 
 
-
 @app.route('/create_session', methods=['POST'])
 def create_session():
     data = request.get_json()
@@ -95,6 +94,7 @@ def get_restaurants(latitude, longitude, radius=5000):
         results = data.get('results', [])
         
         for restaurant in results:
+            id = restaurant['place_id']
             name = restaurant['name']
             rating = restaurant.get('rating')
             rating_amount = restaurant.get('user_ratings_total')
@@ -109,6 +109,7 @@ def get_restaurants(latitude, longitude, radius=5000):
                 photo_url = f"https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference={photo_reference}&key={env.get('GOOGLE_MAPS_API_KEY')}"
 
             restaurants.append({
+                'id':id,
                 'name': name,
                 'rating': rating,
                 'rating_amount': rating_amount,
