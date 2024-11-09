@@ -10,12 +10,16 @@
         {% if session %}
         <h1>Welcome {{session.userinfo.name}}!</h1>
         <p><a href="/logout">Logout</a></p>
-        <div id="restaurant-info"></div>
+        <div class="button-container">
+            <button onclick="create_session()">Host</button>
+            <button>Join</button>
+        </div>
         {% else %}
         <h1>Welcome to FoodSwipe!</h1>
         <p>Please login to get started!</p>
         <p><a href="/login">Login</a></p>
         {% endif %}
     </div>
+    <script src="{{ url_for('static', filename='functions.js') }}"></script>
 </body>
 </html>
