@@ -326,8 +326,29 @@ function showResults() {
         })
         .catch(error => {
             console.error("Error fetching results:", error);
-            alert("Error fetching results. Please try again.");
+            displayHighestRatedRestaurant();
         });
+}
+
+function displayHighestRatedRestaurant() {
+    const highestRatedRestaurant = restaurants.reduce((highest, restaurant) => {
+        return (restaurant.rating > highest.rating) ? restaurant : highest;
+    }, restaurants[0]);
+
+    const resultsHtml = `
+        <div class="results-container">
+            <h2>Top Match!</h2>
+            <div class="restaurant-card">
+                <img src="${highestRatedRestaurant.photo_url}" alt="${highestRatedRestaurant.name}" style="max-width: 300px;">
+                <h3>${highestRatedRestaurant.name}</h3>
+                <p>Rating: ${highestRatedRestaurant.rating}⭐ (${highestRatedRestaurant.rating_amount})</p>
+                <p><a href="${highestRatedRestaurant.maps_url}" target="_blank">${highestRatedRestaurant.address}</a></p>
+            </div>
+        </div>
+    `;
+
+    document.getElementById("restaurant-info").innerHTML = resultsHtml;
+    document.getElementById("swipe-buttons").style.display = "none";
 }
 
 function createNewSession() {
