@@ -10,6 +10,8 @@ import requests
 from time import sleep
 import json
 import os
+import session_manager
+import logging
 
 app = Flask(__name__)
 app.secret_key = env.get("APP_SECRET_KEY")
@@ -36,9 +38,66 @@ oauth.register(
 def generate_token():
     return ''.join(random.choices(string.ascii_letters + string.digits, k=6))
 
+session_manager.init_db()
+
 @app.route("/")
 def home():
     return render_template("index.html", session=session.get('user'))
+
+@app.route("/create_new_session", methods=["POST"])
+def create_new_session():
+    """Create a new session for voting."""
+    session_id = session_manager.create_session()
+    return jsonify({"session_id": session_id})
+
+@app.route("/join_session/<session_id>")
+def join_session(session_id):
+    """Join an existing session."""
+    if session_manager.join_session(session_id):
+        return jsonify({"success": True})
+    else:
+        return jsonify({"error": "Session not found"}), 404
+
+@app.route("/vote", methods=["POST"])
+def vote():
+    data = request.get_json()
+    logging.debug(f"Received vote data: {data}")
+    
+    session_id = data.get("session_id")
+    restaurant_id = data.get("restaurant_id")
+    vote_value = data.get("vote")
+
+    # Check for missing or invalid data
+    if not session_id or not restaurant_id or not vote_value:
+        logging.error("Missing session_id, restaurant_id, or vote value")
+        return jsonify({"error": "Missing data"}), 400
+
+    # Convert 'Yes' to 1 and 'No' to -1, handle invalid vote value
+    if vote_value == 'Yes':
+        vote_value = 1
+    elif vote_value == 'No':
+        vote_value = -1
+    else:
+        logging.error("Invalid vote value")
+        return jsonify({"error": "Invalid vote value"}), 400
+
+    # Attempt to store the vote
+    success = session_manager.store_vote(session_id, restaurant_id, vote_value)
+    if success:
+        logging.info(f"Vote stored successfully for session {session_id} and restaurant {restaurant_id}")
+        return jsonify({"success": True})
+    else:
+        logging.error("Failed to store vote in session manager")
+        return jsonify({"error": "Failed to store vote"}), 500
+    
+@app.route("/results/<session_id>")
+def results(session_id):
+    """Retrieve the top restaurant based on votes."""
+    top_restaurant = session_manager.get_top_restaurant(session_id)
+    if top_restaurant:
+        return jsonify({"top_restaurant": top_restaurant})
+    else:
+        return jsonify({"error": "No votes cast in this session"}), 404
 
 @app.route("/login")
 def login():
@@ -70,19 +129,12 @@ def callback():
 
 @app.route('/create_session', methods=['POST'])
 def create_session():
-    # data = request.get_json() 
-    # latitude = data.get('latitude')
-    # longitude = data.get('longitude')
-    # restaurants = get_restaurants(latitude, longitude)
-
-    # for dynamic fetches that uses google maps api every call
-    # we are sticking to cached data because it takes a long time to make api calls
-
     with open('restaurants_info.txt', 'r') as f:
         raw_data = f.read()
     restaurants = json.loads(raw_data)
 
-    return jsonify(restaurants), 200
+    # Ensure response matches expected format in JavaScript (an object with a "restaurants" key)
+    return jsonify({"restaurants": restaurants}), 200
 
 
 def get_restaurants(latitude, longitude, radius=8000):
