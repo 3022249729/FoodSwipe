@@ -102,6 +102,8 @@ def get_restaurants(latitude, longitude, radius=8000):
         data = response.json()
         results = data.get('results', [])
         for restaurant in results:
+            if len(restaurant['name']) > 28:
+                continue
             id = restaurant['place_id']
             name = restaurant['name']
             rating = restaurant.get('rating')
@@ -136,6 +138,7 @@ def get_restaurants(latitude, longitude, radius=8000):
         
     # with open('restaurants_info.txt', 'w') as file:
     #     json.dump(restaurants, file, indent=4)
+    
     # to cache data!
 
     return restaurants
