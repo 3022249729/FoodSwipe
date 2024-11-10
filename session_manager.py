@@ -138,17 +138,32 @@ def get_top_restaurant(session_id):
     try:
         with get_db_connection() as conn:
             cursor = conn.cursor()
-            cursor.execute('''SELECT restaurant_id, SUM(vote) as score
-                            FROM votes
-                            WHERE session_id = ?
-                            GROUP BY restaurant_id
-                            ORDER BY score DESC
-                            LIMIT 1''', (session_id,))
+            cursor.execute('''
+                SELECT restaurant_id, 
+                       SUM(CASE WHEN vote = 1 THEN 1 ELSE 0 END) as yes_votes,
+                       COUNT(*) as total_votes
+                FROM votes
+                WHERE session_id = ?
+                GROUP BY restaurant_id
+                HAVING yes_votes > 0
+                ORDER BY yes_votes DESC
+                LIMIT 1
+            ''', (session_id,))
             result = cursor.fetchone()
             if result:
                 logging.debug(f"Top restaurant for session {session_id}: {result[0]}")
                 return result[0]
-            return None
+            
+            # If no restaurants with yes votes, get the last voted restaurant
+            cursor.execute('''
+                SELECT restaurant_id
+                FROM votes
+                WHERE session_id = ?
+                ORDER BY ROWID DESC
+                LIMIT 1
+            ''', (session_id,))
+            result = cursor.fetchone()
+            return result[0] if result else None
     except sqlite3.Error as e:
         logging.error(f"Failed to retrieve top restaurant: {e}")
         return None

@@ -108,12 +108,25 @@ def check_login_status():
 
 @app.route("/join_session/<session_id>")
 def join_session(session_id):
-    """Join an existing session."""
-    if session_manager.join_session(session_id):
-        return jsonify({"success": True})
-    else:
-        return jsonify({"error": "Session not found"}), 404
+    """Join an existing session without validation."""
+    return jsonify({"success": True})
 
+@app.route("/restaurant/<restaurant_id>")
+def get_restaurant(restaurant_id):
+    """Retrieve restaurant details by ID."""
+    try:
+        with open('restaurants_info.txt', 'r') as f:
+            restaurants = json.loads(f.read())
+            
+        restaurant = next((r for r in restaurants if r['id'] == restaurant_id), None)
+        if restaurant:
+            return jsonify(restaurant)
+        else:
+            return jsonify({"error": "Restaurant not found"}), 404
+    except Exception as e:
+        logging.error(f"Error retrieving restaurant: {e}")
+        return jsonify({"error": "Failed to retrieve restaurant"}), 500
+    
 @app.route("/vote", methods=["POST"])
 def vote():
     # Check if user is authenticated

@@ -29,9 +29,22 @@ function updateSessionUI() {
     const guestJoinContainer = document.getElementById("guest-join-container");
     const createSessionBtn = document.getElementById("create-session");
     const joinSessionBtn = document.getElementById("join-session");
+    
+    // Add Results button
+    let resultsBtn = document.getElementById("show-results");
+    if (!resultsBtn) {
+        resultsBtn = document.createElement("button");
+        resultsBtn.id = "show-results";
+        resultsBtn.className = "btn btn-primary";
+        resultsBtn.textContent = "Show Results";
+        resultsBtn.onclick = showResults;
+        resultsBtn.style.display = 'none';
+        document.body.appendChild(resultsBtn);
+    }
 
     if (currentUser) {
         if (authButtons) authButtons.style.display = 'none';
+        resultsBtn.style.display = 'block';
 
         if (currentUser.is_guest) {
             if (guestJoinContainer) guestJoinContainer.style.display = 'block';
@@ -47,6 +60,7 @@ function updateSessionUI() {
         if (guestJoinContainer) guestJoinContainer.style.display = 'none';
         if (createSessionBtn) createSessionBtn.style.display = 'none';
         if (joinSessionBtn) joinSessionBtn.style.display = 'none';
+        if (resultsBtn) resultsBtn.style.display = 'none';
     }
 }
 
@@ -155,13 +169,20 @@ function loginAsGuest() {
 }
 
 function getNextRestaurant() {
-    if (restaurants.length === 0) return; 
+    if (restaurants.length === 0) {
+        document.getElementById("restaurant-info").style.opacity = "0";
+        setTimeout(() => {
+            showResults();
+            document.getElementById("restaurant-info").style.opacity = "1";
+        }, 300);
+        return;
+    }
 
     const restaurantIndex = random_index();
     const restaurant = restaurants.splice(restaurantIndex, 1)[0];
     const restaurantInfo = document.getElementById("restaurant-info");
     
-    restaurantInfo.setAttribute('data-restaurant-id', restaurant.id); // Set restaurant ID
+    restaurantInfo.setAttribute('data-restaurant-id', restaurant.id);
     restaurantInfo.style.opacity = "0"; 
 
     setTimeout(() => {
@@ -169,22 +190,22 @@ function getNextRestaurant() {
         $("#restaurant-image").attr("src", restaurant.photo_url);
         $("#restaurant-rating").text("Rating: " + restaurant.rating + "⭐ (" + restaurant.rating_amount + ")");
         let options = '';
-        if (restaurant.dinein){
+        if (restaurant.dinein) {
             options += "Dine-in: ✅ "
         } else {
             options += "Dine-in: ❌ "
         }
-        if (restaurant.delivery){
+        if (restaurant.delivery) {
             options += "Delivery: ✅ "
         } else {
             options += "Delivery: ❌ "
         }
-        if (restaurant.pickup){
+        if (restaurant.pickup) {
             options += "Pick-up: ✅ "
         } else {
             options += "Pick-up: ❌ "
         }
-        if (restaurant.takeout){
+        if (restaurant.takeout) {
             options += "Takeout: ✅ "
         } else {
             options += "Takeout: ❌ "
@@ -249,6 +270,72 @@ function displayResponseMessage(response) {
     }
 }
 
+function restartSwiping() {
+    if (restaurants.length === 0) {
+        // If no more restaurants, fetch new ones
+        create_session();
+    } else {
+        // Otherwise just show the next restaurant
+        const restaurantInfo = document.getElementById("restaurant-info");
+        restaurantInfo.innerHTML = `
+            <h2 id="restaurant-name"></h2>
+            <img id="restaurant-image" src="" alt="Restaurant Image" style="max-width: 300px;">
+            <p id="restaurant-rating"></p>
+            <p id="restaurant-options"></p>
+            <p id="restaurant-address"></p>
+        `;
+        document.getElementById("swipe-buttons").style.display = "block";
+        getNextRestaurant();
+    }
+}
+
+function showResults() {
+    if (!sessionData.session_id) {
+        console.error('No session ID available');
+        return;
+    }
+
+    fetch(`/results/${sessionData.session_id}`)
+        .then(response => response.json())
+        .then(data => {
+            if (!data.top_restaurant) {
+                const message = "No votes recorded yet. Keep swiping!";
+                // document.getElementById("restaurant-info").innerHTML = `
+                //     <div class="results-container">
+                //         <h2>${message}</h2>
+                //         <button onclick="restartSwiping()" class="btn btn-primary">Continue Swiping</button>
+                //     </div>
+                // `;
+                document.getElementById("swipe-buttons").style.display = "none";
+                return;
+            }
+            
+            const restaurantId = data.top_restaurant;
+            fetch(`/restaurant/${restaurantId}`)
+                .then(response => response.json())
+                .then(restaurant => {
+                    const resultsHtml = `
+                        <div class="results-container">
+                            <h2>Top Match!</h2>
+                            <div class="restaurant-card">
+                                <img src="${restaurant.photo_url}" alt="${restaurant.name}" style="max-width: 300px;">
+                                <h3>${restaurant.name}</h3>
+                                <p>Rating: ${restaurant.rating}⭐ (${restaurant.rating_amount})</p>
+                                <p><a href="${restaurant.maps_url}" target="_blank">${restaurant.address}</a></p>
+                            </div>
+                        </div>
+                    `;
+                    
+                    document.getElementById("restaurant-info").innerHTML = resultsHtml;
+                    document.getElementById("swipe-buttons").style.display = "none";
+                });
+        })
+        .catch(error => {
+            console.error("Error fetching results:", error);
+            alert("Error fetching results. Please try again.");
+        });
+}
+
 function createNewSession() {
     fetch('/create_new_session', { method: 'POST' })
         .then(response => response.json())
@@ -265,22 +352,9 @@ function createNewSession() {
 function joinSession() {
     const sessionId = prompt("Enter session ID:");
     if (!sessionId) return;
-
-    fetch(`/join_session/${sessionId}`)
-        .then(response => response.json())
-        .then(data => {
-            if (data.success) {
-                sessionData = { session_id: sessionId };
-                // alert("Joined session successfully!");
-                startSession();
-            } else {
-                // alert(data.error || "Failed to join session");
-            }
-        })
-        .catch(error => {
-            console.error("Error joining session:", error);
-            // alert("Failed to join session. Please try again.");
-        });
+    
+    sessionData = { session_id: sessionId };
+    startSession();
 }
 
 function startSession() {
