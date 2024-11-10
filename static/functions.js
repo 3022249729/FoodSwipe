@@ -6,6 +6,7 @@ function random_index() {
 }
 
 function create_session() {
+    
     navigator.geolocation.getCurrentPosition(function(position) {
         const latitude = position.coords.latitude;
         const longitude = position.coords.longitude;
@@ -29,6 +30,7 @@ function create_session() {
             $("#restaurant-info").show();
             $("#swipe-buttons").show();
 
+            document.getElementById("message").textContent = "Swipe Your Decisions!";
             getNextRestaurant(); 
         });
     });

@@ -1,4 +1,3 @@
-
 from flask import Flask, render_template, request, session, url_for, redirect, jsonify
 from flask_socketio import SocketIO, emit, join_room
 from dotenv import find_dotenv, load_dotenv
