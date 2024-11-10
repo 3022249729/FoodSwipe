@@ -44,11 +44,61 @@ session_manager.init_db()
 def home():
     return render_template("index.html", session=session.get('user'))
 
+@app.route("/guest_login", methods=["POST"])
+def guest_login():
+    """Create a temporary guest session."""
+    if 'user' in session:
+        return jsonify({"error": "Already logged in"}), 400
+        
+    # Generate a temporary guest ID
+    guest_id = f"guest_{generate_token()}"
+    
+    # Store guest session
+    session['user'] = {
+        'userinfo': {
+            'sub': guest_id,
+            'name': 'Guest User',
+            'is_guest': True
+        }
+    }
+    
+    return jsonify({
+        "success": True,
+        "user": {
+            "id": guest_id,
+            "name": "Guest User"
+        }
+    })
+
 @app.route("/create_new_session", methods=["POST"])
 def create_new_session():
     """Create a new session for voting."""
+    if 'user' not in session:
+        return jsonify({"error": "Not logged in"}), 401
+        
+    if session['user'].get('userinfo', {}).get('is_guest', False):
+        return jsonify({"error": "Guests cannot create sessions"}), 403
+        
     session_id = session_manager.create_session()
     return jsonify({"session_id": session_id})
+
+@app.route("/check_login_status")
+def check_login_status():
+    """Check if user is logged in and return user info."""
+    if 'user' in session:
+        user_info = session['user'].get('userinfo', {})
+        return jsonify({
+            "logged_in": True,
+            "user": {
+                "id": user_info.get('sub'),
+                "name": user_info.get('name', 'User'),
+                "is_guest": user_info.get('is_guest', False)
+            }
+        })
+    return jsonify({
+        "logged_in": False,
+        "user": None
+    })
 
 @app.route("/join_session/<session_id>")
 def join_session(session_id):
@@ -60,6 +110,13 @@ def join_session(session_id):
 
 @app.route("/vote", methods=["POST"])
 def vote():
+    # Check if user is authenticated
+    if 'user' not in session:
+        return jsonify({"error": "User not authenticated"}), 401
+        
+    # Get user ID from Auth0 user info
+    user_id = session['user']['userinfo']['sub']  # Auth0 unique identifier
+    
     data = request.get_json()
     logging.debug(f"Received vote data: {data}")
     
@@ -68,26 +125,33 @@ def vote():
     vote_value = data.get("vote")
 
     # Check for missing or invalid data
-    if not session_id or not restaurant_id or not vote_value:
-        logging.error("Missing session_id, restaurant_id, or vote value")
-        return jsonify({"error": "Missing data"}), 400
+    if not all([session_id, restaurant_id, vote_value]):
+        logging.error("Missing required vote data")
+        return jsonify({"error": "Missing required data"}), 400
 
-    # Convert 'Yes' to 1 and 'No' to -1, handle invalid vote value
-    if vote_value == 'Yes':
-        vote_value = 1
-    elif vote_value == 'No':
-        vote_value = -1
-    else:
-        logging.error("Invalid vote value")
+    # Validate session exists
+    if not session_manager.join_session(session_id):
+        logging.error(f"Invalid session ID: {session_id}")
+        return jsonify({"error": "Invalid session ID"}), 404
+
+    # Convert vote value
+    vote_map = {"Yes": 1, "No": -1}
+    numeric_vote = vote_map.get(vote_value)
+    
+    if numeric_vote is None:
+        logging.error(f"Invalid vote value: {vote_value}")
         return jsonify({"error": "Invalid vote value"}), 400
 
-    # Attempt to store the vote
-    success = session_manager.store_vote(session_id, restaurant_id, vote_value)
-    if success:
-        logging.info(f"Vote stored successfully for session {session_id} and restaurant {restaurant_id}")
+    try:
+        session_manager.store_vote(session_id, restaurant_id, user_id, numeric_vote)
+        logging.info(f"Vote stored successfully: session={session_id}, restaurant={restaurant_id}, user={user_id}, vote={numeric_vote}")
         return jsonify({"success": True})
-    else:
-        logging.error("Failed to store vote in session manager")
+    except ValueError as e:
+        if "already voted" in str(e):
+            return jsonify({"error": str(e)}), 409  # Conflict status code
+        return jsonify({"error": str(e)}), 400
+    except Exception as e:
+        logging.error(f"Failed to store vote: {str(e)}")
         return jsonify({"error": "Failed to store vote"}), 500
     
 @app.route("/results/<session_id>")
@@ -124,18 +188,31 @@ def logout():
 def callback():
     token = oauth.auth0.authorize_access_token()
     session["user"] = token
+    session["user"]["userinfo"]["is_guest"] = False  # Explicitly mark as non-guest
     return redirect("/")
 
 
 @app.route('/create_session', methods=['POST'])
 def create_session():
+    # Ensure restaurant data is available before creating a session
+    load_restaurants()
+    
     with open('restaurants_info.txt', 'r') as f:
         raw_data = f.read()
     restaurants = json.loads(raw_data)
 
-    # Ensure response matches expected format in JavaScript (an object with a "restaurants" key)
     return jsonify({"restaurants": restaurants}), 200
 
+def load_restaurants():
+    """Check if 'restaurants_info.txt' exists; if not, generate and save restaurant data."""
+    if not os.path.exists('restaurants_info.txt'):
+        logging.info("Restaurant data file not found. Generating new data...")
+        # Assuming default coordinates and radius for demonstration
+        restaurants = get_restaurants(latitude=40.7128, longitude=-74.0060)  # Example: New York City coordinates
+        with open('restaurants_info.txt', 'w') as file:
+            json.dump(restaurants, file, indent=4)
+    else:
+        logging.info("Restaurant data file found.")
 
 def get_restaurants(latitude, longitude, radius=8000):
     url = "https://maps.googleapis.com/maps/api/place/nearbysearch/json"
@@ -187,8 +264,8 @@ def get_restaurants(latitude, longitude, radius=8000):
         else:
             break
         
-    # with open('restaurants_info.txt', 'w') as file:
-    #     json.dump(restaurants, file, indent=4)
+    with open('restaurants_info.txt', 'w') as file:
+        json.dump(restaurants, file, indent=4)
     
     # to cache data!
 

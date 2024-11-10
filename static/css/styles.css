@@ -55,7 +55,6 @@ header {
 .login-button:hover, .logout-button:hover {
     background-color: #005fa3;
     transform: translateY(-2px);
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 /* Restaurant Info */
@@ -188,4 +187,14 @@ a:hover {
     button {
         padding: 10px;
     }
+}
+
+.auth-container,
+.join-container,
+.actions-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    margin: 20px 0;
 }

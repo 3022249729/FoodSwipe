@@ -5,6 +5,84 @@ function random_index() {
     return Math.floor(Math.random() * restaurants.length);
 }
 
+let currentUser = null;
+
+function checkLoginStatus() {
+    fetch('/check_login_status')
+        .then(response => response.json())
+        .then(data => {
+            currentUser = data.user;
+            updateUIForLoginStatus();
+            if (currentUser) {
+                attachSwipeEventListeners();
+            }
+        })
+        .catch(error => {
+            updateUIForLoginStatus();
+        });
+}
+
+function attachSwipeEventListeners() {
+    const swipeLeftButton = document.getElementById("swipe-left");
+    const swipeRightButton = document.getElementById("swipe-right");
+
+    // Only attach event listeners if the elements are present
+    if (swipeLeftButton) {
+        swipeLeftButton.addEventListener("click", swipeLeft);
+    }
+
+    if (swipeRightButton) {
+        swipeRightButton.addEventListener("click", swipeRight);
+    }
+
+    // Attach keyboard listeners
+    document.addEventListener("keydown", function(event) {
+        if (event.key === "ArrowLeft" && swipeLeftButton) {
+            swipeLeft();
+            swipeLeftButton.classList.add("active-red");
+            swipeRightButton.classList.remove("active");
+        } else if (event.key === "ArrowRight" && swipeRightButton) {
+            swipeRight();
+            swipeLeftButton.classList.remove("active-red");
+        }
+    });
+}
+
+function updateUIForLoginStatus() {
+    const authContainer = document.getElementById('auth-container');
+    const sessionActions = document.getElementById('session-actions');
+    const loginStatus = document.getElementById('login-status');
+    const userInfo = document.getElementById('user-info');
+    const logoutButton = document.getElementById('logout-button');
+    const createSessionBtn = document.getElementById('create-session-btn');
+
+    if (currentUser) {
+        // User is logged in
+        if (authContainer) authContainer.style.display = 'none';
+        if (sessionActions) sessionActions.style.display = 'flex';
+        if (loginStatus) loginStatus.style.display = 'flex';
+        if (logoutButton) logoutButton.style.display = 'block';
+
+        // Update user info display if available
+        if (userInfo) {
+            userInfo.textContent = currentUser.is_guest
+                ? 'Logged in as Guest'
+                : `Welcome, ${currentUser.name}`;
+        }
+
+        // Show/hide create session button based on guest status
+        if (createSessionBtn) {
+            createSessionBtn.style.display = currentUser.is_guest ? 'none' : 'block';
+        }
+    } else {
+        // No user logged in
+        if (authContainer) authContainer.style.display = 'flex';
+        if (sessionActions) sessionActions.style.display = 'none';
+        if (loginStatus) loginStatus.style.display = 'none';
+        if (logoutButton) logoutButton.style.display = 'none';
+    }
+}
+
 function create_session() {
     navigator.geolocation.getCurrentPosition(function(position) {
         const data = {
@@ -28,6 +106,31 @@ function create_session() {
             document.getElementById("message").textContent = "Swipe Your Decisions!";
             getNextRestaurant(); 
         });
+    });
+}
+
+function loginAsGuest() {
+    fetch('/guest_login', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            currentUser = {
+                ...data.user,
+                is_guest: true
+            };
+            updateUIForLoginStatus();
+        } else {
+            // alert(data.error || "Failed to login as guest");
+        }
+    })
+    .catch(error => {
+        console.error("Error logging in as guest:", error);
+        // alert("Failed to login as guest. Please try again.");
     });
 }
 
@@ -70,12 +173,11 @@ function handleSwipe(response, buttonId) {
     
     if (!restaurantId) {
         console.error('No restaurant ID found!');
+        // alert('Error: No restaurant selected');
         return;
     }
 
-    // Call the function to cast the vote
-    castVote(restaurantId, response);
-
+    // Update UI to show response
     restaurantInfo.classList.add(buttonId);
     if (buttonId === "swipe-left") {
         leftButton.classList.add("active-red");
@@ -87,11 +189,14 @@ function handleSwipe(response, buttonId) {
     
     displayResponseMessage(response);
 
+    // Cast the vote
+    castVote(restaurantId, response);
+
+    // Remove animation classes after delay
     setTimeout(() => {
         restaurantInfo.classList.remove(buttonId);
         leftButton.classList.remove("active-red");
         rightButton.classList.remove("active");
-        getNextRestaurant();  
     }, 500);
 }
 
@@ -123,63 +228,93 @@ function createNewSession() {
 
 function joinSession() {
     const sessionId = prompt("Enter session ID:");
+    if (!sessionId) return;
+
     fetch(`/join_session/${sessionId}`)
         .then(response => response.json())
         .then(data => {
             if (data.success) {
-                sessionData = { session_id: sessionId }; // Update session data with session ID
-                console.log("Session data after joining:", sessionData); // Debugging line
-                alert("Joined session successfully!");
+                sessionData = { session_id: sessionId };
+                // alert("Joined session successfully!");
                 startSession();
             } else {
-                alert(data.error);
+                // alert(data.error || "Failed to join session");
             }
+        })
+        .catch(error => {
+            console.error("Error joining session:", error);
+            // alert("Failed to join session. Please try again.");
         });
 }
 
 function startSession() {
-    // Hide create/join buttons and show swipe interface
-    document.getElementById("create-session").style.display = "none";
-    document.getElementById("join-session").style.display = "none";
-    document.getElementById("restaurant-info").style.display = "block";
-    document.getElementById("swipe-buttons").style.display = "block";
-    create_session(); // Start swiping
+    const authButtons = document.getElementById("auth-buttons");
+    const guestJoinContainer = document.getElementById("guest-join-container");
+    const restaurantInfo = document.getElementById("restaurant-info");
+    const swipeButtons = document.getElementById("swipe-buttons");
+    const createSessionButton = document.getElementById("create-session");
+    const joinSessionButton = document.getElementById("join-session");
+
+    if (authButtons) authButtons.style.display = "none";
+    if (guestJoinContainer) guestJoinContainer.style.display = "none";
+    if (restaurantInfo) restaurantInfo.style.display = "block";
+    if (swipeButtons) swipeButtons.style.display = "block";
+    if (createSessionButton) createSessionButton.style.display = "none";
+    if (joinSessionButton) joinSessionButton.style.display = "none";
+
+    create_session();
 }
 
 function castVote(restaurantId, vote) {
-    console.log("vote", sessionData);
-    const sessionId = sessionData.session_id; // Retrieve session ID from session data
-    console.log("Session ID:", sessionId); // Debugging line
-    console.log("Restaurant ID:", restaurantId); // Debugging line
-    console.log("Vote:", vote); // Debugging line
+    if (!sessionData.session_id) {
+        console.error('No session ID available');
+        return;
+    }
+
+    if (!restaurantId) {
+        console.error('No restaurant ID provided');
+        return;
+    }
+
+    const voteData = {
+        session_id: sessionData.session_id,
+        restaurant_id: restaurantId,
+        vote: vote
+    };
+
+    console.log("Casting vote:", voteData);
+
     fetch("/vote", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ session_id: sessionId, restaurant_id: restaurantId, vote: vote })
-    }).then(response => response.json())
-      .then(data => {
-          if (data.success) {
-              alert("Vote recorded!");
-          } else {
-              alert("There was an error casting your vote.");
-          }
-      });
+        headers: { 
+            "Content-Type": "application/json",
+            "Accept": "application/json"
+        },
+        body: JSON.stringify(voteData)
+    })
+    .then(response => {
+        if (!response.ok) {
+            return response.json().then(err => Promise.reject(err));
+        }
+        return response.json();
+    })
+    .then(data => {
+        if (data.success) {
+            console.log("Vote recorded successfully");
+            // Only proceed to next restaurant if vote was successful
+            getNextRestaurant();
+        } else {
+            throw new Error(data.error || "Failed to record vote");
+        }
+    })
+    .catch(error => {
+        console.error("Error casting vote:", error);
+        // alert(`Error recording vote: ${error.message || "Unknown error occurred"}`);
+    });
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("swipe-left").addEventListener("click", swipeLeft);
-    document.getElementById("swipe-right").addEventListener("click", swipeRight);
-
-    document.addEventListener("keydown", function(event) {
-        if (event.key === "ArrowLeft") {
-            swipeLeft();
-            document.getElementById("swipe-left").classList.add("active-red");
-            document.getElementById("swipe-right").classList.remove("active");
-        } else if (event.key === "ArrowRight") {
-            swipeRight();
-            document.getElementById("swipe-left").classList.remove("active-red");
-        }
-    });
+    checkLoginStatus();
 });
 
 $(document).ready(function() {
