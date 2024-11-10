@@ -263,9 +263,24 @@ def get_restaurants(latitude, longitude, radius=8000):
             params['pagetoken'] = token
         else:
             break
+
+    for r in range(len(restaurants)):
+        print("fetching details")
         
-    with open('restaurants_info.txt', 'w') as file:
-        json.dump(restaurants, file, indent=4)
+        place_id = restaurants[r]["id"]
+        url = f"https://maps.googleapis.com/maps/api/place/details/json?placeid={place_id}&key={os.getenv('GOOGLE_MAPS_API_KEY')}"
+        
+        response = requests.get(url)
+        data = response.json().get('result', {})
+
+        restaurants[r]["dinein"] = data.get('dine_in', False)
+        restaurants[r]["delivery"] = data.get('delivery', False)
+        restaurants[r]["pickup"] = data.get('curbside_pickup', False)
+        restaurants[r]["takeout"] = data.get('takeout', False)
+        restaurants[r]["address"] = data.get('formatted_address')
+
+    # with open('restaurants_info.txt', 'w') as file:
+    #     json.dump(restaurants, file, indent=4)
     
     # to cache data!
 
