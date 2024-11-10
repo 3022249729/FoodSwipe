@@ -85,6 +85,9 @@ def create_session():
 
     return jsonify(restaurants), 200
 
+# Create a directory for cached images if it doesn't exist
+IMAGE_CACHE_DIR = 'cached_images'
+os.makedirs(IMAGE_CACHE_DIR, exist_ok=True)
 
 def get_restaurants(latitude, longitude, radius=8000):
     url = "https://maps.googleapis.com/maps/api/place/nearbysearch/json"
@@ -101,9 +104,11 @@ def get_restaurants(latitude, longitude, radius=8000):
         response = requests.get(url, params=params)
         data = response.json()
         results = data.get('results', [])
+        
         for restaurant in results:
             if len(restaurant['name']) > 28:
                 continue
+            
             id = restaurant['place_id']
             name = restaurant['name']
             rating = restaurant.get('rating')
@@ -116,7 +121,25 @@ def get_restaurants(latitude, longitude, radius=8000):
 
             photo_url = None
             if photo_reference:
+                # Construct the URL for the photo
                 photo_url = f"https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference={photo_reference}&key={os.getenv('GOOGLE_MAPS_API_KEY')}"
+                
+                # Define the path for the cached image
+                image_filename = f"{id}.jpg"  # Use place ID as filename to avoid collisions
+                cached_image_path = os.path.join(IMAGE_CACHE_DIR, image_filename)
+
+                # Check if the image is already cached
+                if not os.path.exists(cached_image_path):
+                    # Download and save the image if it doesn't exist
+                    img_response = requests.get(photo_url)
+                    if img_response.status_code == 200:
+                        with open(cached_image_path, 'wb') as img_file:
+                            img_file.write(img_response.content)
+                    else:
+                        print(f"Failed to download image for {name}")
+
+                # Set photo_url to point to the cached image
+                photo_url = cached_image_path
 
             restaurants.append({
                 'id': id,
@@ -128,19 +151,13 @@ def get_restaurants(latitude, longitude, radius=8000):
                 'maps_url': f"https://www.google.com/maps/place/?q=place_id:{id}"
             })
 
-
         token = data.get('next_page_token')
         if token:
             sleep(1.75)
             params['pagetoken'] = token
         else:
             break
-        
-    # with open('restaurants_info.txt', 'w') as file:
-    #     json.dump(restaurants, file, indent=4)
     
-    # to cache data!
-
     return restaurants
     
 if __name__ == '__main__':
