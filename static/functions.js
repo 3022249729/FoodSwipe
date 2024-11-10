@@ -1,4 +1,175 @@
-let restaurants = [];
+let restaurants = [
+    {
+        "id": "ChIJBbG97ett04kRyLNBbBA-hz0",
+        "name": "Texas Roadhouse",
+        "rating": 4.5,
+        "rating_amount": 4154,
+        "address": "900 Young St, Tonawanda, NY 14150, USA",
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DNgPN8CUZ_Z4z09eT-zp1QZjMVUb0toc7JN4SDT-ua6Oan4o_SwganPFqDs8MYjwVairgEQTZv6wgSqztBhdIN0RljTB_Es_5e6gc8vGHDEy84FUHUoYfP5qgOcLd-Cr1Js0zo6pmwFcW4WsqXiSCqc8uKB5UNVzPi9bwt9eEKqRJUs&key=AIzaSyAi1avndrNeCQV69bGVROFPBzMo8gZzeUg",
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJBbG97ett04kRyLNBbBA-hz0",
+        "dinein": true,
+        "delivery": false,
+        "pickup": true,
+        "takeout": true
+    },
+    {
+        "id": "ChIJL1K2RhFy04kRthgIm-_JAJg",
+        "name": "Chipotle Mexican Grill",
+        "rating": 3.5,
+        "rating_amount": 1300,
+        "address": "1643 Niagara Fls Blvd, Amherst, NY 14228, USA",
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DNr2IWSZ7obV1NOSdzMzMaJMoHqpQYfDkbM9csbK1SECVSObaa9_cDwoPjFjk2x4vJc-Ru2Skenwhy-zIf08fiFafANucfxgWT10AhBcNAiaJ3aAEGW4xkRPDRMds-jrbBR5t4kGc7VBjrAwW0fzpD5I5JM49YumQu-70a0oG5cLlzW&key=AIzaSyAi1avndrNeCQV69bGVROFPBzMo8gZzeUg",
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJL1K2RhFy04kRthgIm-_JAJg",
+        "dinein": true,
+        "delivery": true,
+        "pickup": false,
+        "takeout": true
+    },
+    {
+        "id": "ChIJ0-jEZRFy04kRiFBfrh6coCs",
+        "name": "Buffalo Wild Wings",
+        "rating": 3.8,
+        "rating_amount": 2211,
+        "address": "1620 Niagara Fls Blvd, Tonawanda, NY 14150, USA",
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DONWvmPJBMl7-kXV2tFgbgX87JKSK1v31Nh1LQgDXXvNk2OWcHtH8JNEUgqEa6m942z-iIKRlZWrjk6U2rI9KAXmtu9WrvlBpxExPoxw5HuEc1_ehxLSw8VnO1t3RmHEiLe7dYcgpY39Alv9VM9QaYzq6x0pZii4z2Gt9rPFsv4_v65&key=AIzaSyAi1avndrNeCQV69bGVROFPBzMo8gZzeUg",
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ0-jEZRFy04kRiFBfrh6coCs",
+        "dinein": true,
+        "delivery": true,
+        "pickup": true,
+        "takeout": true
+    },
+    {
+        "id": "ChIJ1TNXRxFy04kRC_XI4mc6UEA",
+        "name": "Carrabba's Italian Grill",
+        "rating": 4.3,
+        "rating_amount": 2687,
+        "address": "1645 Niagara Fls Blvd, Amherst, NY 14228, USA",
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DOssjWdFZ39sF285Pqnncd66DNupRcg9JChBRjJYa2lk4Z8vw3-Y17py522Cu-HrL67aaVbc57bqp1zXRat6HvBptM3v3hF2wWa6hjqV6J35Pa88YjtwgffWjWss6Tg3SCkOeaYN6p7S3G13TaAHUD0U0aESRUtac4zW3uKW5dmoQH-&key=AIzaSyAi1avndrNeCQV69bGVROFPBzMo8gZzeUg",
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ1TNXRxFy04kRC_XI4mc6UEA",
+        "dinein": true,
+        "delivery": true,
+        "pickup": true,
+        "takeout": true
+    },
+    {
+        "id": "ChIJAZsLTrty04kRHJv_CIFU0wE",
+        "name": "Lake Effect Diner",
+        "rating": 4.2,
+        "rating_amount": 1621,
+        "address": "3165 Main St, Buffalo, NY 14214, USA",
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DNxMQnfMW0Gn-GSor2iO9ffm6GG_aAi1ZX5K528qTQdZ8bwU_G1mvcqQMJ2PH7S_Oh2QxItaoSjVmFRePx2-AGPwvzEEck3zwrzo8BdxLSvz1mkZ0aF6IdkahPcX1Mi4u4pq1jqq8vfSGJBY2WtYHDG-8L5qwgh1u69-U2tfUVsyBPE&key=AIzaSyAi1avndrNeCQV69bGVROFPBzMo8gZzeUg",
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJAZsLTrty04kRHJv_CIFU0wE",
+        "dinein": true,
+        "delivery": false,
+        "pickup": false,
+        "takeout": true
+    },
+    {
+        "id": "ChIJ2bnZcy1x04kRfMV5mWmtQeE",
+        "name": "Amherst Pizza and Ale House",
+        "rating": 4.4,
+        "rating_amount": 978,
+        "address": "55 Crosspoint Pkwy, Getzville, NY 14068, USA",
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DMK2blQf59T8nxoWHHMCOklLha-iWMfHCPxmVMVDchCumQWQ4nYKsO5yO1XPHaPGlAdTBjztzUunQ20BnSXGxUjUdFLq0BCiwAF3_BRVGgMsiS2lk0Jocf49xYwVumqcoUl0YAxTBeYylmdZRmGGpSs4jWioPSd-1IlQeg_gyC7B7IA&key=AIzaSyAi1avndrNeCQV69bGVROFPBzMo8gZzeUg",
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ2bnZcy1x04kRfMV5mWmtQeE",
+        "dinein": true,
+        "delivery": true,
+        "pickup": false,
+        "takeout": true
+    },
+    {
+        "id": "ChIJl11WUqNx04kRHfHUuX9W1qE",
+        "name": "Banchetti By Rizzo's",
+        "rating": 3.9,
+        "rating_amount": 507,
+        "address": "550 N French Rd, Buffalo, NY 14228, USA",
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DM0XmXztY7gxjsIu9iqpFUFF9FZm_1OgxLTRepM3Fc7cQjh5d3NmyzLHf5S3C76rjSMeU-AoEQxVYkU3ZGB7NlylAQRclFf41DXazbkuypTgZsJ06r_5dBaEEyUE1daRKkCp_MNxkgfiVE3KSfrwPwxKgnXzxQ-X9PKYbEP9v7jk0Fg&key=AIzaSyAi1avndrNeCQV69bGVROFPBzMo8gZzeUg",
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJl11WUqNx04kRHfHUuX9W1qE",
+        "dinein": true,
+        "delivery": false,
+        "pickup": false,
+        "takeout": true
+    },
+    {
+        "id": "ChIJw1Dsl3tz04kRSn-4Bp7ALfI",
+        "name": "SPoT Coffee",
+        "rating": 4.4,
+        "rating_amount": 862,
+        "address": "5330 Main St # 4, Williamsville, NY 14221, USA",
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DNMZQW6zChxGt96Hoo00-jk0Ml9w-wlr6dSx52J8IqRCawOMXigH_K1TTL8F29-aRAazPcbdLUa6UaosnXdYiuYa7PUk7QQwpBNdL-qpDBbPzkwJNpXbxoTZDmfMurSqtzFOVln7efK3-QtUPOzKsYW-uXaf7KQReSMe4SxR4uLfqfl&key=AIzaSyAi1avndrNeCQV69bGVROFPBzMo8gZzeUg",
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJw1Dsl3tz04kRSn-4Bp7ALfI",
+        "dinein": true,
+        "delivery": true,
+        "pickup": false,
+        "takeout": true
+    },
+    {
+        "id": "ChIJF_JcPnBz04kRYuA9k09KMUQ",
+        "name": "La Nova Pizzeria",
+        "rating": 3.7,
+        "rating_amount": 1401,
+        "address": "5151 Main St Suite 100, Amherst, NY 14221, USA",
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DO0-mbncSvuNf9RH7aPzuPv6u7znEoMvB-5Howf2CdpZQcSwVKN-qoljf_NsYl0wKIXMSScKUBOMHnR-SuW7_o1H9FzPqcgAKcJ5Ap5_Xy_t6cN4Nm7XGIGebE9ifeLW3gPmkPL1VlaKEEHKJXm0hCgbYh4adiaPGL0PXTLEwjYb4Hl&key=AIzaSyAi1avndrNeCQV69bGVROFPBzMo8gZzeUg",
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJF_JcPnBz04kRYuA9k09KMUQ",
+        "dinein": true,
+        "delivery": true,
+        "pickup": false,
+        "takeout": true
+    },
+    {
+        "id": "ChIJzWpFyGB204kRzrESdXpqM9o",
+        "name": "Grovers Bar & Grill",
+        "rating": 4.6,
+        "rating_amount": 1599,
+        "address": "9160 Transit Rd, East Amherst, NY 14051, USA",
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DMjyI_3dVyRmdHJSKZB8Jm2eaXu3vIQpU3H_CJeWNhsitj_AlLGm57PHgZ-B-osFviFiDC2TS3yNA7fNYMi0qhVknfa4Glnnb3IQ0c1GA2neHVxDcQa2_ZYbb-xV_G4i5cVOx78EfjOUYcdP5-tclSQlahyZawgtcvGcnm6YUOgOwM7&key=AIzaSyAi1avndrNeCQV69bGVROFPBzMo8gZzeUg",
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJzWpFyGB204kRzrESdXpqM9o",
+        "dinein": true,
+        "delivery": false,
+        "pickup": false,
+        "takeout": true
+    },
+    {
+        "id": "ChIJ_0h-q0Fy04kRmSZp3AwTI_E",
+        "name": "IHOP",
+        "rating": 4.2,
+        "rating_amount": 2910,
+        "address": "4003 Maple Rd, Amherst, NY 14226, USA",
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DPuFtlXH2NAYwI5nJCvxNRxqA_BoMuy34JZPJ6w_Wl62s2TxYdtAt9XjdNFrhHWTCV0rFkg0iNmmwZjiH_9CNoE52Gbuqf5QLhfi4Xs0C7I7unrGSSMJLxxA9JSDhmy-ctfn8y0biPayk9wDQyHSzxYA0GtuYnfDOhyes8f52XQz9m6&key=AIzaSyAi1avndrNeCQV69bGVROFPBzMo8gZzeUg",
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ_0h-q0Fy04kRmSZp3AwTI_E",
+        "dinein": true,
+        "delivery": true,
+        "pickup": false,
+        "takeout": true
+    },
+    {
+        "id": "ChIJr_t2k-1z04kRE--wP2X6YmU",
+        "name": "Fuji Grill",
+        "rating": 4.5,
+        "rating_amount": 618,
+        "address": "736 Maple Rd, Buffalo, NY 14221, USA",
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DMQh5E0k9MINV9MZ-wd_12sGxrdHcoyR4ytowCVdXiyEFYTqlEMAZ-0aViYKDyCi7zpdGHlNCtXYx3LZh7U1Ea38AWho855w0-my3lRP0MFAcCiUjgFWcKbKZzgXBUB-TqwReDTIuo2yHjFtv8wID8GGnR3fl0rQhh1soIK74dYj2T5&key=AIzaSyAi1avndrNeCQV69bGVROFPBzMo8gZzeUg",
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJr_t2k-1z04kRE--wP2X6YmU",
+        "dinein": true,
+        "delivery": true,
+        "pickup": false,
+        "takeout": true
+    },
+    {
+        "id": "ChIJ2bnZcy1x04kR3MdlVF7bpTQ",
+        "name": "Sun Garden",
+        "rating": 4.3,
+        "rating_amount": 91,
+        "address": "55 Crosspoint Pkwy Suite 118, Getzville, NY 14068, USA",
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DNjPZrY-fASmUg9L1iTmxxyoYRHYxLW3KMcgO1VHtH0KLmfM-PeOkbvuT2SRLZcPFVwZeCs-NGYMRKC-Cz-NYOAC63oR-i4nn7lKhye5_ExEJcGgibP_8nNx_kSedy1yXEZQq65RGj248ti1nuebB0akCpp0N6xJaAPRi_PMbySWvA8&key=AIzaSyAi1avndrNeCQV69bGVROFPBzMo8gZzeUg",
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ2bnZcy1x04kR3MdlVF7bpTQ",
+        "dinein": true,
+        "delivery": true,
+        "pickup": false,
+        "takeout": true
+    }
+];
+
 let sessionData = {};
 
 function random_index() {
