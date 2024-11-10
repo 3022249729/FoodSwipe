@@ -17,11 +17,17 @@
             <header>
                 <h1>Welcome, {{session.userinfo.name}}!</h1>
             </header>
+            <br />
             <main id="restaurant-info">
                 <h2 id="restaurant-name"></h2>
-                <img id="restaurant-image" src="" alt="Restaurant Image">
-                <p id="restaurant-rating"></p>
-                <p id="restaurant-address"></p>
+                <p></p>
+                <div class="image-container">
+                    <img id="restaurant-image" src="" alt="Restaurant Image">
+                </div>
+                <div id="restaurant-details">
+                    <b><p id="restaurant-rating"></p></b>
+                    <b><p id="restaurant-address"></p></b>
+                </div>
             </main>
             <div id="swipe-buttons">
                 <button id="swipe-left">No</button>

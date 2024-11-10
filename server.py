@@ -9,6 +9,8 @@ import random
 import string
 import requests
 from time import sleep
+import json
+import os
 
 app = Flask(__name__)
 app.secret_key = env.get("APP_SECRET_KEY")
@@ -69,26 +71,33 @@ def callback():
 
 @app.route('/create_session', methods=['POST'])
 def create_session():
-    data = request.get_json()
-    
-    latitude = data.get('latitude')
-    longitude = data.get('longitude')
+    # data = request.get_json() 
+    # latitude = data.get('latitude')
+    # longitude = data.get('longitude')
+    # restaurants = get_restaurants(latitude, longitude)
 
-    restaurants = get_restaurants(latitude, longitude)
+    # for dynamic fetches that uses google maps api every call
+    # we are sticking to cached data because it takes a long time to make api calls
+
+    with open('restaurants_info.txt', 'r') as f:
+        raw_data = f.read()
+    restaurants = json.loads(raw_data)
+
     return jsonify(restaurants), 200
 
 
-def get_restaurants(latitude, longitude, radius=5000):
+def get_restaurants(latitude, longitude, radius=8000):
     url = "https://maps.googleapis.com/maps/api/place/nearbysearch/json"
     params = {
         'location': f"{latitude},{longitude}",
         'radius': radius,
         'type': 'restaurant',
-        'key': env.get("GOOGLE_MAPS_API_KEY")
+        'key': os.getenv("GOOGLE_MAPS_API_KEY")
     }
     
     restaurants = []
     while True:
+        print("fetching")
         response = requests.get(url, params=params)
         data = response.json()
         results = data.get('results', [])
@@ -105,19 +114,18 @@ def get_restaurants(latitude, longitude, radius=5000):
 
             photo_url = None
             if photo_reference:
-                photo_url = f"https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference={photo_reference}&key={env.get('GOOGLE_MAPS_API_KEY')}"
+                photo_url = f"https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference={photo_reference}&key={os.getenv('GOOGLE_MAPS_API_KEY')}"
 
             restaurants.append({
-                'id':id,
+                'id': id,
                 'name': name,
                 'rating': rating,
                 'rating_amount': rating_amount,
                 'address': address,
-                'photo_url': photo_url 
+                'photo_url': photo_url,
+                'maps_url': f"https://www.google.com/maps/place/?q=place_id:{id}"
             })
 
-        if len(restaurants) >= 50:
-            break
 
         token = data.get('next_page_token')
         if token:
@@ -126,8 +134,11 @@ def get_restaurants(latitude, longitude, radius=5000):
         else:
             break
         
-    return restaurants
+    # with open('restaurants_info.txt', 'w') as file:
+    #     json.dump(restaurants, file, indent=4)
+    # to cache data!
 
+    return restaurants
     
 if __name__ == '__main__':
     socketio.run(app, host="0.0.0.0" ,port=3000, debug=True)
