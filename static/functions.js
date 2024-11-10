@@ -362,6 +362,9 @@ function createNewSession() {
             document.getElementById("session-url").textContent = `${sessionData.session_id}`;
             startSession();
         });
+    if (restaurants.length == 0) {
+        create_session();
+    }
 }
 
 function joinSession() {
