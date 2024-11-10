@@ -7,7 +7,6 @@ from contextlib import contextmanager
 
 DATABASE = 'sessions.db'
 
-# Set up logging
 logging.basicConfig(level=logging.DEBUG)
 
 @contextmanager
@@ -76,7 +75,6 @@ def join_session(session_id):
             result = cursor.fetchone()
             
             if not result:
-                # If the session doesn't exist, create it
                 logging.info(f"Session {session_id} does not exist. Creating new session.")
                 create_session()
                 return True
@@ -97,15 +95,12 @@ def store_vote(session_id, restaurant_id, user_id, vote):
         with get_db_connection() as conn:
             cursor = conn.cursor()
             
-            # First verify if the session exists; if not, create it
             cursor.execute("SELECT 1 FROM sessions WHERE session_id = ?", (session_id,))
             if not cursor.fetchone():
-                # If session doesn't exist, create a new session
                 cursor.execute("INSERT INTO sessions (session_id, name) VALUES (?, ?)", 
                                (session_id, "New Session"))
                 logging.info(f"Session {session_id} created.")
 
-            # Check if user already voted for this restaurant in this session
             cursor.execute('''SELECT vote FROM votes 
                             WHERE session_id = ? AND restaurant_id = ? AND user_id = ?''',
                          (session_id, restaurant_id, user_id))
@@ -163,7 +158,6 @@ def get_top_restaurant(session_id):
                 logging.debug(f"Top restaurant for session {session_id}: {result[0]}")
                 return result[0]
             
-            # If no restaurants with yes votes, get the last voted restaurant
             cursor.execute('''
                 SELECT restaurant_id
                 FROM votes

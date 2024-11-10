@@ -1,5 +1,5 @@
 let restaurants = [];
-let sessionData = {}; // Store session data globally
+let sessionData = {};
 
 function random_index() {
     return Math.floor(Math.random() * restaurants.length);
@@ -30,7 +30,6 @@ function updateSessionUI() {
     const createSessionBtn = document.getElementById("create-session");
     const joinSessionBtn = document.getElementById("join-session");
     
-    // Add Results button
     let resultsBtn = document.getElementById("show-results");
     if (!resultsBtn) {
         resultsBtn = document.createElement("button");
@@ -68,7 +67,6 @@ function attachSwipeEventListeners() {
     const swipeLeftButton = document.getElementById("swipe-left");
     const swipeRightButton = document.getElementById("swipe-right");
 
-    // Only attach event listeners if the elements are present
     if (swipeLeftButton) {
         console.log("swipeLeftButton");
         swipeLeftButton.addEventListener("click", swipeLeft);
@@ -260,8 +258,6 @@ function handleSwipe(response, buttonId) {
 function displayResponseMessage(response) {
     const responseMessage = document.getElementById("response-message");
     if (responseMessage) {
-        responseMessage.textContent = `You selected: ${response}`;
-        responseMessage.style.opacity = "1";
         setTimeout(() => {
             responseMessage.style.opacity = "0";
         }, 2000);
@@ -272,10 +268,8 @@ function displayResponseMessage(response) {
 
 function restartSwiping() {
     if (restaurants.length === 0) {
-        // If no more restaurants, fetch new ones
         create_session();
     } else {
-        // Otherwise just show the next restaurant
         const restaurantInfo = document.getElementById("restaurant-info");
         restaurantInfo.innerHTML = `
             <h2 id="restaurant-name"></h2>
@@ -354,6 +348,7 @@ function joinSession() {
     if (!sessionId) return;
     
     sessionData = { session_id: sessionId };
+    
     startSession();
 }
 

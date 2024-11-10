@@ -50,10 +50,8 @@ def guest_login():
     if 'user' in session:
         return jsonify({"error": "Already logged in"}), 400
         
-    # Generate a temporary guest ID
     guest_id = f"guest_{generate_token()}"
     
-    # Store guest session
     session['user'] = {
         'userinfo': {
             'sub': guest_id,
@@ -77,7 +75,6 @@ def create_new_session():
         print("No user in session")
         return jsonify({"error": "Not logged in"}), 401
 
-    # Print the session data to debug guest flag
     print("Session data:", session['user'])
 
     if session['user'].get('userinfo', {}).get('is_guest', False):
@@ -129,11 +126,9 @@ def get_restaurant(restaurant_id):
     
 @app.route("/vote", methods=["POST"])
 def vote():
-    # Check if user is authenticated
     if 'user' not in session:
         return jsonify({"error": "User not authenticated"}), 401
         
-    # Get user ID from Auth0 user info
     user_id = session['user']['userinfo']['sub']  # Auth0 unique identifier
     
     data = request.get_json()
@@ -143,17 +138,14 @@ def vote():
     restaurant_id = data.get("restaurant_id")
     vote_value = data.get("vote")
 
-    # Check for missing or invalid data
     if not all([session_id, restaurant_id, vote_value]):
         logging.error("Missing required vote data")
         return jsonify({"error": "Missing required data"}), 400
 
-    # Validate session exists
     if not session_manager.join_session(session_id):
         logging.error(f"Invalid session ID: {session_id}")
         return jsonify({"error": "Invalid session ID"}), 404
 
-    # Convert vote value
     vote_map = {"Yes": 1, "No": -1}
     numeric_vote = vote_map.get(vote_value)
     
@@ -213,7 +205,6 @@ def callback():
 
 @app.route('/create_session', methods=['POST'])
 def create_session():
-    # Ensure restaurant data is available before creating a session
     load_restaurants()
     
     with open('restaurants_info.txt', 'r') as f:
