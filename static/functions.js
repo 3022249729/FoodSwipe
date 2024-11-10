@@ -342,7 +342,7 @@ function createNewSession() {
         .then(data => {
             sessionData["session_id"] = data.session_id; // Store new session data
             console.log("Session data after creation:", sessionData); // Debugging line
-            document.getElementById("session-link").style.display = "display: flex; align-items: center;";
+            document.getElementById("session-link").style.display = "block";
             document.getElementById("session-url").href = `/join_session/${sessionData.session_id}`;
             document.getElementById("session-url").textContent = `${sessionData.session_id}`;
             startSession();
