@@ -1,0 +1,482 @@
+[
+    {
+        "id": "ChIJtYkIwlxy04kRoyBiKk62eX0",
+        "name": "Subway",
+        "rating": 3.1,
+        "rating_amount": 44,
+        "address": "3290 Sheridan Drive, Amherst",
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DNfTW7CKDFMTGhVcPzmx2bas402fKq53yPNvgogUfPivrD-jMKxiFqC3DY7FfYG-UuYQlqISBrQu4INdQ1vOarlQysMFZyN8Ew3XUIwvyw7yLd7H6LEpnY-J2j-ZRjdDhRpiECXe2IzFMuNVGC3BJi48jt8YusiPm6C2oeyNCk60Icd&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+    },
+    {
+        "id": "ChIJBbG97ett04kRyLNBbBA-hz0",
+        "name": "Texas Roadhouse",
+        "rating": 4.5,
+        "rating_amount": 4154,
+        "address": "900 Young Street, Tonawanda",
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DOdtOM8F5b3A5pxlQelDsz7jhWpu_dfovT2Y7rrEvIJ1loz8FBn1I20CwihVl9cLqQAckh0RUgcHDfE7Ul0NSrygMLx30Mo0gCSKKcYGoc9yqYv7zReqYlg6WUTLRvLy9ZAPf2SU9jeTsJeDsbZg8kLg-_E2mU7HsBrCM12KqobEYTN&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+    },
+    {
+        "id": "ChIJL1K2RhFy04kRthgIm-_JAJg",
+        "name": "Chipotle Mexican Grill",
+        "rating": 3.5,
+        "rating_amount": 1300,
+        "address": "1643 Niagara Falls Boulevard, Amherst",
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DPNkMzk4m_T_hDhkxUriNppmFRnrZS-KuM7Iy2eQ4A4MujC_rsp312-s03xRgi3oycH4oet7PFYi5LwA9MFmV8JVmwHlbEKWQDlfzptIBYCkw1XRgGLwCE-XTD-iAPm46ggd1ya9CQN9r4LA9zJz6wlSp_8ocYl3hqvjm52w-2NMhTO&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+    },
+    {
+        "id": "ChIJ0-jEZRFy04kRiFBfrh6coCs",
+        "name": "Buffalo Wild Wings",
+        "rating": 3.8,
+        "rating_amount": 2211,
+        "address": "1620 Niagara Falls Boulevard, Tonawanda",
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DNMnuv8o8zHxvLV13QHrXcL6jOyxPC3JWtUpDgLF22typaM2RfmEbfb5D1nC6mhCD0RdpBS6YNHO2nDQwl2vjUxyRmCdnc8sCObs4WsV5HFsj0bmvFdL2gYuekXJKijpIf25U659eKpSRbe0SVPW_uZmv53AhlXzJGDdZfGinCaKcaK&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+    },
+    {
+        "id": "ChIJ_beErdFz04kRZnUfrcNIyUE",
+        "name": "Subway",
+        "rating": 3.6,
+        "rating_amount": 86,
+        "address": "520 Lee Entrance Suite 303, Amherst",
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DNv9YB2SQJKoEZxFWHHIMOvlOO19DQ9JgomgCGmL-MLA1HmN5iGnonCRsKKRkcJ17_xFviNcMzJz2bgapxvTUusJ2_DIuct9wQ8KCn1StRJNEAXjucLGGjlEu-PUeY3qpYLrgCYEseoShWtFpu4KjqlqLatATMG76mfNJ_1u4BU_OdS&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+    },
+    {
+        "id": "ChIJ1TNXRxFy04kRC_XI4mc6UEA",
+        "name": "Carrabba's Italian Grill",
+        "rating": 4.3,
+        "rating_amount": 2687,
+        "address": "1645 Niagara Falls Boulevard, Amherst",
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DMfCRPqdHTMhmeQbrEGu5Al0mxiPk4sk7ox8AA5LeZ2mD8RMHM9MX6628_6b2G3jUNnFusCUaCV6KVs2VBQLNLCbBPOrsS0q-4WrWNDgD4KvrLLzZDwoRktTmifoDHJ0WG07CD_tygYCGpGYtJS2D9iMn5iI71-_BQTG4blheq-tBFh&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+    },
+    {
+        "id": "ChIJAbWme2py04kRR1ZgN1Fl69U",
+        "name": "Olive Garden Italian Restaurant",
+        "rating": 4.2,
+        "rating_amount": 2985,
+        "address": "3951 Maple Road, Amherst",
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DN8jzFmORgUH8XI4dVPGlqhDo-pc6PbOYXqvQsK5kuu7tmxCT7HPnMqNz9dQS8HtQmfxIdKNucQBu6MeRpEoX4_bm98IIuC_iZaAqzdWzQbqPY50pAvUC1meb3QMLPeRkGfhTF9ocjYGCxR3QPPIyTzG4pShw2ODh1-p5pNheLd12mI&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+    },
+    {
+        "id": "ChIJAZsLTrty04kRHJv_CIFU0wE",
+        "name": "Lake Effect Diner",
+        "rating": 4.2,
+        "rating_amount": 1621,
+        "address": "3165 Main Street, Buffalo",
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DMT48rLxYSQ2L4BHnqCmrzo4hScxfv-Sfxg5bZ5kdkz-Gl9wCeuwrSV8sLdwlkm7Q23pGBs0BL3yy8k-TAqZNFmLo3WO7MbY-vsrSQ5mgnD74utzX5RmBFL3Tul9WUFtJ6OOTvWDW6DCoPuBoAzfc07EO8CPKrPpglQlIj8nbbzZ5fi&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+    },
+    {
+        "id": "ChIJUWSUPml004kRiNEO0GaLXxE",
+        "name": "black & blue Steak and Crab, Buffalo NY",
+        "rating": 4.4,
+        "rating_amount": 909,
+        "address": "5493 Sheridan Drive, Amherst",
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DOZze_LPVh4s4Hopu8X6gJ3uo_b44UQaPTuQo_yOySuZjG9WmRiisDyboVzvwiZ4w9vB_QBzwTE1vUTsx89xeNkCyf87gW5f3J5Cazvxa_Da8zo3V_NhUmBYSF5GASgFN5tirLM3uzMVmRlOsGsCxoNeKnhkhEKg7vYUPvRD8PfnRUl&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+    },
+    {
+        "id": "ChIJZ8mx-7xy04kRYW0PDm_lUCw",
+        "name": "Shango New Orleans Bistro & Wine Bar",
+        "rating": 4.5,
+        "rating_amount": 487,
+        "address": "3260 Main Street, Buffalo",
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DNsxsRqX3JzoQonHpJaBCl1EEbfnyNsfMJKBb7XNt-YkMnnnPbJi5L2ly4r-5n0KpCUPioZPzrQbya52CN7bU2YxgCw3YBe8kCwByZVee-Z2kb-kqD936TLguxvx_dedWBWWDPOFmWD43BLj0MKuX74J_P6yEjjrePFEgqn5K8-qWVd&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+    },
+    {
+        "id": "ChIJ2bnZcy1x04kRfMV5mWmtQeE",
+        "name": "Amherst Pizza and Ale House",
+        "rating": 4.4,
+        "rating_amount": 978,
+        "address": "55 Crosspoint Parkway, Getzville",
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DP2Rja4n9sYypsLp_p5mV6kCddj_a5bP-FWRpc4sfuJ73W4xy2_t6et5g01-tm4j99GgyMdSsHZKAAmK4Bn6CFKB4PGrSzbiS0Egt2qHzYae_vLmmbdtYgA9lvq1mW3QTuYrOJi3kXeh4X2enbMfaB0Gmze1V2PlCMBm7onF8TWAoC3&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+    },
+    {
+        "id": "ChIJzWpFyGB204kRzrESdXpqM9o",
+        "name": "Grovers Bar & Grill",
+        "rating": 4.6,
+        "rating_amount": 1599,
+        "address": "9160 Transit Road, East Amherst",
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DOKMwSB_BAwOHvet1yqD8JAM-PKaICplclXADEQOw1n-ADnSEB7xCwd74DaXP4HpC-qfmYDGkn9CoKf93olt6RoqBFP5HStcvfRElxykwKw8wRA4aiAci6joAjuYQSmmE9UlIPAo3xrUbqP5wGvEkIFXIYjxTOaM41Vs1WAUx-ILIRG&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+    },
+    {
+        "id": "ChIJl11WUqNx04kRHfHUuX9W1qE",
+        "name": "Banchetti By Rizzo's",
+        "rating": 3.9,
+        "rating_amount": 507,
+        "address": "550 North French Road, Buffalo",
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DN5JZshc2vVxAXpB0ZIv3hL-Sva9W_omb6vuGbD7VhPTmheFKDj6FCnvzjies2_uMdWS1e78c4oonK0YIuamReZDBcASqS7c918jgvOz9u3rk-Kppm3-gV6utldh0gcE0as2sLh8HXBuYaHJK1Se8iOJaNkqrwq3adYLDR5XoKVxhHa&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+    },
+    {
+        "id": "ChIJw1Dsl3tz04kRSn-4Bp7ALfI",
+        "name": "SPoT Coffee",
+        "rating": 4.4,
+        "rating_amount": 862,
+        "address": "5330 Main Street # 4, Williamsville",
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DPGf1JkroBjLj67wbdwwaW5sWQ1S-ZA0-7WWFRMV2-Ll3QX1pM397W3RSrl73uMUJbi_UggotVnQSyw2_Imt03zZfAGhs7Qm7PiAhhid4bMcd4RHmGdGjzYr_-0S8itOY8fvRPymKxJDlg56Ix4iCcNaKwE11yIu24J58Lzlj-f_kzW&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+    },
+    {
+        "id": "ChIJF_JcPnBz04kRYuA9k09KMUQ",
+        "name": "La Nova Pizzeria",
+        "rating": 3.7,
+        "rating_amount": 1401,
+        "address": "5151 Main Street Suite 100, Amherst",
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DO3-SNHkozwct8S5307fpSeItSdKYH6kZtspattYql3eSnLGSITcbcPpLTTyG_UYb8FPtbIL4bKxwqNo-8TIC6STKsh-oNycjc3a3FQBKNmvgaVB27OyeZh4g0oOdk7-0c-9ZNpBZj6P-X_SQ_zzXI1UeGw-_NHyo04hCn9N_IgSAIw&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+    },
+    {
+        "id": "ChIJ-UMvxfNz04kRNMa1PMTuyo4",
+        "name": "Tim Hortons",
+        "rating": 3.8,
+        "rating_amount": 209,
+        "address": "870 Maple Road, Williamsville",
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DMX8wu1o8b5WBczaSxtXWRNHMP_fXrd4cCA7YrwV5RAgL2Ub3vOZ23zjdUiuSQqqKToq6Laguo63_s-zhfWZyVs5Ipln2czFlvPqlJdr0IRW2_s0UAVRiuhzzOZsw_sP-olUuqxZlNMAJeIBKVugJr53tNZ6F1ANKpCxAc4Q5kP433A&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+    },
+    {
+        "id": "ChIJb6ohr1ty04kRZNaehchfY0o",
+        "name": "Tim Hortons",
+        "rating": 3.9,
+        "rating_amount": 652,
+        "address": "3394 Sheridan Drive, Amherst",
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DPGidX5Tvf3VcmdMHLoxmGy9RRwR2xah8933-Y12XwgaIrUhXeMbKcqlKqQW_N9kxC1OyLEgvhYsFPSEaRhTR7Q73GrhobtjXlMkcj1bY7LT1Ul-M5KQtJLm4q2TKCntMw4_rO7XUWMIDsQQoBJ-oV73kWEJZKo1IJl_k3L_wtnT_yq&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+    },
+    {
+        "id": "ChIJXxIkCmB004kR9sAapCF1VQA",
+        "name": "Tim Hortons",
+        "rating": 4,
+        "rating_amount": 345,
+        "address": "6125 Main Street, Williamsville",
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DMWs302Zs_OsEoBlDQcG0WS8N6twZFn05DNXmmDtuEqaYdriH9ItjqBQ-IqjNelilaClcDmG8HOZKqWKW7eLIbfMAOkdJclpSQrr3kP4pRz7MM7mr2jNYOl3a3HUJA6FeLqX60dnzxGOhm0aD-nkTTL6RuAVDdD-IokgD33aiOYYcrg&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+    },
+    {
+        "id": "ChIJ_0h-q0Fy04kRmSZp3AwTI_E",
+        "name": "IHOP",
+        "rating": 4.2,
+        "rating_amount": 2910,
+        "address": "4003 Maple Road, Amherst",
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DNsHvE_G_jpuO76FRFs2Yt_9rZqfPoVtg7WXo0h-5Hw-j1FzKo7pfdL6PATZUPEgyvgbSse-AxFr2tV_Kg67rmbe0P17pqUyoXRQAdNyGDB6oY6GzOjEhWBxBqbrI-uUn00VRi-sWFC-GgVHyiZZzAdZbHrtPNrmX8FsTsAiTfcQq64&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+    },
+    {
+        "id": "ChIJ2bnZcy1x04kR3MdlVF7bpTQ",
+        "name": "Sun Garden",
+        "rating": 4.3,
+        "rating_amount": 91,
+        "address": "55 Crosspoint Parkway Suite 118, Getzville",
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DNZJ2xXF8rPP6txKycTMCfvWKKxgBLNwVSFHbwtJKiLZj5beOeQHEUBEuZOxXhY3LuRuSXqEoLkMiwgFnNNOOJ-9OhyY75r07YpqEzKJoTld41c21vahr4QxFrzbJFwFCdkMaQORXGbH6R6YrhrMRV2cgIbmx8b-ANSxaibeVJ6s6Gz&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+    },
+    {
+        "id": "ChIJr_t2k-1z04kRE--wP2X6YmU",
+        "name": "Fuji Grill",
+        "rating": 4.5,
+        "rating_amount": 618,
+        "address": "736 Maple Road, Buffalo",
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DOf6uxoQm4f6jRVdgnS47pZB4qeEXj0ZzljKeXGfa_cULK0bEfciSFHPIbOfEinxW6-GsLIK8eokeO76gBLg0noEonbyhk2xZ7SugMEF8vsyDI0EgAbXiqMtmhVPFZueF0_acrrCGcT7KbulfbBp4EllV3yZ3Rvhoag6g6mseXrlIpn&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+    },
+    {
+        "id": "ChIJ_XBkngVz04kR3S-Is94OXis",
+        "name": "Siena Restaurant",
+        "rating": 4.6,
+        "rating_amount": 400,
+        "address": "4516 Main Street, Snyder",
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DOivc4zO_9EAvLTwUW-hs3aga5uHUn29V3M9wwOt5OPSp28zCiNNHXMqlPpeGzfpX57NwQyBbzq9yQfk4koeDc6vb8Yu3LIMmsBr70whxz1dSd5dEY0mJqN8BMN2bKQs5cFkKzWkMZxIQDEYqwNuGE4XFi1EUccqnyDg3D-sflD0GFL&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+    },
+    {
+        "id": "ChIJT8Kc_kdy04kR7bfFVho-upc",
+        "name": "Subway",
+        "rating": 3.4,
+        "rating_amount": 88,
+        "address": "4224 Maple Road Suite 108, Amherst",
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DPDbCKMEOOCIVyw8eviexOi7_sUhxMVEDUtUSRh-x-pcdlQYdCUFIpHcgJJCF_kahUz4KaIgcw3AKNqEKVnt3s6HUdUlIOW5gI2AqVQLdfwpK6votlZD_FyMtqZ8c-lka2NmV8aD_7-36ccdoKn1Q2Jpc0DQqXWWw0kQ1QGbNTKB3GN&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+    },
+    {
+        "id": "ChIJlRVV_71y04kRCRTPUThMma0",
+        "name": "Subway",
+        "rating": 3.3,
+        "rating_amount": 333,
+        "address": "3382 Main Street, Buffalo",
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DPgPqNTX_yo_mHjjRDWjH5P1rzigvxLgs3tTPDAqxNzJYLOyTSdPykumt0gjS3K1s8WNm3Iv5R_lWhHeRzXyeiVgKurC1jUHRthzKrZLUT3vyBm77CULuOUGrdeZuse-huJSFH9OtTR7EaPxkjc-22Zjd86z4-t8_9icgbopUZHVx3D&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+    },
+    {
+        "id": "ChIJk-ty7l1x04kRF8-oF5fSttE",
+        "name": "Subway",
+        "rating": 3.4,
+        "rating_amount": 69,
+        "address": "2325 Millersport Highway, Getzville",
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DMKZHgpYysNp3EKXJuhFXg4qyMJ5-6ZFn6g6TsqYj8njtVlx0913Folo9vRjWsvQduKAsJOygXjpdEiZt2Drn4VL7eeVdHyTTbXIzt9EVHyFIkDofOyoCCs4PgJNNhGv1I0-v-OM80DchrUNJ7c-scYSID1Q270sHJSiYDiX-ktfMG1&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+    },
+    {
+        "id": "ChIJF8lzYPNy04kR8IG1maU2udo",
+        "name": "Bocce Club Pizza",
+        "rating": 4.1,
+        "rating_amount": 2134,
+        "address": "4174 Bailey Avenue, Amherst",
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DNDHgzWtk4tCm7-c0rP9L5cuHNDfbWeqJwBspPa3LCkldIj_OCeD6xqUijgCP8ixB09H49nMsqIkghWAKRagCQ_92OciO8x88qc4K3kRNAdR92mIf91EmFqoq-eswFmsjx2KLG2Xr5BELQcBD7l7r5JkKnY1Pk92fX-xZCamrtrFsrF&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+    },
+    {
+        "id": "ChIJe0B5IXpu04kRsebUcDIu5M0",
+        "name": "Remington Tavern and Seafood Exchange",
+        "rating": 4.5,
+        "rating_amount": 1705,
+        "address": "184 Sweeney Street, North Tonawanda",
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DP76G40im_NDaZSvpiFtkQ8Q2wCZjufO45D8NxCXtlHNCphQa3v5NYNTi8J89ok6XfQdNPMiidcrsnyz69T_ButtCs9-P_rwpb9hWfMg5ZxlYGBEdbL2borupz1g6BxEudS0PTu28iUoxEjBND77rEmEKJmVYvj5UF48MJC9m8Ylc9C&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+    },
+    {
+        "id": "ChIJHbqAm4F004kRDGCpXm1QDaM",
+        "name": "Eagle House Restaurant",
+        "rating": 4.5,
+        "rating_amount": 1097,
+        "address": "5578 Main Street, Williamsville",
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DMaimbUp_9nlYaaGYJNuGuXZxAlqhnLo4fAhgeY-BzoENjyczO3NRgiRn28KyW3-9VAf87gbRwMq56twqCY_nMs9zzhKleBYzRGocJaE3VgcGr9EbveZSE7GNzSBflvg2blpRyTw3-a5d9JkFJnLEVd5rrCQQ0zQIS7DoXYr9LRCSgW&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+    },
+    {
+        "id": "ChIJcTaAGpFt04kRHpOQem5eNNY",
+        "name": "Tim Hortons",
+        "rating": 4.1,
+        "rating_amount": 378,
+        "address": "1930 Colvin Boulevard, Tonawanda",
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DPeeK_es8n1AoPGagqOc1G6kLoYHpku2MxKPRKMc4zHQPzOJtPAijAeczCoQfgL5y9RRjOR3XsmqsNExieTlaWBMVJLLk5J5YU6wTni_tlNaN9CGN5ATbpb1o5uBNO5YsHfttBL4HJzvY5ZWAzmSDDBQkotlwoQNLzLtUHr7UmLcUos&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+    },
+    {
+        "id": "ChIJly4mQ4F004kRIIsvJvlYU_Y",
+        "name": "Creekview Restaurant",
+        "rating": 4.3,
+        "rating_amount": 894,
+        "address": "5629 Main Street, Williamsville",
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DOvbJ228yuzvbSGtwPvWYzJyg3zjliJ4926sJTmXDU1fk6sTf-eiuAcjVxqB3uqleA73WuItircdeI8wytJu9uEAtLB6SeUvzRNwR340LTGtJd60Z9STS3Zk3Oc7kwV68laMrSlpN4hporDqgrH-zPWqOl2xaJv0VI4RZ6v153pmdbt&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+    },
+    {
+        "id": "ChIJT8Kc_kdy04kR-tSRijuwuGQ",
+        "name": "Tea Leaf Cafe",
+        "rating": 4.5,
+        "rating_amount": 826,
+        "address": "4224 Maple Road Suite 124, Amherst",
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DOVhmWYB280y9U8I0LAhiGjK4AxWNYCIcrrl4uwemCaZ4Z4hg4VF9IG7lf2wzCyN0VC60RTE9dJ2GoapbXVitvgMJ_otIzsPPB3L0pCd9bLIsOIYrA8yap9zl2ORkdHQi0vgW2y9wIxcIa78eNLtU9e71vzpFgwy8XhO7xv1TVRlm0A&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+    },
+    {
+        "id": "ChIJ77J0ZHB004kRQ_G5XdJdD1M",
+        "name": "Tim Hortons",
+        "rating": 3.9,
+        "rating_amount": 348,
+        "address": "5225 Sheridan Drive, Williamsville",
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DMLdi1E49tl2d69r0M1sjcrrs5p3hr4y_iAB_MyovgXoc9qZg3oXCBrN_3n_-VRkWrwswNPQX6pu2NtrKsSUf9sED_L9Jvrv1UMMjOOm0Pkz7UjYvLWBCS4J04zBmJeOC7gzH8ykP5jrGPPY0CIgX4R2bOH46AV4GO4Z-YRkY7VRhgx&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+    },
+    {
+        "id": "ChIJ6W1CpmBx04kRHShTMkZNewM",
+        "name": "Tim Hortons",
+        "rating": 3.7,
+        "rating_amount": 588,
+        "address": "2290 Millersport Highway, Getzville",
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DO4_7HBSXStzPrKpBzPmM7qXh5DKC5UzAAnwCMeWEc2HW9y1fD64Nr2g4lj-QofrWYz-PFfT5__oVMtT74TSJz_esYl5nsX8bItK_5E8KXsv30dAWZPsjbu43dnEEgqlVXjgk4zeEw39wIV26WT6YI9lNijcW-N-WhXTiz1DKoNb6pI&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+    },
+    {
+        "id": "ChIJ1YD0NHxz04kRO6PUQUC0q1U",
+        "name": "Starbucks",
+        "rating": 4.2,
+        "rating_amount": 552,
+        "address": "5165 Main Street, Williamsville",
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DOt7JIMDPe0jKsiRiRq1ry-ApuGoxu1qRnsalPh19cyxjsQ_BcxaqihL4rdabISoFsGYSOpHVIv43whcpmF4i8CRzOIseCyPiRtP9lSNESkeekMlwQ47bDIx3UcOmPJQPhwk2OjhsSKCpW0DjayIOKaFW9VkVwm1zglNA7mQvRj7Mpm&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+    },
+    {
+        "id": "ChIJFZ8X7H1z04kREMVvyyeJM9c",
+        "name": "The Original Pancake House",
+        "rating": 4.4,
+        "rating_amount": 2242,
+        "address": "5479 Main Street, Williamsville",
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DN-xjGuGGL7HJ7T5BqTRc2lFRNnR4TIInaTabqOzfLbXKMUUDASQyIzGJlkhUvMg-PAerggDNdYNotnSmH3EeV_EwPYuvNq_X4UuX-Xxnc7Itp43Sb6XoUH5rgZa1WZs0wMeDC7dvDCtU5ECwzFhr91fJhnZJVB0H-ANA_a7P-vcpF4&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+    },
+    {
+        "id": "ChIJDTKYZHp004kRn_9tugPw9Sw",
+        "name": "Thai Orchid Cafe",
+        "rating": 4.6,
+        "rating_amount": 392,
+        "address": "416 Evans Street, Williamsville",
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DM9hbo4UFf4cAAhdrIpvseiwtYJSupdx-YqtbiUOCDVYRoEhXKzNoHRfnveBNYQaRNCoomj03fPvfnCwwTUAO2ZxGEcBBRQMziKU11qVcRB0jbOA89HQwCFgmuzTMR9k4hWzO6QuTAv5qi4Kq88TFe_KzRJUo1wfa3SHxPUASraGMOL&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+    },
+    {
+        "id": "ChIJxZcEtnFz04kRMzWCJjRb3-U",
+        "name": "Giancarlo\u2019s Sicilian Steakhouse",
+        "rating": 4.6,
+        "rating_amount": 1219,
+        "address": "5110 Main Street Ste 125, Williamsville",
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DPmDwDD-amgGZuXZbS1yARfH9YQga8Jt4wob-DhHPqI0nvAhObRcY-A6ngQOrbfEtLHSMAsIeCf0g42cHYp1LJkddrgbJNR7eutc54oyB8pS8APM6jp5ySZJ2l1ZEKOjYPE2dnM6Zf6xpUm84JTGGGgDUk1_K3NXC3nui3OQ5E8BSIn&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+    },
+    {
+        "id": "ChIJk-WrjEBy04kRYejX0M6tXKU",
+        "name": "Kyoto Japanese Restaurant",
+        "rating": 4.3,
+        "rating_amount": 1986,
+        "address": "4060 Maple Road, Amherst",
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DMEu3G8Q14kVDXIyhvOruF875XAiPYiWLzrX3wJZO6ONPBThcBBg3mtYSm8xkWs5GO-Y9NeFDxXgz-F9OrAvszJpnxTTOeZK8sgZJqJmpJg77w8obsAyNuX4RSZXuaaCcbWDkEK23IO0JxE4PXQwiMHH0RCAfNwCyee_qwq7HSqrVcl&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+    },
+    {
+        "id": "ChIJldVCP2xy04kRov-yzWuU4CE",
+        "name": "Jasmine",
+        "rating": 4.4,
+        "rating_amount": 1009,
+        "address": "1330 Niagara Falls Boulevard, Tonawanda",
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DOqVr2ByAL11D1aiu_vlWGO2NB2w4OD99oFf_pVVPumfV6eIO06N-onQrxipRJacim_wN9vCCgUksP_xtNydq_UYnrwWNMVnT19O-qtMEtrPoraakAc8a6-5Ww9h4C0xQ6ZFokDuK7lK6J_3_R1pPGYSesChtM-pBKGQT2cdAgIMeGi&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+    },
+    {
+        "id": "ChIJBS6XSBd004kRoCSxQDPRoes",
+        "name": "Tim Hortons",
+        "rating": 3.3,
+        "rating_amount": 113,
+        "address": "Millard Fillmore Suburban Hospital, 1540 Maple Road, Williamsville",
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DO-JVuJDhKyPWZeEWLZLFPByQP2oHSBkSGENC6eQ4_CZMHdCnCuTpI9DiLpgfk1fMz-HeztXP6nDqBLkHeVg_sapDJ10BJ0M68ogy4RECtGkGHvMEXZDgp0GbcwLzWlWaOmYV5cjbf_-YSOReBMry4J0F8olAIdU_yQBnsOwlcJtZI6&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+    },
+    {
+        "id": "ChIJp8_j5mZy04kR_iGfm3Px3Ro",
+        "name": "Taste of India",
+        "rating": 3.9,
+        "rating_amount": 874,
+        "address": "3192 Sheridan Drive, Buffalo",
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DNH0Er1GxI-EkLO21kf_in03RY7lthWtUkuExJBJ7a9FHN4KrE5xOQIS7uxvc_ssYdmyuN15ZEf1rngcQ3uV7gZiiW50AoNxVduaz9uHQYh0t5__fXD5nbDFFQttaNl_umEj3bX5RrkL18w9G9irK1r2-hN5DnpY5hksHdYOvKtQIAp&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+    },
+    {
+        "id": "ChIJMVSk7Lxy04kRb76I6LP6szs",
+        "name": "Amy's Place",
+        "rating": 4.5,
+        "rating_amount": 1309,
+        "address": "3234 Main Street, Buffalo",
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DNAYrKM06fYwzZp68_TlEhmZdnc970XffHs2qBUqm5STsWpLBEhFMEWc6JKoCyYclX8hjtEczl2nZDdybSMRIOesohS3Jlsy_mt-Li1HTOwGDm6bJKfKq3qinFvM6RDQBCEynioyu5dWU_8wcvcNH-6TSS6idPbiFRFzuVGJS1spzCz&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+    },
+    {
+        "id": "ChIJAU1fV_Fx04kRNxpdoRr2_iI",
+        "name": "Ted's Hot Dogs",
+        "rating": 4.5,
+        "rating_amount": 2132,
+        "address": "2351 Niagara Falls Boulevard, Amherst",
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DPNFAPpPp0CQelqWWvtsblL576gDITujcc_U6mqwxeQz1Tpt4E81IyBMOqReYySMqyayA0PhFnPMB7nd2YR7U95vuONxUhLGXsR5QIlXHhaT_bnsoxnmhC8mU0uFSoG4Mg8mnPeDTXraJz90iX8vDk1CjCyzvkToHqjtXOhEkLo0R48&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+    },
+    {
+        "id": "ChIJ73XGQXBz04kRjl9qbDtcYw0",
+        "name": "Tim Hortons",
+        "rating": 4,
+        "rating_amount": 674,
+        "address": "5140 Main Street, Williamsville",
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DPPx-HZbmY7lsqnwAMgMnNEAFiMfzKX9ghPc-EDunrKsEKZE2vyLgDXQ__ezYB4qVCA7FitNz9JwLt5sqlHd2j2HKBAcR7K_5gusPoXU_pCwS_uIqhWoY-oL-aNH9KAlu-s970vxpydid2oUUWabzkgVCyDqaEnXMWztJBFlvtC2zyC&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+    },
+    {
+        "id": "ChIJIfqJ6GZy04kRKe9g8ectjCs",
+        "name": "My Tomato Pie",
+        "rating": 4.3,
+        "rating_amount": 738,
+        "address": "3055 Niagara Falls Boulevard, Amherst",
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DPtKM1CrmEPWqnONevGGeJ5Tyd0FxGunypIvCxy8UXZPXTCSeFrIx6JSH_69nt-zewSKSb6jOETJEAaaXgHvrHMIlj3M7gmnbt9fSgkFCPnLAQ4EenRBv2u3U2fjmDV52PxwzGsJzZyO8JuNYUKOHqabCfU9rEq-2mhDzvZ8Zo1uMcM&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+    },
+    {
+        "id": "ChIJV2F637d204kRPmAFUr5dpyo",
+        "name": "Bocce Club Pizza",
+        "rating": 4.1,
+        "rating_amount": 552,
+        "address": "1614 Hopkins Road, Williamsville",
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DPHa9xXTzQRU5zlnDR_MXunQy-9k-dkVBsiUla14VGeWstgpl1JS1jnV3NKwtWRfSOQS87h2kLLEEvlrvClj1TXKEfz8T0YGj2-NQTRgrqtELlw1mf_68wJVGlAIlNbG8doQM6kMdxxBZs0HWAfM47tQ7eUOE4QZCBzqUa59XFAuipR&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+    },
+    {
+        "id": "ChIJ-fMk8G5004kRn6x4roawKBM",
+        "name": "Soupherb Gourmet",
+        "rating": 4.5,
+        "rating_amount": 60,
+        "address": "5403 Sheridan Drive, Buffalo",
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DPlsTkhNpft7du3bME4qiW6fmk9BH1J08YpqyPj9_7ZOeWWX-b662HQlTZYY5E-vFt_0JPFGRiqkx1d8PSJgKqR1mu7HEejRyAmf3QxSc0Okuf0V078JdvwsEQgCgcpPtghqvQ9OodlAELnmdfA31_4fHhNSqEmMlwXPAW4IwAJ_O29&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+    },
+    {
+        "id": "ChIJ3fSDYPVy04kRjvP0HoNh274",
+        "name": "Family Tree",
+        "rating": 4.3,
+        "rating_amount": 1748,
+        "address": "4346 Bailey Avenue, Amherst",
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DOXeA8le2D84ErSE1JZ5hlh-teCDZS4ZaurbX98IGAj5UszxEiqKbWGCTBmlFv7adOKuDX_MlcvBi37gH5Fk6zaW45_2xd-qw8SQYQCuTsE9Kpmcy7I0W5cWqgvBeOcu9BbjBLogPsdw80VHjgcWKSjUNzyrCB737aGF_qcYQZhkH-M&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+    },
+    {
+        "id": "ChIJl1cGm1ty04kRgzyoOxuFmyA",
+        "name": "Jim's Steakout",
+        "rating": 4,
+        "rating_amount": 436,
+        "address": "3336 Sheridan Drive, Buffalo",
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DPkneWZ0L9MHePC8Pm7rFzQwbHNZUf8j9cKNIJcABWptJHD1PEeRfyopwEzKRGKbwnKE_a1OhbF3UF60XUViypc_sz3fAXXyMvMV-ylkY0VrC2ukdTEPcAL7RjWr1B80Zmc2o5lR_O-9HJ4C2TgZojoM-cLLMV_DppuKmfHOS9DYLvU&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+    },
+    {
+        "id": "ChIJ45lzRmRy04kRugkIy0sPvfs",
+        "name": "Koreana Restaurant",
+        "rating": 4.2,
+        "rating_amount": 246,
+        "address": "1010 Niagara Falls Boulevard, Tonawanda",
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DMk3uNnTL535xHBwjbK4d-BK1ELIqB8xC-2gONr-k7js4A3uO46f1707eGx3OPdmfBoC6nSd0F2DM-iqPEQnz8baDfC79gy_jA622hYHMm1Q34h20CzlZtw0WsvFN2BlrM0nsSb3QBEJ1iDoupfdST0TNVYukIgCJl6jIBRg3BMhJcl&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+    },
+    {
+        "id": "ChIJ9QnsyGxy04kR6MbYLy2Wp8E",
+        "name": "John's Pizza & Subs",
+        "rating": 4.3,
+        "rating_amount": 451,
+        "address": "1436 Niagara Falls Boulevard, Tonawanda",
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DOBzrYBzj5a8bCk6Eo33SJ7hCQyU_PPJDZtORkRqG80fLp2HlkqK4bB_v6zbB908AioNBx_9rpaKi_LGGn9aalLsm48esfoyZDea_YvqSQJQ8SFSf5Eg2GzjSjbkPK4V8_HMIrXH9sGrWnrohf_dhiBE_G0swTo9qbXoK13uwhGAaly&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+    },
+    {
+        "id": "ChIJz3DOdKht04kRKtJLQPZ1RY0",
+        "name": "Chipotle Mexican Grill",
+        "rating": 3.4,
+        "rating_amount": 1216,
+        "address": "1759 Sheridan Drive, Kenmore",
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DPTk4Kq1nwIh-Ce9GVxzp9qfCcoSKJ9BHQpdMblTD3Wnk7wjs1GqrGGemaCOSxL0TBQLGTmX2TPhBeqCetFwoIdFAmCy6_zUnLAfVJeDL_0TQsIjSg_cxCAek0KSYDZQtBgEkbIhjREmG5xEKJ2NYCPIayLn3MFt46Sl5fy7WHvOklW&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+    },
+    {
+        "id": "ChIJUSla08t104kRFmY2Cm40dKs",
+        "name": "Transit Lanes Inc",
+        "rating": 4.3,
+        "rating_amount": 983,
+        "address": "7850 Transit Road, Williamsville",
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DPbXoZSnevJEn_3XIRzL2n97w6omCnUiCHgZ0ThT74Kzp_pqYqMUXHNnzz5HdCA5j_jZewpV3wYfepWw1MS0ffhM2qLXzxsSm_Yv_QLbNyBcWyhq5LYERoNqwKh7xFa2eAAJTDYp4MHAvhtbetia87ZAr-bIrmOJUdP-hUMC-EvYMbN&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+    },
+    {
+        "id": "ChIJBeaHjHpz04kRR4khgFE93so",
+        "name": "Trattoria Aroma",
+        "rating": 4.3,
+        "rating_amount": 387,
+        "address": "5229 Main Street, Buffalo",
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DPhrkFdbxsty57VdkR-lcEfIi1cXqYbXAC4xRXLl_4R54mfV-0oDzuDmxqnE3MFFQE36k_LC0aGDGZYc2buLgaFX3bYSbHv8EI4ALCGjhb0LFTDP80jI6k8JBoUoz4q-8diD8p5YhAJ2SXJWqwyDpEo3D1VdcCC74cKzJAjfRZWiKTe&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+    },
+    {
+        "id": "ChIJ8YDwjXpz04kRGcH3bFd4DM8",
+        "name": "Break'n Eggs Cr\u00eaperie",
+        "rating": 4.6,
+        "rating_amount": 1535,
+        "address": "1280 Sweet Home Road, Amherst",
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DNtQPj5YOwvAXARAAWepO6Lc8aGyfn0XoKf57VPkLKtAfJ12UAmZa8mODxSEBhOYSGt17LtT0TFJ0rsU_CmqVqNwBo9VqOCBdtW6QCZKWEu-cRVCQ7gFXNhCiwd7i1bEu_44xkZLcqmIMmlyfsQW2Gu-mFG_Y2YGdLFgEzAQ_yO1QGi&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+    },
+    {
+        "id": "ChIJT7lyZHp004kRED2nUywxg4A",
+        "name": "Woo Chon Korea House Restaurant",
+        "rating": 4.3,
+        "rating_amount": 501,
+        "address": "402 Evans Street, Williamsville",
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DNWH9-TZWrf3sP1yb78TSlsVQwocTCM6T7yhe7BKo9JYxM6R0j8GjogPkufqNYoQUpNIQi1sRMB7weHEK4m6nlO4D283OEvg8npmUVX2MpFALEUOZMEEZIyLuqj1pvhD8yEoPUC17hyc5K-LvjNvvDXtkT1P2jXcnTwcT5C_YZaloFA&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+    },
+    {
+        "id": "ChIJobs27xNy04kRxMVPeWznia4",
+        "name": "Panera Bread",
+        "rating": 4.2,
+        "rating_amount": 1183,
+        "address": "1593 Niagara Falls Boulevard Suite 100, Amherst",
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DMEQLx_R31bAVBV75WwmU5rT4URojK4jo1HRyAIcuOlz_TZ725-E3qJU2BYU7EvdAsojb55FhbErdUOK02uc1FNxopSgL7NP1qet3edx_FFbHHFSTjyM4yQy-mVuTxo3gG6FoZoQE2LK2FAY68mNw4NW1dqLwWPlfKJBBkCLhFeNOmJ&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+    },
+    {
+        "id": "ChIJC5NKVfZt04kRhYHwMcznSII",
+        "name": "THE GRILL at the Dome / Home of SPORTZONE",
+        "rating": 4.5,
+        "rating_amount": 489,
+        "address": "175 Brompton Road, Tonawanda",
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DOZEcHqwBsR5SR2fMIrnVt0YH5X5RFRC6sjkHzHUVMvOosnfZE4kiHm6PD_xlkJW5D2ulctRQUbEnEVwtBRCrlyyuJeZn1tS6MT1cVNmJPRipAo8uW2V5PI7M0E0TP867dwLUTaPHrKpDFkLYy4rK0ocotzJ6REaQy8ud4c7ITsxa4S&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+    },
+    {
+        "id": "ChIJzTe-Fe1y04kRpBnCPWFzdYE",
+        "name": "KFC",
+        "rating": 3.2,
+        "rating_amount": 866,
+        "address": "3962 Bailey Avenue, Amherst",
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DP1OQIyoWYrXTheDNFhGgfshgvRSvIfhiICBTR45x25WLCGgEYcSvmBpqFUbG81VCQRkrUueC79pjIWhwl_cQ0VLZIU3RdYamD1Pw7lpJwTuMS4XJFzNRqxVS9PlrW5idR_hDgfYE5stwWc_jIy6w7xnG1xThFxxj8ornW6VS0PGkIn&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+    },
+    {
+        "id": "ChIJI7_OzR1y04kR-cZ9UCXCUfo",
+        "name": "The Original Pancake House",
+        "rating": 4.2,
+        "rating_amount": 1865,
+        "address": "2075 Niagara Falls Boulevard, Amherst",
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DNco7RbV52xAJ6ZONcOUG5aW_OK5d86WaNz-h9zUVHzCpVlsDUKnoIdI2mfaKFaHBXbqsq3ZcIZMvtDh5qbd6YaQXiXp1-QUqQDXIi7A1UzNiSiEDsPjMry2or8Xcs3m8QSfVvuPRGVDSuUYVPf8wximAb3ZD7mQvoWGvgcUPOBBoHi&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+    }
+]
