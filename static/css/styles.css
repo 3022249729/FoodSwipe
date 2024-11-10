@@ -1,4 +1,4 @@
-/* Reset and Base Styles */
+/* Base and Layout Styles */
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +14,6 @@ body, html {
     align-items: center;
 }
 
-/* Centered Container */
 .centered-container {
     width: 400px;
     height: 90%;
@@ -39,6 +38,28 @@ header {
     flex-shrink: 0;
 }
 
+/* Login and Logout Button Styling */
+.login-button, .logout-button {
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #0077cc;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+.login-button:hover, .logout-button:hover {
+    background-color: #005fa3;
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
 /* Restaurant Info */
 #restaurant-info {
     transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
@@ -50,7 +71,6 @@ header {
     overflow-y: auto;
 }
 
-/* Restaurant Name */
 #restaurant-name {
     white-space: nowrap;
     overflow: hidden;
@@ -69,7 +89,6 @@ header {
     margin-bottom: 10px;
 }
 
-/* Restaurant Image */
 #restaurant-image {
     max-width: 100%;
     max-height: 100%;
@@ -96,28 +115,16 @@ header {
     justify-content: center; 
 }
 
-/* Button Styles */
 button {
-    background-color: #0077cc;
-    color: #fff;
-    font-weight: bold;
-    border: none;
-    border-radius: 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     padding: 12px 24px;
     font-size: 16px; 
+    border-radius: 20px;
     cursor: pointer;
     transition: all 0.3s ease;
     margin: 0 10px;
 }
 
-button:hover {
-    background-color: #005fa3;
-    transform: translateY(-2px);
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
-}
-
-/* Swipe Left Animation */
+/* Sliding Animations for Swipe Buttons */
 .swipe-left {
     animation: slideAndFadeLeft 1s forwards cubic-bezier(0.5, 0, 0.75, 1);
     background-color: #ff4136;
@@ -125,7 +132,6 @@ button:hover {
     border: none;
 }
 
-/* Swipe Right Animation */
 .swipe-right {
     animation: slideAndFadeRight 1s forwards cubic-bezier(0.5, 0, 0.75, 1);
     background-color: #2ecc40;
@@ -133,13 +139,14 @@ button:hover {
     border: none;
 }
 
-/* Button Hover Colors */
-#swipe-left:hover {
-    background-color: #e60000; 
+.swipe-left:hover {
+    background-color: #e60000;
+    transform: translateY(-2px);
 }
 
-#swipe-right:hover {
-    background-color: #29a03b; 
+.swipe-right:hover {
+    background-color: #29a03b;
+    transform: translateY(-2px);
 }
 
 /* Animations */
