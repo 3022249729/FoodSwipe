@@ -200,6 +200,7 @@ def callback():
 
 @app.route('/create_session', methods=['POST'])
 def create_session():
+    # Ensure restaurant data is available before creating a session
     load_restaurants()
     
     with open('restaurants_info.txt', 'r') as f:
@@ -212,6 +213,7 @@ def load_restaurants():
     """Check if 'restaurants_info.txt' exists; if not, generate and save restaurant data."""
     if not os.path.exists('restaurants_info.txt'):
         logging.info("Restaurant data file not found. Generating new data...")
+        # Assuming default coordinates and radius for demonstration
         restaurants = get_restaurants(latitude=40.7128, longitude=-74.0060)  # Example: New York City coordinates
         with open('restaurants_info.txt', 'w') as file:
             json.dump(restaurants, file, indent=4)

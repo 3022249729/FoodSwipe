@@ -87,7 +87,6 @@ function updateUIForLoginStatus() {
         if (authButtons) authButtons.style.display = 'none';
 
         if (currentUser.is_guest) {
-            document.getElementById("please-login").style.display = 'none';
             if (guestJoinContainer) guestJoinContainer.style.display = 'block';
             if (createSessionBtn) createSessionBtn.style.display = 'none';
             if (joinSessionBtn) joinSessionBtn.style.display = 'none';
@@ -118,8 +117,8 @@ function create_session() {
         })
         .then(response => response.json())
         .then(responseData => {
-            sessionData["restaurants"] = responseData;
-            console.log("Session data after creation 1:", sessionData);
+            sessionData["restaurants"] = responseData; // Store session data
+            console.log("Session data after creation 1:", sessionData); // Debugging line
             restaurants = responseData.restaurants;
             $(".button-container").hide();
             $("#restaurant-info").show();
@@ -158,11 +157,6 @@ function loginAsGuest() {
 function getNextRestaurant() {
     if (restaurants.length === 0) return; 
 
-    if (restaurantCounter >= 15) {
-        callFinalSelection();
-        return;
-    }
-
     const restaurantIndex = random_index();
     const restaurant = restaurants.splice(restaurantIndex, 1)[0];
     const restaurantInfo = document.getElementById("restaurant-info");
@@ -200,7 +194,6 @@ function getNextRestaurant() {
         
         restaurantInfo.style.opacity = "1";
     }, 300); 
-    restaurantCounter++;
 }
 
 function swipeLeft() {
@@ -353,58 +346,6 @@ function castVote(restaurantId, vote) {
     .catch(error => {
         console.error("Error recording vote:", error);
     });
-}
-
-function finalizeRestaurant() {
-    // Logic to select a random restaurant after voting
-    const randomRestaurant = restaurants[random_index()];
-    const restaurantInfo = document.getElementById("restaurant-info");
-    
-    restaurantInfo.setAttribute('data-restaurant-id', randomRestaurant.id); // Set restaurant ID
-    restaurantInfo.style.opacity = "0"; 
-
-    setTimeout(() => {
-        $("#restaurant-name").text(randomRestaurant.name);
-        $("#restaurant-image").attr("src", randomRestaurant.photo_url);
-        $("#restaurant-rating").text("Rating: " + randomRestaurant.rating + "⭐ (" + randomRestaurant.rating_amount + ")");
-        
-        let options = '';
-        if (randomRestaurant.dinein){
-            options += "Dine-in: ✅ ";
-        } else {
-            options += "Dine-in: ❌ ";
-        }
-        if (randomRestaurant.delivery){
-            options += "Delivery: ✅ ";
-        } else {
-            options += "Delivery: ❌ ";
-        }
-        if (randomRestaurant.pickup){
-            options += "Pick-up: ✅ ";
-        } else {
-            options += "Pick-up: ❌ ";
-        }
-        if (randomRestaurant.takeout){
-            options += "Takeout: ✅ ";
-        } else {
-            options += "Takeout: ❌ ";
-        }
-        $("#restaurant-options").text(options);
-        $("#restaurant-address").html(`Address: <a href="${randomRestaurant.maps_url}" target="_blank">${randomRestaurant.address}</a>`);
-        
-        restaurantInfo.style.opacity = "1";
-    }, 300);
-}
-
-function displayFinalChoiceMessage() {
-    const responseMessage = document.getElementById("response-message");
-    if (responseMessage) {
-        responseMessage.textContent = "The final choice is: " + $("#restaurant-name").text();
-        responseMessage.style.opacity = "1";
-        setTimeout(() => {
-            responseMessage.style.opacity = "0";
-        }, 2000);
-    }
 }
 
 document.addEventListener("DOMContentLoaded", function() {

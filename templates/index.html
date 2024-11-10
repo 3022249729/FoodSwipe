@@ -15,7 +15,7 @@
     <div class="centered-container">
         {% if session %}
         <header>
-            <h1 id="message">Welcome to FoodSwipe!</h1>
+            <h1 id="message">Welcome to FoodSwipe, {{session.userinfo.name}}!</h1>
             <button id="create-session" onclick="createNewSession()">Create Session</button>
             <button id="join-session" onclick="joinSession()">Join Session</button>
         </header>
