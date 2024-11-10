@@ -40,6 +40,8 @@ body, html {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    transition: transform 0.5s ease-in-out;
+    will-change: transform;
 }
 
 #restaurant-image {
@@ -70,12 +72,14 @@ button {
     background-color: #ff4136;
     color: white;
     border: none;
+    transform: translate(-100%);
 }
 
 #swipe-right {
     background-color: #2ecc40;
     color: white;
     border: none;
+    transform: translate(100%);
 }
 
 #swipe-left:hover {

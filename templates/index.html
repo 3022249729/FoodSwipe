@@ -6,6 +6,10 @@
     <title>FoodSwipe</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://unpkg.com/react@18.2.0/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.production.min.js"></script>
+</head>
 </head>
 <body>
     <div class="centered-container">
@@ -55,6 +59,9 @@
             </main>
         {% endif %}
     </div>
+
+    <div id="app"></div>
+    
     <script src="{{ url_for('static', filename='functions.js') }}"></script>
 </body>
 </html>

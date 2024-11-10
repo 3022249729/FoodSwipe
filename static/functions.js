@@ -28,3 +28,28 @@ function send_location(position) {
     request.setRequestHeader('Content-Type', 'application/json');
     request.send(JSON.stringify(data));
 }
+
+document.getElementById("swipe-left").addEventListener("click", function() {
+    const restaurantInfo = document.getElementById("restaurant-info");
+    restaurantInfo.classList.add("swipe-left");
+    setTimeout(getNextRestaurant, 500); // Delay to let animation finish before changing the restaurant
+});
+
+document.getElementById("swipe-right").addEventListener("click", function() {
+    const restaurantInfo = document.getElementById("restaurant-info");
+    restaurantInfo.classList.add("swipe-right");
+    setTimeout(getNextRestaurant, 500); // Delay to let animation finish before changing the restaurant
+});
+
+function getNextRestaurant() {
+    $.get("/get_restaurant", function(data) {
+        $("#restaurant-name").text(data.name);
+        $("#restaurant-image").attr("src", data.image_url);
+        $("#restaurant-rating").text("Rating: " + data.rating);
+        $("#restaurant-address").text("Address: " + data.address);
+    });
+
+    // Reset swipe animation
+    const restaurantInfo = document.getElementById("restaurant-info");
+    restaurantInfo.classList.remove("swipe-left", "swipe-right");
+}
