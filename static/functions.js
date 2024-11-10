@@ -1,8 +1,8 @@
 let restaurants = [];
 
-function random_index(){
+function random_index() {
     let random = Math.floor(Math.random() * restaurants.length);
-    return random
+    return random;
 }
 
 function create_session() {
@@ -29,24 +29,58 @@ function create_session() {
             $("#restaurant-info").show();
             $("#swipe-buttons").show();
 
-            const restaurantIndex = random_index();
-            displayRestaurant(restaurantIndex);
-        })
+            getNextRestaurant(); 
+        });
     });
 }
 
-function displayRestaurant(index) {
-    restaurants.splice(index, 1);
-    const restaurant = restaurants[index];
-    $("#restaurant-name").text(restaurant.name);
-    $("#restaurant-image").attr("src", restaurant.photo_url);
-    $("#restaurant-rating").text("Rating: " + restaurant.rating);
-    $("#restaurant-address").text("Address: " + restaurant.address);
+function getNextRestaurant() {
+    if (restaurants.length === 0) return; 
+
+    const restaurantIndex = random_index();
+    const restaurant = restaurants.splice(restaurantIndex, 1)[0];
+
+    
+    const restaurantInfo = document.getElementById("restaurant-info");
+    restaurantInfo.style.opacity = "0"; 
+
+    setTimeout(() => {
+        
+        $("#restaurant-name").text(restaurant.name);
+        const imageUrl = restaurant.photo_url || '/path/to/default-image.jpg';
+        $("#restaurant-image").attr("src", imageUrl);
+        $("#restaurant-rating").text("Rating: " + restaurant.rating);
+        $("#restaurant-address").text("Address: " + restaurant.address);
+
+        
+        restaurantInfo.style.opacity = "1";
+    }, 300); 
 }
 
-$("#swipe-left, #swipe-right").click(function() {
-    const restaurantIndex = random_index();
-    displayRestaurant(restaurantIndex);
+
+document.getElementById("swipe-left").addEventListener("click", function() {
+    const restaurantInfo = document.getElementById("restaurant-info");
+
+    
+    restaurantInfo.classList.add("swipe-left");
+
+    
+    setTimeout(() => {
+        restaurantInfo.classList.remove("swipe-left"); 
+        getNextRestaurant();  
+    }, 500); 
+});
+
+
+document.getElementById("swipe-right").addEventListener("click", function() {
+    const restaurantInfo = document.getElementById("restaurant-info");
+
+
+    restaurantInfo.classList.add("swipe-right"); 
+    setTimeout(() => {
+        restaurantInfo.classList.remove("swipe-right"); 
+        getNextRestaurant();
+    }, 500); 
 });
 
 $(document).ready(function() {
