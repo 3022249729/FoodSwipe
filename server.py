@@ -9,6 +9,8 @@ import random
 import string
 import requests
 from time import sleep
+import json
+import os
 
 app = Flask(__name__)
 app.secret_key = env.get("APP_SECRET_KEY")
@@ -79,12 +81,23 @@ def create_session():
 
 
 def get_restaurants(latitude, longitude, radius=5000):
+    file_name = 'restaurants.json'
+    
+    # Check if the file exists
+    if os.path.exists(file_name):
+        # If file exists, read from it
+        with open(file_name, 'r') as file:
+            restaurants = json.load(file)
+        print(f"Loaded {len(restaurants)} restaurants from file.")
+        return restaurants
+    
+    # If file doesn't exist, proceed with API call
     url = "https://maps.googleapis.com/maps/api/place/nearbysearch/json"
     params = {
         'location': f"{latitude},{longitude}",
         'radius': radius,
         'type': 'restaurant',
-        'key': env.get("GOOGLE_MAPS_API_KEY")
+        'key': os.getenv("GOOGLE_MAPS_API_KEY")
     }
     
     restaurants = []
@@ -105,10 +118,10 @@ def get_restaurants(latitude, longitude, radius=5000):
 
             photo_url = None
             if photo_reference:
-                photo_url = f"https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference={photo_reference}&key={env.get('GOOGLE_MAPS_API_KEY')}"
+                photo_url = f"https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference={photo_reference}&key={os.getenv('GOOGLE_MAPS_API_KEY')}"
 
             restaurants.append({
-                'id':id,
+                'id': id,
                 'name': name,
                 'rating': rating,
                 'rating_amount': rating_amount,
@@ -125,9 +138,13 @@ def get_restaurants(latitude, longitude, radius=5000):
             params['pagetoken'] = token
         else:
             break
-        
+    
+    # Save the results to file
+    with open(file_name, 'w') as file:
+        json.dump(restaurants, file, indent=2)
+    
+    print(f"Fetched and saved {len(restaurants)} restaurants to file.")
     return restaurants
-
     
 if __name__ == '__main__':
     socketio.run(app, host="0.0.0.0" ,port=3000, debug=True)

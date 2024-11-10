@@ -28,6 +28,7 @@ body, html {
     padding: 20px;
     /* overflow-y: auto; /* Enable scrolling if content exceeds height */
     /* Remove margin: auto; as it's no longer needed */
+
 }
 
 header {
@@ -118,3 +119,4 @@ a {
 a:hover {
     text-decoration: underline; /* Underline on hover for links */
 }
+
