@@ -92,7 +92,6 @@ def get_restaurants(latitude, longitude, radius=5000):
         response = requests.get(url, params=params)
         data = response.json()
         results = data.get('results', [])
-        
         for restaurant in results:
             id = restaurant['place_id']
             name = restaurant['name']

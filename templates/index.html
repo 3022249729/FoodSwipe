@@ -11,7 +11,7 @@
     <script src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.production.min.js"></script>
 </head>
 </head>
-<body>
+<body onload="create_session()">
     <div class="centered-container">
         {% if session %}
             <header>
@@ -30,25 +30,6 @@
             <nav>
                 <a href="/logout">Logout</a>
             </nav>
-            <script>
-                function getNextRestaurant() {
-                    $.get("/get_restaurant", function(data) {
-                        $("#restaurant-name").text(data.name);
-                        $("#restaurant-image").attr("src", data.image_url);
-                        $("#restaurant-rating").text("Rating: " + data.rating);
-                        $("#restaurant-address").text("Address: " + data.address);
-                    });
-                }
-
-                $(document).ready(function() {
-                    getNextRestaurant();
-
-                    $("#swipe-left, #swipe-right").click(function() {
-                        // Here you can add logic to save the user's choice
-                        getNextRestaurant();
-                    });
-                });
-            </script>
         {% else %}
             <header>
                 <h1>Welcome to FoodSwipe!</h1>

@@ -1,55 +1,89 @@
+let restaurants = [];
+
+function random_index() {
+    let random = Math.floor(Math.random() * restaurants.length);
+    return random;
+}
+
 function create_session() {
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(send_location);
-    } else {
-        console.log("Geolocation is not supported, please update your browser to the lastest version.");
-        return
-    }
+    navigator.geolocation.getCurrentPosition(function(position) {
+        const latitude = position.coords.latitude;
+        const longitude = position.coords.longitude;
+        
+        const data = {
+            latitude: latitude,
+            longitude: longitude
+        };
+
+        fetch("/create_session", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(data)
+        })
+        .then(response => response.json())
+        .then(responseData => {
+            restaurants = responseData;
+            $(".button-container").hide();
+            $("#restaurant-info").show();
+            $("#swipe-buttons").show();
+
+            getNextRestaurant(); 
+        });
+    });
 }
 
-function send_location(position) {
-    const latitude = position.coords.latitude;
-    const longitude = position.coords.longitude;
-    
-    const data = {
-        latitude: latitude,
-        longitude: longitude
-    };
+function getNextRestaurant() {
+    if (restaurants.length === 0) return; 
 
-    const request = new XMLHttpRequest();
-    request.onreadystatechange = function () {
-        if (this.readyState === 4 && this.status === 200) {
-            const restaurants = JSON.parse(this.responseText);
-            console.log('Restaurants data:', restaurants);
-        }
-    };
+    const restaurantIndex = random_index();
+    const restaurant = restaurants.splice(restaurantIndex, 1)[0];
+
     
-    request.open("POST", "/create_session");
-    request.setRequestHeader('Content-Type', 'application/json');
-    request.send(JSON.stringify(data));
+    const restaurantInfo = document.getElementById("restaurant-info");
+    restaurantInfo.style.opacity = "0"; 
+
+    setTimeout(() => {
+        
+        $("#restaurant-name").text(restaurant.name);
+        const imageUrl = restaurant.photo_url || '/path/to/default-image.jpg';
+        $("#restaurant-image").attr("src", imageUrl);
+        $("#restaurant-rating").text("Rating: " + restaurant.rating);
+        $("#restaurant-address").text("Address: " + restaurant.address);
+
+        
+        restaurantInfo.style.opacity = "1";
+    }, 300); 
 }
+
 
 document.getElementById("swipe-left").addEventListener("click", function() {
     const restaurantInfo = document.getElementById("restaurant-info");
+
+    
     restaurantInfo.classList.add("swipe-left");
-    setTimeout(getNextRestaurant, 500); // Delay to let animation finish before changing the restaurant
+
+    
+    setTimeout(() => {
+        restaurantInfo.classList.remove("swipe-left"); 
+        getNextRestaurant();  
+    }, 500); 
 });
+
 
 document.getElementById("swipe-right").addEventListener("click", function() {
     const restaurantInfo = document.getElementById("restaurant-info");
-    restaurantInfo.classList.add("swipe-right");
-    setTimeout(getNextRestaurant, 500); // Delay to let animation finish before changing the restaurant
+
+
+    restaurantInfo.classList.add("swipe-right"); 
+    setTimeout(() => {
+        restaurantInfo.classList.remove("swipe-right"); 
+        getNextRestaurant();
+    }, 500); 
 });
 
-function getNextRestaurant() {
-    $.get("/get_restaurant", function(data) {
-        $("#restaurant-name").text(data.name);
-        $("#restaurant-image").attr("src", data.image_url);
-        $("#restaurant-rating").text("Rating: " + data.rating);
-        $("#restaurant-address").text("Address: " + data.address);
-    });
-
-    // Reset swipe animation
-    const restaurantInfo = document.getElementById("restaurant-info");
-    restaurantInfo.classList.remove("swipe-left", "swipe-right");
-}
+$(document).ready(function() {
+    $("#restaurant-info").hide();
+    $("#swipe-buttons").hide();
+});
