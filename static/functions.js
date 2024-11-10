@@ -1,30 +1,55 @@
+let restaurants = [];
+
+function random_index(){
+    let random = Math.floor(Math.random() * restaurants.length);
+    return random
+}
+
 function create_session() {
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(send_location);
-    } else {
-        console.log("Geolocation is not supported, please update your browser to the lastest version.");
-        return
-    }
+    navigator.geolocation.getCurrentPosition(function(position) {
+        const latitude = position.coords.latitude;
+        const longitude = position.coords.longitude;
+        
+        const data = {
+            latitude: latitude,
+            longitude: longitude
+        };
+
+        fetch("/create_session", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(data)
+        })
+        .then(response => response.json())
+        .then(responseData => {
+            restaurants = responseData;
+            $(".button-container").hide();
+            $("#restaurant-info").show();
+            $("#swipe-buttons").show();
+
+            const restaurantIndex = random_index();
+            displayRestaurant(restaurantIndex);
+        })
+    });
 }
 
-function send_location(position) {
-    const latitude = position.coords.latitude;
-    const longitude = position.coords.longitude;
-    
-    const data = {
-        latitude: latitude,
-        longitude: longitude
-    };
-
-    const request = new XMLHttpRequest();
-    request.onreadystatechange = function () {
-        if (this.readyState === 4 && this.status === 200) {
-            const restaurants = JSON.parse(this.responseText);
-            console.log('Restaurants data:', restaurants);
-        }
-    };
-    
-    request.open("POST", "/create_session");
-    request.setRequestHeader('Content-Type', 'application/json');
-    request.send(JSON.stringify(data));
+function displayRestaurant(index) {
+    restaurants.splice(index, 1);
+    const restaurant = restaurants[index];
+    $("#restaurant-name").text(restaurant.name);
+    $("#restaurant-image").attr("src", restaurant.photo_url);
+    $("#restaurant-rating").text("Rating: " + restaurant.rating);
+    $("#restaurant-address").text("Address: " + restaurant.address);
 }
+
+$("#swipe-left, #swipe-right").click(function() {
+    const restaurantIndex = random_index();
+    displayRestaurant(restaurantIndex);
+});
+
+$(document).ready(function() {
+    $("#restaurant-info").hide();
+    $("#swipe-buttons").hide();
+});
