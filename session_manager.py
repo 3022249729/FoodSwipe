@@ -68,14 +68,20 @@ def create_session():
         raise
 
 def join_session(session_id):
-    """Verify if a session exists with the given session_id."""
+    """Verify if a session exists with the given session_id. If not, create it."""
     try:
         with get_db_connection() as conn:
             cursor = conn.cursor()
-            cursor.execute("SELECT session_id FROM sessions WHERE session_id = ?", 
-                         (session_id,))
+            cursor.execute("SELECT session_id FROM sessions WHERE session_id = ?", (session_id,))
             result = cursor.fetchone()
-            return result is not None
+            
+            if not result:
+                # If the session doesn't exist, create it
+                logging.info(f"Session {session_id} does not exist. Creating new session.")
+                create_session()
+                return True
+            
+            return True
     except sqlite3.Error as e:
         logging.error(f"Error joining session: {e}")
         raise
@@ -91,10 +97,13 @@ def store_vote(session_id, restaurant_id, user_id, vote):
         with get_db_connection() as conn:
             cursor = conn.cursor()
             
-            # First verify the session exists
+            # First verify if the session exists; if not, create it
             cursor.execute("SELECT 1 FROM sessions WHERE session_id = ?", (session_id,))
             if not cursor.fetchone():
-                raise ValueError(f"Invalid session ID: {session_id}")
+                # If session doesn't exist, create a new session
+                cursor.execute("INSERT INTO sessions (session_id, name) VALUES (?, ?)", 
+                               (session_id, "New Session"))
+                logging.info(f"Session {session_id} created.")
 
             # Check if user already voted for this restaurant in this session
             cursor.execute('''SELECT vote FROM votes 
