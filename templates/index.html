@@ -15,7 +15,7 @@
     <div class="centered-container">
         {% if session %}
             <header>
-                <h1>Welcome, {{session.userinfo.name.split(' ')[0]}}!</h1>
+                <h1 id="message">Welcome, {{session.userinfo.name.split(' ')[0]}}!</h1>
             </header>
             <br />
             <main id="restaurant-info">
@@ -30,8 +30,8 @@
                 </div>
             </main>
             <div id="swipe-buttons">
-                <button id="swipe-left">Nay</button>
-                <button id="swipe-right">Yay</button>
+                <button id="swipe-left">No</button>
+                <button id="swipe-right">Yes</button>
             </div>
             <nav>
                 <a href="/logout">Logout</a>

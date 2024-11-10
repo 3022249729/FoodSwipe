@@ -6,6 +6,7 @@ function random_index() {
 }
 
 function create_session() {
+    
     navigator.geolocation.getCurrentPosition(function(position) {
         const latitude = position.coords.latitude;
         const longitude = position.coords.longitude;
@@ -29,6 +30,7 @@ function create_session() {
             $("#restaurant-info").show();
             $("#swipe-buttons").show();
 
+            document.getElementById("message").textContent = "Swipe Your Decisions!";
             getNextRestaurant(); 
         });
     });
@@ -49,10 +51,10 @@ function getNextRestaurant() {
         $("#restaurant-name").text(restaurant.name);
         const imageUrl = restaurant.photo_url || '/path/to/default-image.jpg';
         $("#restaurant-image").attr("src", imageUrl);
-        $("#restaurant-rating").text("Rating: " + restaurant.rating + " (" + restaurant.rating_amount + ")");
-        const addressHtml = `Address: <a href="${restaurant.maps_url}" target="_blank">${restaurant.address}</a>`;
-        $("#restaurant-address").html(addressHtml); // Use .html() to insert HTML content
+        $("#restaurant-rating").text("Rating: " + restaurant.rating);
+        $("#restaurant-address").text("Address: " + restaurant.address);
 
+        
         restaurantInfo.style.opacity = "1";
     }, 300); 
 }
