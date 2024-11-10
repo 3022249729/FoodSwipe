@@ -32,25 +32,44 @@ function create_session() {
 }
 
 function getNextRestaurant() {
-    if (restaurants.length === 0) return;
+    if (restaurants.length === 0) return; 
 
     const restaurantIndex = random_index();
     const restaurant = restaurants.splice(restaurantIndex, 1)[0];
     const restaurantInfo = document.getElementById("restaurant-info");
     
-    restaurantInfo.style.opacity = "0";
+    restaurantInfo.style.opacity = "0"; 
 
     setTimeout(() => {
         $("#restaurant-name").text(restaurant.name);
-        $("#restaurant-image").attr("src", restaurant.photo_url || '/path/to/default-image.jpg');
-        $("#restaurant-rating").text("Rating: " + restaurant.rating);
+        $("#restaurant-image").attr("src", restaurant.photo_url);
+        $("#restaurant-rating").text("Rating: " + restaurant.rating + "⭐ (" + restaurant.rating_amount + ")");
+        let options = '';
+        if (restaurant.dinein){
+            options += "Dine-in: ✅ "
+        } else {
+            options += "Dine-in: ❌ "
+        }
+        if (restaurant.delivery){
+            options += "Delivery: ✅ "
+        } else {
+            options += "Delivery: ❌ "
+        }
+        if (restaurant.pickup){
+            options += "Pick-up: ✅ "
+        } else {
+            options += "Pick-up: ❌ "
+        }
+        if (restaurant.takeout){
+            options += "Takeout: ✅ "
+        } else {
+            options += "Takeout: ❌ "
+        }
+        $("#restaurant-options").text(options);
         $("#restaurant-address").html(`Address: <a href="${restaurant.maps_url}" target="_blank">${restaurant.address}</a>`);
         
         restaurantInfo.style.opacity = "1";
-
-        // Store restaurant data on the session so we can reference it during swipes
-        restaurantInfo.setAttribute('data-restaurant-id', restaurant.id);
-    }, 300);
+    }, 300); 
 }
 
 function swipeLeft() {
