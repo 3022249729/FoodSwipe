@@ -3,3 +3,4 @@ requests==2.28.0
 python-dotenv>=0.19.2
 authlib>=1.0
 flask_socketio
+gunicorn
