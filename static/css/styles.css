@@ -15,8 +15,7 @@ body, html {
 
 .centered-container {
     width: 400px;
-    max-width: 600px;
-    height: 85vh;
+    height: 90%;
     border: 2px solid #333;
     border-radius: 20px;
     background-color: white;
@@ -24,8 +23,10 @@ body, html {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     text-align: center;
     padding: 20px;
+    overflow-y: auto;
 }
 
 header {
@@ -37,6 +38,10 @@ header {
         transform: translateX(0);
         opacity: 1;
     }
+    50% {
+        transform: translateX(-50%);
+        opacity: 0.5;
+    }
     100% {
         transform: translateX(-100%);
         opacity: 0;
@@ -47,6 +52,10 @@ header {
     0% {
         transform: translateX(0);
         opacity: 1;
+    }
+    50% {
+        transform: translateX(50%);
+        opacity: 0.5;
     }
     100% {
         transform: translateX(100%);
@@ -109,14 +118,14 @@ button {
 }
 
 .swipe-left {
-    animation: slideAndFadeLeft 1s forwards;
+    animation: slideAndFadeLeft 1s forwards cubic-bezier(0.5, 0, 0.75, 1);
     background-color: #ff4136;
     color: white;
     border: none;
 }
 
 .swipe-right {
-    animation: slideAndFadeRight 1s forwards;
+    animation: slideAndFadeRight 1s forwards cubic-bezier(0.5, 0, 0.75, 1);
     background-color: #2ecc40;
     color: white;
     border: none;
