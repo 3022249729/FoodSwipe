@@ -10,6 +10,7 @@ import string
 import requests
 from time import sleep
 import json
+import os
 
 app = Flask(__name__)
 app.secret_key = env.get("APP_SECRET_KEY")
@@ -91,7 +92,7 @@ def get_restaurants(latitude, longitude, radius=8000):
         'location': f"{latitude},{longitude}",
         'radius': radius,
         'type': 'restaurant',
-        'key': env.get("GOOGLE_MAPS_API_KEY")
+        'key': os.getenv("GOOGLE_MAPS_API_KEY")
     }
     
     restaurants = []
@@ -113,10 +114,10 @@ def get_restaurants(latitude, longitude, radius=8000):
 
             photo_url = None
             if photo_reference:
-                photo_url = f"https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference={photo_reference}&key={env.get('GOOGLE_MAPS_API_KEY')}"
+                photo_url = f"https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference={photo_reference}&key={os.getenv('GOOGLE_MAPS_API_KEY')}"
 
             restaurants.append({
-                'id':id,
+                'id': id,
                 'name': name,
                 'rating': rating,
                 'rating_amount': rating_amount,
@@ -138,7 +139,6 @@ def get_restaurants(latitude, longitude, radius=8000):
     # to cache data!
 
     return restaurants
-
     
 if __name__ == '__main__':
     socketio.run(app, host="0.0.0.0" ,port=3000, debug=True)
