@@ -38,8 +38,7 @@
             <button id="swipe-right" onclick="swipeRight()">Yes</button>
         </div>
         <div id="session-link" style="display:none;">
-            <p>Invite others to join using this link:</p>
-            <a id="session-url" href="#">Link</a>
+            <p>Invite: <a id="session-url" href="#">Link</a></p>
         </div>
         <nav>
             <a href="/logout" class="logout-button">Logout</a>
@@ -49,15 +48,14 @@
                 <h1>Welcome to FoodSwipe!</h1>
             </header>
             <main>
-                <p>Please login to get started!</p>
+                <p id="please-login">Please login to get started!</p>
                 <div id="auth-buttons" class="auth-container">
                     <button onclick="window.location.href='/login'" class="button-primary">Login with Auth0</button>
                     <button onclick="loginAsGuest()" class="button-secondary">Continue as Guest</button>
                 </div>
-        
+                <br />
                 <div id="guest-join-container" class="join-container" style="display: none;">
                     <button onclick="joinSession()" class="button-primary">Join Existing Session</button>
-                    <p class="guest-notice">Note: Guest users can only join existing sessions</p>
                 </div>
             </main>
         {% endif %}

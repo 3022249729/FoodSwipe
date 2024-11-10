@@ -22,12 +22,44 @@ function checkLoginStatus() {
         });
 }
 
+function updateSessionUI() {
+    attachSwipeEventListeners();
+    const authButtons = document.getElementById("auth-buttons");
+    const guestJoinContainer = document.getElementById("guest-join-container");
+    const createSessionBtn = document.getElementById("create-session");
+    const joinSessionBtn = document.getElementById("join-session");
+
+    if (currentUser) {
+        // Hide auth buttons regardless of user type
+        if (authButtons) authButtons.style.display = 'none';
+
+        if (currentUser.is_guest) {
+            // Guest user - only show join container
+            if (guestJoinContainer) guestJoinContainer.style.display = 'block';
+            if (createSessionBtn) createSessionBtn.style.display = 'none';
+            if (joinSessionBtn) joinSessionBtn.style.display = 'none';
+        } else {
+            // Regular user - show create/join buttons in header
+            if (guestJoinContainer) guestJoinContainer.style.display = 'none';
+            if (createSessionBtn) createSessionBtn.style.display = 'block';
+            if (joinSessionBtn) joinSessionBtn.style.display = 'block';
+        }
+    } else {
+        // No user logged in - show auth buttons, hide everything else
+        if (authButtons) authButtons.style.display = 'block';
+        if (guestJoinContainer) guestJoinContainer.style.display = 'none';
+        if (createSessionBtn) createSessionBtn.style.display = 'none';
+        if (joinSessionBtn) joinSessionBtn.style.display = 'none';
+    }
+}
+
 function attachSwipeEventListeners() {
     const swipeLeftButton = document.getElementById("swipe-left");
     const swipeRightButton = document.getElementById("swipe-right");
 
     // Only attach event listeners if the elements are present
     if (swipeLeftButton) {
+        console.log("swipeLeftButton");
         swipeLeftButton.addEventListener("click", swipeLeft);
     }
 
@@ -49,37 +81,18 @@ function attachSwipeEventListeners() {
 }
 
 function updateUIForLoginStatus() {
-    const authContainer = document.getElementById('auth-container');
-    const sessionActions = document.getElementById('session-actions');
-    const loginStatus = document.getElementById('login-status');
-    const userInfo = document.getElementById('user-info');
-    const logoutButton = document.getElementById('logout-button');
-    const createSessionBtn = document.getElementById('create-session-btn');
-
     if (currentUser) {
-        // User is logged in
-        if (authContainer) authContainer.style.display = 'none';
-        if (sessionActions) sessionActions.style.display = 'flex';
-        if (loginStatus) loginStatus.style.display = 'flex';
-        if (logoutButton) logoutButton.style.display = 'block';
+        console.log("logged in");
+        
+        // Update session-related UI elements
+        updateSessionUI();
 
-        // Update user info display if available
-        if (userInfo) {
-            userInfo.textContent = currentUser.is_guest
-                ? 'Logged in as Guest'
-                : `Welcome, ${currentUser.name}`;
-        }
-
-        // Show/hide create session button based on guest status
-        if (createSessionBtn) {
-            createSessionBtn.style.display = currentUser.is_guest ? 'none' : 'block';
-        }
+        // Make sure restaurant info and swipe buttons are initially hidden
+        $("#restaurant-info").hide();
+        $("#swipe-buttons").hide();
     } else {
         // No user logged in
-        if (authContainer) authContainer.style.display = 'flex';
-        if (sessionActions) sessionActions.style.display = 'none';
-        if (loginStatus) loginStatus.style.display = 'none';
-        if (logoutButton) logoutButton.style.display = 'none';
+        updateSessionUI();
     }
 }
 
@@ -124,13 +137,13 @@ function loginAsGuest() {
                 is_guest: true
             };
             updateUIForLoginStatus();
+            attachSwipeEventListeners();
         } else {
-            // alert(data.error || "Failed to login as guest");
+            console.error('Failed to login as guest');
         }
     })
     .catch(error => {
         console.error("Error logging in as guest:", error);
-        // alert("Failed to login as guest. Please try again.");
     });
 }
 
@@ -141,6 +154,7 @@ function getNextRestaurant() {
     const restaurant = restaurants.splice(restaurantIndex, 1)[0];
     const restaurantInfo = document.getElementById("restaurant-info");
     
+    restaurantInfo.setAttribute('data-restaurant-id', restaurant.id); // Set restaurant ID
     restaurantInfo.style.opacity = "0"; 
 
     setTimeout(() => {
@@ -240,7 +254,7 @@ function createNewSession() {
             console.log("Session data after creation:", sessionData); // Debugging line
             document.getElementById("session-link").style.display = "block";
             document.getElementById("session-url").href = `/join_session/${sessionData.session_id}`;
-            document.getElementById("session-url").textContent = `/join_session/${sessionData.session_id}`;
+            document.getElementById("session-url").textContent = `${sessionData.session_id}`;
             startSession(); // Start session after creating
         });
 }
@@ -327,7 +341,8 @@ function castVote(restaurantId, vote) {
         }
     })
     .catch(error => {
-        console.error("Error casting vote:", error);
+        // console.error("Error casting vote:", error); // unique constraint
+        getNextRestaurant();
         // alert(`Error recording vote: ${error.message || "Unknown error occurred"}`);
     });
 }

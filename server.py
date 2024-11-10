@@ -74,12 +74,18 @@ def guest_login():
 def create_new_session():
     """Create a new session for voting."""
     if 'user' not in session:
+        print("No user in session")
         return jsonify({"error": "Not logged in"}), 401
-        
+
+    # Print the session data to debug guest flag
+    print("Session data:", session['user'])
+
     if session['user'].get('userinfo', {}).get('is_guest', False):
+        print("Guest users cannot create sessions")
         return jsonify({"error": "Guests cannot create sessions"}), 403
-        
+
     session_id = session_manager.create_session()
+    print("Session created successfully with ID:", session_id)
     return jsonify({"session_id": session_id})
 
 @app.route("/check_login_status")
