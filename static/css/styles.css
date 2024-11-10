@@ -143,3 +143,12 @@ a {
 a:hover {
     text-decoration: underline; 
 }
+
+#restaurant-address a {
+    color: black; /* Set link color to black */
+    text-decoration: none; /* Remove underline */
+}
+
+#restaurant-address a:hover {
+    text-decoration: underline; /* Ensure no underline on hover as well */
+}

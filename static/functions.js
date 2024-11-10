@@ -49,10 +49,10 @@ function getNextRestaurant() {
         $("#restaurant-name").text(restaurant.name);
         const imageUrl = restaurant.photo_url || '/path/to/default-image.jpg';
         $("#restaurant-image").attr("src", imageUrl);
-        $("#restaurant-rating").text("Rating: " + restaurant.rating);
-        $("#restaurant-address").text("Address: " + restaurant.address);
+        $("#restaurant-rating").text("Rating: " + restaurant.rating + " (" + restaurant.rating_amount + ")");
+        const addressHtml = `Address: <a href="${restaurant.maps_url}" target="_blank">${restaurant.address}</a>`;
+        $("#restaurant-address").html(addressHtml); // Use .html() to insert HTML content
 
-        
         restaurantInfo.style.opacity = "1";
     }, 300); 
 }
