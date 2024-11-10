@@ -15,7 +15,7 @@
     <div class="centered-container">
         {% if session %}
             <header>
-                <h1>Welcome, {{session.userinfo.name}}!</h1>
+                <h1>Welcome, {{session.userinfo.name.split(' ')[0]}}!</h1>
             </header>
             <br />
             <main id="restaurant-info">
