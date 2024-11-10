@@ -18,6 +18,7 @@ function checkLoginStatus() {
             }
         })
         .catch(error => {
+            console.error("Error checking login status:", error);
             updateUIForLoginStatus();
         });
 }
@@ -77,18 +78,28 @@ function attachSwipeEventListeners() {
 }
 
 function updateUIForLoginStatus() {
-    if (currentUser) {
-        console.log("logged in");
-        
-        // Update session-related UI elements
-        updateSessionUI();
+    const authButtons = document.getElementById("auth-buttons");
+    const guestJoinContainer = document.getElementById("guest-join-container");
+    const createSessionBtn = document.getElementById("create-session");
+    const joinSessionBtn = document.getElementById("join-session");
 
-        // Make sure restaurant info and swipe buttons are initially hidden
-        $("#restaurant-info").hide();
-        $("#swipe-buttons").hide();
+    if (currentUser) {
+        if (authButtons) authButtons.style.display = 'none';
+
+        if (currentUser.is_guest) {
+            if (guestJoinContainer) guestJoinContainer.style.display = 'block';
+            if (createSessionBtn) createSessionBtn.style.display = 'none';
+            if (joinSessionBtn) joinSessionBtn.style.display = 'none';
+        } else {
+            if (guestJoinContainer) guestJoinContainer.style.display = 'none';
+            if (createSessionBtn) createSessionBtn.style.display = 'block';
+            if (joinSessionBtn) joinSessionBtn.style.display = 'block';
+        }
     } else {
-        // No user logged in
-        updateSessionUI();
+        if (authButtons) authButtons.style.display = 'block';
+        if (guestJoinContainer) guestJoinContainer.style.display = 'none';
+        if (createSessionBtn) createSessionBtn.style.display = 'none';
+        if (joinSessionBtn) joinSessionBtn.style.display = 'none';
     }
 }
 

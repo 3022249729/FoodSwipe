@@ -218,3 +218,15 @@ a:hover {
     width: 100%;
     max-width: 200px;
 }
+
+.auth-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.button-primary, .button-secondary {
+    width: auto;
+    max-width: 100%;
+    box-sizing: border-box;
+}
