@@ -5,7 +5,8 @@
         "rating": 3.1,
         "rating_amount": 44,
         "address": "3290 Sheridan Drive, Amherst",
-        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DNfTW7CKDFMTGhVcPzmx2bas402fKq53yPNvgogUfPivrD-jMKxiFqC3DY7FfYG-UuYQlqISBrQu4INdQ1vOarlQysMFZyN8Ew3XUIwvyw7yLd7H6LEpnY-J2j-ZRjdDhRpiECXe2IzFMuNVGC3BJi48jt8YusiPm6C2oeyNCk60Icd&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DMuKYNTV7eDULxgKnXe642sSbQvBEheoASg_0jmRFRctrvA85AtjswCDNJemVfv6wxUykI6WEeF0jp1eVKhWCoCDvb6bgEDVC7Vd2J_4bQfxXi0fBSyEwXig4eEH-VEZU2qbs1ld5e4udclduvyxjayMr4FD0bDbcsR4n60pQNy5TZy&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4",
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJtYkIwlxy04kRoyBiKk62eX0"
     },
     {
         "id": "ChIJBbG97ett04kRyLNBbBA-hz0",
@@ -13,7 +14,8 @@
         "rating": 4.5,
         "rating_amount": 4154,
         "address": "900 Young Street, Tonawanda",
-        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DOdtOM8F5b3A5pxlQelDsz7jhWpu_dfovT2Y7rrEvIJ1loz8FBn1I20CwihVl9cLqQAckh0RUgcHDfE7Ul0NSrygMLx30Mo0gCSKKcYGoc9yqYv7zReqYlg6WUTLRvLy9ZAPf2SU9jeTsJeDsbZg8kLg-_E2mU7HsBrCM12KqobEYTN&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DPKZqzOhTeCycHZTa3Iw0uR9YycXW0lDJoP-YzgIArEXYhh17JWzRSfguEtE3bdlcW1uMejt9TX8P2654Y8axHgnENXuWvlAXQ585t4FVw9Al7ghK5NicoC4cPAqkkSq18CqpAqMvihxQIMHxsnywS46KwClYN2yQT0IYTqkT75AQK5&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4",
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJBbG97ett04kRyLNBbBA-hz0"
     },
     {
         "id": "ChIJL1K2RhFy04kRthgIm-_JAJg",
@@ -21,7 +23,8 @@
         "rating": 3.5,
         "rating_amount": 1300,
         "address": "1643 Niagara Falls Boulevard, Amherst",
-        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DPNkMzk4m_T_hDhkxUriNppmFRnrZS-KuM7Iy2eQ4A4MujC_rsp312-s03xRgi3oycH4oet7PFYi5LwA9MFmV8JVmwHlbEKWQDlfzptIBYCkw1XRgGLwCE-XTD-iAPm46ggd1ya9CQN9r4LA9zJz6wlSp_8ocYl3hqvjm52w-2NMhTO&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DMczbldBYWvN9HKi2y3GCVKoupuj7Ao3TFcxOrD1TgDme7wbDRI5bdxuOYQIO6jiLdkV4nu6pKaXkMzIw3h1peFy5A1EXKqXRjLQEIjfkgR7SmjI78tbIrtPoi5Sdh292GxDL3Xc5MHLD7uCYDc1sse4y5cv0whcaDLSSh_56d2ubx4&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4",
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJL1K2RhFy04kRthgIm-_JAJg"
     },
     {
         "id": "ChIJ0-jEZRFy04kRiFBfrh6coCs",
@@ -29,7 +32,8 @@
         "rating": 3.8,
         "rating_amount": 2211,
         "address": "1620 Niagara Falls Boulevard, Tonawanda",
-        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DNMnuv8o8zHxvLV13QHrXcL6jOyxPC3JWtUpDgLF22typaM2RfmEbfb5D1nC6mhCD0RdpBS6YNHO2nDQwl2vjUxyRmCdnc8sCObs4WsV5HFsj0bmvFdL2gYuekXJKijpIf25U659eKpSRbe0SVPW_uZmv53AhlXzJGDdZfGinCaKcaK&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DPyCXp2pf9vJdukYBP1xYWJlw1_I48M6v611c4gCxhicPXVeTy4hHvemSd25tU-eWxcz8ft568lmQKpa6ZJjtK4LhHs5vzf44TagbtZ6YT5eMO_S8GRXCSGCpqbIkD7B5z7SEs3G-5H4371XzGulBYzxTZxno0vYeigflJk8r0PWkL-&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4",
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ0-jEZRFy04kRiFBfrh6coCs"
     },
     {
         "id": "ChIJ_beErdFz04kRZnUfrcNIyUE",
@@ -37,7 +41,8 @@
         "rating": 3.6,
         "rating_amount": 86,
         "address": "520 Lee Entrance Suite 303, Amherst",
-        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DNv9YB2SQJKoEZxFWHHIMOvlOO19DQ9JgomgCGmL-MLA1HmN5iGnonCRsKKRkcJ17_xFviNcMzJz2bgapxvTUusJ2_DIuct9wQ8KCn1StRJNEAXjucLGGjlEu-PUeY3qpYLrgCYEseoShWtFpu4KjqlqLatATMG76mfNJ_1u4BU_OdS&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DMzEf36XzVJ38HIUSXF0gpjyJs9slbHKysva3h7eLR0oHx0xjM-5gkxG0jxwNCKyu8j1mIBtiFGp9qpxTaeinMOggCxtyic7rswbEcdaFW-0oNrD6pUpXRlxRNHSJ3fdt5TVsPxBT-2zZiuteLWkgL_SBz23rxsTakIjI_s95CcS4Zw&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4",
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ_beErdFz04kRZnUfrcNIyUE"
     },
     {
         "id": "ChIJ1TNXRxFy04kRC_XI4mc6UEA",
@@ -45,7 +50,8 @@
         "rating": 4.3,
         "rating_amount": 2687,
         "address": "1645 Niagara Falls Boulevard, Amherst",
-        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DMfCRPqdHTMhmeQbrEGu5Al0mxiPk4sk7ox8AA5LeZ2mD8RMHM9MX6628_6b2G3jUNnFusCUaCV6KVs2VBQLNLCbBPOrsS0q-4WrWNDgD4KvrLLzZDwoRktTmifoDHJ0WG07CD_tygYCGpGYtJS2D9iMn5iI71-_BQTG4blheq-tBFh&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DOxLQeYGGT_4JCoErgw1ntDYlYR3Vn7I_EySJqWMqKsJ5SUELT6bJvqLkEKo4vybSLakImmJJ6Rs38xe6q0DnI7CvR7g0pnb_vS2aAM5_lyaNHN3--Fqh3NZXFdxA063KzY6ozNaOD6lSqTDo_WgPbdEjqpsA8HhqHXgCX6n7DAhQfu&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4",
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ1TNXRxFy04kRC_XI4mc6UEA"
     },
     {
         "id": "ChIJAbWme2py04kRR1ZgN1Fl69U",
@@ -53,7 +59,8 @@
         "rating": 4.2,
         "rating_amount": 2985,
         "address": "3951 Maple Road, Amherst",
-        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DN8jzFmORgUH8XI4dVPGlqhDo-pc6PbOYXqvQsK5kuu7tmxCT7HPnMqNz9dQS8HtQmfxIdKNucQBu6MeRpEoX4_bm98IIuC_iZaAqzdWzQbqPY50pAvUC1meb3QMLPeRkGfhTF9ocjYGCxR3QPPIyTzG4pShw2ODh1-p5pNheLd12mI&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DMLvdMw8rccQXOF-fnpa9yMr0V1FpGG7ugXWJqXmDy_d4GTQNBkfxSQHueobJcl-iRpsKBoLU97HofIlThLhzaM1INpEb5oV2qRryZLt3tU3Eui5m1zFZ9oThCMnKG2ubr-RuMugt2tLL7gvBN16zDTgOsEFxB3RgS3Ru3MFuIhMrs_&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4",
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJAbWme2py04kRR1ZgN1Fl69U"
     },
     {
         "id": "ChIJAZsLTrty04kRHJv_CIFU0wE",
@@ -61,7 +68,8 @@
         "rating": 4.2,
         "rating_amount": 1621,
         "address": "3165 Main Street, Buffalo",
-        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DMT48rLxYSQ2L4BHnqCmrzo4hScxfv-Sfxg5bZ5kdkz-Gl9wCeuwrSV8sLdwlkm7Q23pGBs0BL3yy8k-TAqZNFmLo3WO7MbY-vsrSQ5mgnD74utzX5RmBFL3Tul9WUFtJ6OOTvWDW6DCoPuBoAzfc07EO8CPKrPpglQlIj8nbbzZ5fi&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DMBhaNmqNxOsOaZVbzSMlrdS3coL50J6-bFq3oe5UYM8eYdm_YYAmXMsBOfUcHLen0WlhNJaOxZYGl2qgOPAg36FELBTSATrh-2yEtkQ7RGE1hedSqi8H-EzZYP1mHFX6R4HzNYm1U-MZEYF_O3B9OyHs_-9yc887E8YiCylmpsfLhj&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4",
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJAZsLTrty04kRHJv_CIFU0wE"
     },
     {
         "id": "ChIJUWSUPml004kRiNEO0GaLXxE",
@@ -69,7 +77,8 @@
         "rating": 4.4,
         "rating_amount": 909,
         "address": "5493 Sheridan Drive, Amherst",
-        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DOZze_LPVh4s4Hopu8X6gJ3uo_b44UQaPTuQo_yOySuZjG9WmRiisDyboVzvwiZ4w9vB_QBzwTE1vUTsx89xeNkCyf87gW5f3J5Cazvxa_Da8zo3V_NhUmBYSF5GASgFN5tirLM3uzMVmRlOsGsCxoNeKnhkhEKg7vYUPvRD8PfnRUl&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DNmgCQ-OMRuiXRoIfXGvu9TNksDt9K765VzHkDxOWKE0UNoTcOwWFWPHfqDn_2xBSO91z9hyixNQICRxvMgWAwtrkIM58mzvGWIOs4Q_L2nhBcjwDyZCzeLTxQ60dyUUnauIaZ78zb94H9Rq2W9nsdU9op3ctUDDH4ixIk1RHcHZVkG&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4",
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJUWSUPml004kRiNEO0GaLXxE"
     },
     {
         "id": "ChIJZ8mx-7xy04kRYW0PDm_lUCw",
@@ -77,7 +86,8 @@
         "rating": 4.5,
         "rating_amount": 487,
         "address": "3260 Main Street, Buffalo",
-        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DNsxsRqX3JzoQonHpJaBCl1EEbfnyNsfMJKBb7XNt-YkMnnnPbJi5L2ly4r-5n0KpCUPioZPzrQbya52CN7bU2YxgCw3YBe8kCwByZVee-Z2kb-kqD936TLguxvx_dedWBWWDPOFmWD43BLj0MKuX74J_P6yEjjrePFEgqn5K8-qWVd&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DMCxeCsRbW96DzZd_lCOA2Qc_gjCUvp7WgCLgrq1APa4KLI5xa69yxuFB0H-Aqx7_09vWV1iSUkl387-CLQAo08_tKEf8z8lFwCTYGm372WxJm_bysOB8vFXyKt8Ndn9PeOGfQ8IwCLGfJaRrXBs-0Sy-dtbrBv_cCiDDybgcOz9hyM&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4",
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJZ8mx-7xy04kRYW0PDm_lUCw"
     },
     {
         "id": "ChIJ2bnZcy1x04kRfMV5mWmtQeE",
@@ -85,7 +95,8 @@
         "rating": 4.4,
         "rating_amount": 978,
         "address": "55 Crosspoint Parkway, Getzville",
-        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DP2Rja4n9sYypsLp_p5mV6kCddj_a5bP-FWRpc4sfuJ73W4xy2_t6et5g01-tm4j99GgyMdSsHZKAAmK4Bn6CFKB4PGrSzbiS0Egt2qHzYae_vLmmbdtYgA9lvq1mW3QTuYrOJi3kXeh4X2enbMfaB0Gmze1V2PlCMBm7onF8TWAoC3&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DMBUYyrf3FJLWTIlSxYfAy50myc9waJF4cbMlbv0J-k6qdNQflCN3f9AmbVbrvy-nM0ev4SEXJzShVbt1561Dy6evP-yapYx_GnGXhJUUKxVI2CBuJiPBD6vBtZB2xgRS74WHlhNXjvecfYVRox8xufDwuVGW_4c2mw_D_HdDB0IkyC&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4",
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ2bnZcy1x04kRfMV5mWmtQeE"
     },
     {
         "id": "ChIJzWpFyGB204kRzrESdXpqM9o",
@@ -93,7 +104,8 @@
         "rating": 4.6,
         "rating_amount": 1599,
         "address": "9160 Transit Road, East Amherst",
-        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DOKMwSB_BAwOHvet1yqD8JAM-PKaICplclXADEQOw1n-ADnSEB7xCwd74DaXP4HpC-qfmYDGkn9CoKf93olt6RoqBFP5HStcvfRElxykwKw8wRA4aiAci6joAjuYQSmmE9UlIPAo3xrUbqP5wGvEkIFXIYjxTOaM41Vs1WAUx-ILIRG&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DOD9J7fb5j7RkHcF1XLVziVLv9GdNZu3wjq-Ah9oMZrMijkuYPCUZVapsDbeLY19gz4uSKMtPJcQB_Ac0YBVSaJDlXueyYBy2oow2E3C4o0vlNu6Gf8s6T2ql_LMEz2FdRXwtEZuqdninAfrrgTgDPNFxwQTwdJllqA9nGu30hsE700&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4",
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJzWpFyGB204kRzrESdXpqM9o"
     },
     {
         "id": "ChIJl11WUqNx04kRHfHUuX9W1qE",
@@ -101,7 +113,8 @@
         "rating": 3.9,
         "rating_amount": 507,
         "address": "550 North French Road, Buffalo",
-        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DN5JZshc2vVxAXpB0ZIv3hL-Sva9W_omb6vuGbD7VhPTmheFKDj6FCnvzjies2_uMdWS1e78c4oonK0YIuamReZDBcASqS7c918jgvOz9u3rk-Kppm3-gV6utldh0gcE0as2sLh8HXBuYaHJK1Se8iOJaNkqrwq3adYLDR5XoKVxhHa&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DOOReZvP3BEad95z8IAwB1vrTSRimnOuBVUsx9ZZ_thcXUn3ccVIfU9fajDmdhmL7JtFS6rTNMf_UEdB640ZhEtVZpb3b4YAodFIxEYdbmJD-9DE86mH9g8bG-mFs7wXxS9q4aCCXQZn4nFhAoQCkm_Rp61p_2DLVzYR7NoNXcA0SQD&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4",
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJl11WUqNx04kRHfHUuX9W1qE"
     },
     {
         "id": "ChIJw1Dsl3tz04kRSn-4Bp7ALfI",
@@ -109,7 +122,8 @@
         "rating": 4.4,
         "rating_amount": 862,
         "address": "5330 Main Street # 4, Williamsville",
-        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DPGf1JkroBjLj67wbdwwaW5sWQ1S-ZA0-7WWFRMV2-Ll3QX1pM397W3RSrl73uMUJbi_UggotVnQSyw2_Imt03zZfAGhs7Qm7PiAhhid4bMcd4RHmGdGjzYr_-0S8itOY8fvRPymKxJDlg56Ix4iCcNaKwE11yIu24J58Lzlj-f_kzW&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DOEoBA3aT6AdAWUjrCkk2blqkNQPSJnzyc-KgQJmxli6wXHA1CmDezXTRMk0eTyTYU7MdDZaCjm8ET9oRQ2nzbf6mzGE646yjU3scNGqCmXhIPKQhm-yfHzqGRxaThP9FoX0dkndr4WQyROfr8bH9pwcNa8xd1wnQQE_goJa9VSZRIq&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4",
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJw1Dsl3tz04kRSn-4Bp7ALfI"
     },
     {
         "id": "ChIJF_JcPnBz04kRYuA9k09KMUQ",
@@ -117,7 +131,8 @@
         "rating": 3.7,
         "rating_amount": 1401,
         "address": "5151 Main Street Suite 100, Amherst",
-        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DO3-SNHkozwct8S5307fpSeItSdKYH6kZtspattYql3eSnLGSITcbcPpLTTyG_UYb8FPtbIL4bKxwqNo-8TIC6STKsh-oNycjc3a3FQBKNmvgaVB27OyeZh4g0oOdk7-0c-9ZNpBZj6P-X_SQ_zzXI1UeGw-_NHyo04hCn9N_IgSAIw&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DOoy3_TnKrLEcwqGD3VTdCv8fpJSqPIC_Ivp37AelaFwY0ZVHTF6POiQJmOUu8NpaYtWQxyR4IqfsCsMfttVuJIkMQz-yRU3oe9IahWuXeQuP1tEXCRjCFVp5kXqCShIrvbkD4d36TJO2RhP2E-kYyvJSND_N_Bl-AT3ls5Fzpi-7cL&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4",
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJF_JcPnBz04kRYuA9k09KMUQ"
     },
     {
         "id": "ChIJ-UMvxfNz04kRNMa1PMTuyo4",
@@ -125,7 +140,8 @@
         "rating": 3.8,
         "rating_amount": 209,
         "address": "870 Maple Road, Williamsville",
-        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DMX8wu1o8b5WBczaSxtXWRNHMP_fXrd4cCA7YrwV5RAgL2Ub3vOZ23zjdUiuSQqqKToq6Laguo63_s-zhfWZyVs5Ipln2czFlvPqlJdr0IRW2_s0UAVRiuhzzOZsw_sP-olUuqxZlNMAJeIBKVugJr53tNZ6F1ANKpCxAc4Q5kP433A&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DPR3r75Wv30rb8KiQidjm_iQCRSzjwNYDG-CYpjG_vX_I3Z9cs95ZT_NaCqFoDGMX37YYeCAcxQcWa4-iSvYKwqwT5iAe37N0u3t83DG-ovSJtJYnCrNe-rx38S29oq35wSOzBlxUnr7IcPmt5KTgKeaNpM0s01hd0SMLeXKmZHoKAy&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4",
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ-UMvxfNz04kRNMa1PMTuyo4"
     },
     {
         "id": "ChIJb6ohr1ty04kRZNaehchfY0o",
@@ -133,7 +149,8 @@
         "rating": 3.9,
         "rating_amount": 652,
         "address": "3394 Sheridan Drive, Amherst",
-        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DPGidX5Tvf3VcmdMHLoxmGy9RRwR2xah8933-Y12XwgaIrUhXeMbKcqlKqQW_N9kxC1OyLEgvhYsFPSEaRhTR7Q73GrhobtjXlMkcj1bY7LT1Ul-M5KQtJLm4q2TKCntMw4_rO7XUWMIDsQQoBJ-oV73kWEJZKo1IJl_k3L_wtnT_yq&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DM14gvMguCkLA5OGd6jbnWTEQrAZqWqn7d4r4AvpDxIVQunNQAGVP_9waq1YI5DCnGOI_SSweFi_-tG8sRdza6cRnGWxJxTKA1CTVkyyoxqffTc7O3A_H9JXQwYP85vnKAUPAvb27K6IPg5_jbvvabQ8x6EKyIaXQUqYzE_HVI9iGld&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4",
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJb6ohr1ty04kRZNaehchfY0o"
     },
     {
         "id": "ChIJXxIkCmB004kR9sAapCF1VQA",
@@ -141,7 +158,8 @@
         "rating": 4,
         "rating_amount": 345,
         "address": "6125 Main Street, Williamsville",
-        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DMWs302Zs_OsEoBlDQcG0WS8N6twZFn05DNXmmDtuEqaYdriH9ItjqBQ-IqjNelilaClcDmG8HOZKqWKW7eLIbfMAOkdJclpSQrr3kP4pRz7MM7mr2jNYOl3a3HUJA6FeLqX60dnzxGOhm0aD-nkTTL6RuAVDdD-IokgD33aiOYYcrg&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DNtKRuD-0_jM-QR348yneTmGQqE40I2KCbvM9GzJoe1g81tskm6CcwY3kcR_qSt1Hf41wu07G6apw2rLmiJG-JOe6JEGcJ4p7p2YdEoO4jR6kBT8dDaQIDaShY5ePfxKJvR8W_9DE_C-uPvTIrnpwb2FWrVPKq3kf4739bi0ZswOKRr&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4",
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJXxIkCmB004kR9sAapCF1VQA"
     },
     {
         "id": "ChIJ_0h-q0Fy04kRmSZp3AwTI_E",
@@ -149,7 +167,8 @@
         "rating": 4.2,
         "rating_amount": 2910,
         "address": "4003 Maple Road, Amherst",
-        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DNsHvE_G_jpuO76FRFs2Yt_9rZqfPoVtg7WXo0h-5Hw-j1FzKo7pfdL6PATZUPEgyvgbSse-AxFr2tV_Kg67rmbe0P17pqUyoXRQAdNyGDB6oY6GzOjEhWBxBqbrI-uUn00VRi-sWFC-GgVHyiZZzAdZbHrtPNrmX8FsTsAiTfcQq64&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DOxs1dofLUs19Sn9GdEjGIDCv2wQFWmIqDAAsredFVsvMKKBnpmYTeJo6FBT1ouDqLhFwpQ1tH5TwOPfKSWcf93pYsIJIdjvIOZ6EcleCeGyaoO80okaDD44_krPN2Qbt4ioSnuDholc7RyBuSeYFwdPCmhtnQHDfiiVSJ0OvqN9OVy&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4",
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ_0h-q0Fy04kRmSZp3AwTI_E"
     },
     {
         "id": "ChIJ2bnZcy1x04kR3MdlVF7bpTQ",
@@ -157,7 +176,8 @@
         "rating": 4.3,
         "rating_amount": 91,
         "address": "55 Crosspoint Parkway Suite 118, Getzville",
-        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DNZJ2xXF8rPP6txKycTMCfvWKKxgBLNwVSFHbwtJKiLZj5beOeQHEUBEuZOxXhY3LuRuSXqEoLkMiwgFnNNOOJ-9OhyY75r07YpqEzKJoTld41c21vahr4QxFrzbJFwFCdkMaQORXGbH6R6YrhrMRV2cgIbmx8b-ANSxaibeVJ6s6Gz&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DO4C8-2Elw9Hc2XgNd_4NA02I0DVJDv4VnQQ89n8oddNnMXYVbl4eZmTxHVOLwOep1Y5OkGEpmhJodSOohrUWY78czAFpMfHzwX-kc1xxirnhjacId-VR-53VTG-8sO8WIHrXjQ0VcGWwtkSxBk0m-Oe0Plo4457xX6muGIlG41UlL5&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4",
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ2bnZcy1x04kR3MdlVF7bpTQ"
     },
     {
         "id": "ChIJr_t2k-1z04kRE--wP2X6YmU",
@@ -165,7 +185,8 @@
         "rating": 4.5,
         "rating_amount": 618,
         "address": "736 Maple Road, Buffalo",
-        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DOf6uxoQm4f6jRVdgnS47pZB4qeEXj0ZzljKeXGfa_cULK0bEfciSFHPIbOfEinxW6-GsLIK8eokeO76gBLg0noEonbyhk2xZ7SugMEF8vsyDI0EgAbXiqMtmhVPFZueF0_acrrCGcT7KbulfbBp4EllV3yZ3Rvhoag6g6mseXrlIpn&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DNk5LHN118nv6oY8Dn9B4Y2lICStszW67VnYWHiI6qbZEjuFePEF2Xzp1A57zeqda-c-kBR0MlbedDg-_WhtAi0GhX5Ne5DwZQYSldbIwPJdEUlPul6a0Wa8kplJUlMHqMrj8ChQ6ebbUOCQYrN4ME-W7LsSUn2hhXRGug9rXy7-VAS&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4",
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJr_t2k-1z04kRE--wP2X6YmU"
     },
     {
         "id": "ChIJ_XBkngVz04kR3S-Is94OXis",
@@ -173,7 +194,8 @@
         "rating": 4.6,
         "rating_amount": 400,
         "address": "4516 Main Street, Snyder",
-        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DOivc4zO_9EAvLTwUW-hs3aga5uHUn29V3M9wwOt5OPSp28zCiNNHXMqlPpeGzfpX57NwQyBbzq9yQfk4koeDc6vb8Yu3LIMmsBr70whxz1dSd5dEY0mJqN8BMN2bKQs5cFkKzWkMZxIQDEYqwNuGE4XFi1EUccqnyDg3D-sflD0GFL&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DMJq3rk4XnEIyGfjh6cP0qjlMLCyUQJDJN_FsHs68rCZCZFjosd9PcZBEF7o1R6iJlXkk6zryrP2f0tW8ZhWMmPK6qTxqzLPPxFfqeI7rmZiWY_kSgknQpSvNrnwYOKT6kX9x222nU6IwChxPrQmd_d6VqR5OA_PTbMaN1_pI7b3It5&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4",
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ_XBkngVz04kR3S-Is94OXis"
     },
     {
         "id": "ChIJT8Kc_kdy04kR7bfFVho-upc",
@@ -181,7 +203,8 @@
         "rating": 3.4,
         "rating_amount": 88,
         "address": "4224 Maple Road Suite 108, Amherst",
-        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DPDbCKMEOOCIVyw8eviexOi7_sUhxMVEDUtUSRh-x-pcdlQYdCUFIpHcgJJCF_kahUz4KaIgcw3AKNqEKVnt3s6HUdUlIOW5gI2AqVQLdfwpK6votlZD_FyMtqZ8c-lka2NmV8aD_7-36ccdoKn1Q2Jpc0DQqXWWw0kQ1QGbNTKB3GN&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DPZg6U1eP9mD23l6P9cS3gXf2jtzElK0EqEgsBQD2RO25OwVycmW_Lwz0JpKILZRH8EIPRZkf8Pad5RIFse0F_lugimj2wBXph6TjwH4hHKf3ybPup5GMuwWVc-LNJsI28U1SSXR41P5-4DrBAeip_UPlHfapqLFxLWX7gD-IVxRbYm&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4",
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJT8Kc_kdy04kR7bfFVho-upc"
     },
     {
         "id": "ChIJlRVV_71y04kRCRTPUThMma0",
@@ -189,7 +212,8 @@
         "rating": 3.3,
         "rating_amount": 333,
         "address": "3382 Main Street, Buffalo",
-        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DPgPqNTX_yo_mHjjRDWjH5P1rzigvxLgs3tTPDAqxNzJYLOyTSdPykumt0gjS3K1s8WNm3Iv5R_lWhHeRzXyeiVgKurC1jUHRthzKrZLUT3vyBm77CULuOUGrdeZuse-huJSFH9OtTR7EaPxkjc-22Zjd86z4-t8_9icgbopUZHVx3D&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DMM1va8VBjQiTzLMIGhXPy-Zzmp1e-9znP8Ew2Xh3LLjK14XIqx-R--leXKxRIodId0hilI9ELhCd9JiIQ2RNpJCOPIztNzhG4A6bbIG1L3pThXbgEGcR_QIFIyOujt-bhe_7fjeeTXXzcv3ImtuJuDgydTrt2-lVj28PZ5Lg-1N2YL&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4",
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJlRVV_71y04kRCRTPUThMma0"
     },
     {
         "id": "ChIJk-ty7l1x04kRF8-oF5fSttE",
@@ -197,7 +221,8 @@
         "rating": 3.4,
         "rating_amount": 69,
         "address": "2325 Millersport Highway, Getzville",
-        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DMKZHgpYysNp3EKXJuhFXg4qyMJ5-6ZFn6g6TsqYj8njtVlx0913Folo9vRjWsvQduKAsJOygXjpdEiZt2Drn4VL7eeVdHyTTbXIzt9EVHyFIkDofOyoCCs4PgJNNhGv1I0-v-OM80DchrUNJ7c-scYSID1Q270sHJSiYDiX-ktfMG1&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DOIFQKfLHwY1ZicyHv_eJFThTwEGY33Gg-J-GwTPdtmu2n0hEwUpwskqFkpZhZs_52cf6ZdU7W9iRnF-clSCX_UmQky1p_mBEybDPkD-LOpfM2EFXNJYRWRtZxlfqzt2iATMxc3DB93jgttPGHE7r-MshnxqCY4HWe07dMM8V8QtTbf&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4",
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJk-ty7l1x04kRF8-oF5fSttE"
     },
     {
         "id": "ChIJF8lzYPNy04kR8IG1maU2udo",
@@ -205,7 +230,8 @@
         "rating": 4.1,
         "rating_amount": 2134,
         "address": "4174 Bailey Avenue, Amherst",
-        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DNDHgzWtk4tCm7-c0rP9L5cuHNDfbWeqJwBspPa3LCkldIj_OCeD6xqUijgCP8ixB09H49nMsqIkghWAKRagCQ_92OciO8x88qc4K3kRNAdR92mIf91EmFqoq-eswFmsjx2KLG2Xr5BELQcBD7l7r5JkKnY1Pk92fX-xZCamrtrFsrF&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DMGOmkuBPtNkFcs2lr16VYyRcHZfCNN8DRbtkCIEJyQYFFvGzgba5QJS3Kt4v4T5WsSKnECeezAn4uEfQp9T3w_7WfIxPETl8HWLkA2Uczicy0Xwe-X2W1ipoTFnfTxCaKoY5Krg89J9tudsV3MxPcOs9TocolFSBEvG6dHcswbfznY&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4",
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJF8lzYPNy04kR8IG1maU2udo"
     },
     {
         "id": "ChIJe0B5IXpu04kRsebUcDIu5M0",
@@ -213,7 +239,8 @@
         "rating": 4.5,
         "rating_amount": 1705,
         "address": "184 Sweeney Street, North Tonawanda",
-        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DP76G40im_NDaZSvpiFtkQ8Q2wCZjufO45D8NxCXtlHNCphQa3v5NYNTi8J89ok6XfQdNPMiidcrsnyz69T_ButtCs9-P_rwpb9hWfMg5ZxlYGBEdbL2borupz1g6BxEudS0PTu28iUoxEjBND77rEmEKJmVYvj5UF48MJC9m8Ylc9C&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DObSrRDn_EzerV62WE30Gt_r-uWCyLMQH5oBBTbBO2jVeIC5Za72FqjufgOQcjsSup1Y1rC6E3BIuXMhQctcyaMVjp9jFdDTIi4rznx6a32YfEDW0hrO-KjuxpLbJNXnbWACJkVa1XlKGfESEdhe6khvIh624UTmkCL9MboPisMMVfb&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4",
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJe0B5IXpu04kRsebUcDIu5M0"
     },
     {
         "id": "ChIJHbqAm4F004kRDGCpXm1QDaM",
@@ -221,7 +248,8 @@
         "rating": 4.5,
         "rating_amount": 1097,
         "address": "5578 Main Street, Williamsville",
-        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DMaimbUp_9nlYaaGYJNuGuXZxAlqhnLo4fAhgeY-BzoENjyczO3NRgiRn28KyW3-9VAf87gbRwMq56twqCY_nMs9zzhKleBYzRGocJaE3VgcGr9EbveZSE7GNzSBflvg2blpRyTw3-a5d9JkFJnLEVd5rrCQQ0zQIS7DoXYr9LRCSgW&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DNiRaO2W9yEv9U0HrlaSguF_Fn667s1lBdvdeSp3OTndcGOEuolWFpTop8OmqTxPdFZd-yWqGRXhYxxRcw-04TY7qCwYtzfKp977aW02QguZmFU04JfQDgTQqzobihMH_f37Ft1eMxXyhExlBLOB-ukcbocOo98BHgTV8lShATWOUD5&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4",
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJHbqAm4F004kRDGCpXm1QDaM"
     },
     {
         "id": "ChIJcTaAGpFt04kRHpOQem5eNNY",
@@ -229,7 +257,8 @@
         "rating": 4.1,
         "rating_amount": 378,
         "address": "1930 Colvin Boulevard, Tonawanda",
-        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DPeeK_es8n1AoPGagqOc1G6kLoYHpku2MxKPRKMc4zHQPzOJtPAijAeczCoQfgL5y9RRjOR3XsmqsNExieTlaWBMVJLLk5J5YU6wTni_tlNaN9CGN5ATbpb1o5uBNO5YsHfttBL4HJzvY5ZWAzmSDDBQkotlwoQNLzLtUHr7UmLcUos&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DMw4aFa_la8Kf9lO5_caDzNgiq1ODyUYlcuX7c75G7D4cs0BRehqZXK6WW7wO-Rs1394iFFJMp7L34ETyISe6I7nwR-eyZoh_CmLDuLHhUZ2wQzdAVRRrFyBuhN28HBXZFXm96Pmf9gqVtszFWKM0tF66fOoIoxDBeFYySRuFuIsV-b&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4",
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJcTaAGpFt04kRHpOQem5eNNY"
     },
     {
         "id": "ChIJly4mQ4F004kRIIsvJvlYU_Y",
@@ -237,7 +266,8 @@
         "rating": 4.3,
         "rating_amount": 894,
         "address": "5629 Main Street, Williamsville",
-        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DOvbJ228yuzvbSGtwPvWYzJyg3zjliJ4926sJTmXDU1fk6sTf-eiuAcjVxqB3uqleA73WuItircdeI8wytJu9uEAtLB6SeUvzRNwR340LTGtJd60Z9STS3Zk3Oc7kwV68laMrSlpN4hporDqgrH-zPWqOl2xaJv0VI4RZ6v153pmdbt&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DM6n5vd6Wg218tjIGihDe3PxvEKlIL8wi6coPVwv3aCGv0HbYLcnF9wHWi3id9Z3gE28w8_18uA1s478Ix5TxaE_axrUAXKHEteKG0QduNsCl4S0DQmR8zYAUzAxI-_Jsdkz5IfVcllzzci0TvJX3CPLQK2_DIKgp1q8zIF8aU5hLQC&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4",
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJly4mQ4F004kRIIsvJvlYU_Y"
     },
     {
         "id": "ChIJT8Kc_kdy04kR-tSRijuwuGQ",
@@ -245,7 +275,8 @@
         "rating": 4.5,
         "rating_amount": 826,
         "address": "4224 Maple Road Suite 124, Amherst",
-        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DOVhmWYB280y9U8I0LAhiGjK4AxWNYCIcrrl4uwemCaZ4Z4hg4VF9IG7lf2wzCyN0VC60RTE9dJ2GoapbXVitvgMJ_otIzsPPB3L0pCd9bLIsOIYrA8yap9zl2ORkdHQi0vgW2y9wIxcIa78eNLtU9e71vzpFgwy8XhO7xv1TVRlm0A&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DOrdPS69o0EboYtiEiAS5WHm9Y0qM0r5o2iycmS6cQO486VMQfbhuTxZ5f89opNx9GjYrRZlb0qWNTlRFRspRp_nMVH3Qfl4pvQhrxpMsd_eglo5mee8UZZE1aZhgI6Q4-ZvxQMuvOPmZhx9FCJFV83N1dun4QYc3IVR83briuzXe57&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4",
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJT8Kc_kdy04kR-tSRijuwuGQ"
     },
     {
         "id": "ChIJ77J0ZHB004kRQ_G5XdJdD1M",
@@ -253,7 +284,8 @@
         "rating": 3.9,
         "rating_amount": 348,
         "address": "5225 Sheridan Drive, Williamsville",
-        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DMLdi1E49tl2d69r0M1sjcrrs5p3hr4y_iAB_MyovgXoc9qZg3oXCBrN_3n_-VRkWrwswNPQX6pu2NtrKsSUf9sED_L9Jvrv1UMMjOOm0Pkz7UjYvLWBCS4J04zBmJeOC7gzH8ykP5jrGPPY0CIgX4R2bOH46AV4GO4Z-YRkY7VRhgx&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DPObx__0EpCnVS-ck3O8vetsYtMRqt7QSr9haZ_3m6bpAIaaob8mh0K9vbW5aTeK4QGnHW47f-TuxS3c4JofpZdbWzO0ESi5H6sDfb-jX70UxBqmV9sfs15_Os6yY4oszYgq4V9_J9tZa6RlxX3xDN7H_VmTSadk6oe7WWubEDwyIbY&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4",
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ77J0ZHB004kRQ_G5XdJdD1M"
     },
     {
         "id": "ChIJ6W1CpmBx04kRHShTMkZNewM",
@@ -261,7 +293,8 @@
         "rating": 3.7,
         "rating_amount": 588,
         "address": "2290 Millersport Highway, Getzville",
-        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DO4_7HBSXStzPrKpBzPmM7qXh5DKC5UzAAnwCMeWEc2HW9y1fD64Nr2g4lj-QofrWYz-PFfT5__oVMtT74TSJz_esYl5nsX8bItK_5E8KXsv30dAWZPsjbu43dnEEgqlVXjgk4zeEw39wIV26WT6YI9lNijcW-N-WhXTiz1DKoNb6pI&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DOTs8S6dM23DqJMFcmII6-CGEdBxJVoWHDjOZ2CnIvR0xaVtK-bbnB9s7Yv0-jr44WcRQiv18i0ZFcZ1Kg7gAzSj0CCOoZra9QcUuG3cCtnMoMqpiKPMVTozBA3CCtsyp47mbyRNXhqp47_VvWVz3VUYEbc4PvYpVfd7hFYXduNVT7q&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4",
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ6W1CpmBx04kRHShTMkZNewM"
     },
     {
         "id": "ChIJ1YD0NHxz04kRO6PUQUC0q1U",
@@ -269,7 +302,8 @@
         "rating": 4.2,
         "rating_amount": 552,
         "address": "5165 Main Street, Williamsville",
-        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DOt7JIMDPe0jKsiRiRq1ry-ApuGoxu1qRnsalPh19cyxjsQ_BcxaqihL4rdabISoFsGYSOpHVIv43whcpmF4i8CRzOIseCyPiRtP9lSNESkeekMlwQ47bDIx3UcOmPJQPhwk2OjhsSKCpW0DjayIOKaFW9VkVwm1zglNA7mQvRj7Mpm&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DNZHZze2u84Gh1d0mcgsbisWzNUaq6lJXei1nxCwISdyI3VXuTYlkYHDuSb7MyrL7oVMNMKeZuIJbFB0pQ7MsHrX6EMMOts_wpS67Qks6RwAxBrpYUTNrWaWmkXyWzlo6BlzxfwFdmbJK_VWgjOd1TVx2mu48WevJtdzbq4mTMd2Ome&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4",
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ1YD0NHxz04kRO6PUQUC0q1U"
     },
     {
         "id": "ChIJFZ8X7H1z04kREMVvyyeJM9c",
@@ -277,7 +311,8 @@
         "rating": 4.4,
         "rating_amount": 2242,
         "address": "5479 Main Street, Williamsville",
-        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DN-xjGuGGL7HJ7T5BqTRc2lFRNnR4TIInaTabqOzfLbXKMUUDASQyIzGJlkhUvMg-PAerggDNdYNotnSmH3EeV_EwPYuvNq_X4UuX-Xxnc7Itp43Sb6XoUH5rgZa1WZs0wMeDC7dvDCtU5ECwzFhr91fJhnZJVB0H-ANA_a7P-vcpF4&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DMGBY6mag6XIhZOhuow-3qVI3QuSc0TqREJcn-odCbOKJ0UAZGURiMdU66iX8xPCnP4Msc9uOF8J2NAGAe2lg7_12i5KQ44upDvvSbo-8DYgeL31zC4tnY1itBYu4m1Mr2Zm5BvwBE1_8XjOTNylI4jl8sxyG24ogGztQIrcoxuhhvK&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4",
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJFZ8X7H1z04kREMVvyyeJM9c"
     },
     {
         "id": "ChIJDTKYZHp004kRn_9tugPw9Sw",
@@ -285,7 +320,8 @@
         "rating": 4.6,
         "rating_amount": 392,
         "address": "416 Evans Street, Williamsville",
-        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DM9hbo4UFf4cAAhdrIpvseiwtYJSupdx-YqtbiUOCDVYRoEhXKzNoHRfnveBNYQaRNCoomj03fPvfnCwwTUAO2ZxGEcBBRQMziKU11qVcRB0jbOA89HQwCFgmuzTMR9k4hWzO6QuTAv5qi4Kq88TFe_KzRJUo1wfa3SHxPUASraGMOL&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DMBfri8_2F2c4-dnOqGt0Tu5h_a0eC60BSj4K_9lmuBXQWUYUvCfygggm7p9mTx911hFF4GuAtRM8xeXN5IdBzk0txgV5S9-yuSXORU0ctR6MZr3-lZ2s_-eqUO7RbBJ_cIQCRmdY0Fnbcjdn8sWGslbCooqGJ2oQzlUsRwlKGEO4E5&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4",
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJDTKYZHp004kRn_9tugPw9Sw"
     },
     {
         "id": "ChIJxZcEtnFz04kRMzWCJjRb3-U",
@@ -293,7 +329,8 @@
         "rating": 4.6,
         "rating_amount": 1219,
         "address": "5110 Main Street Ste 125, Williamsville",
-        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DPmDwDD-amgGZuXZbS1yARfH9YQga8Jt4wob-DhHPqI0nvAhObRcY-A6ngQOrbfEtLHSMAsIeCf0g42cHYp1LJkddrgbJNR7eutc54oyB8pS8APM6jp5ySZJ2l1ZEKOjYPE2dnM6Zf6xpUm84JTGGGgDUk1_K3NXC3nui3OQ5E8BSIn&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DMDqjtsbTe58UCAm3FT0QgSD7cOqBneslhX75yPsGNK1bZCJQopCsAw7PwR1r0FhEUxAgyvFx3CIss1B2mlw2norJy_P1XGtMqy8VFg404uUSSY6exgPvmxz5mlNT1WuZDFgnOdZPDkpxsA9kRmv31a7iogXlQ-dMbwjHWCGilk5JFh&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4",
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJxZcEtnFz04kRMzWCJjRb3-U"
     },
     {
         "id": "ChIJk-WrjEBy04kRYejX0M6tXKU",
@@ -301,7 +338,8 @@
         "rating": 4.3,
         "rating_amount": 1986,
         "address": "4060 Maple Road, Amherst",
-        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DMEu3G8Q14kVDXIyhvOruF875XAiPYiWLzrX3wJZO6ONPBThcBBg3mtYSm8xkWs5GO-Y9NeFDxXgz-F9OrAvszJpnxTTOeZK8sgZJqJmpJg77w8obsAyNuX4RSZXuaaCcbWDkEK23IO0JxE4PXQwiMHH0RCAfNwCyee_qwq7HSqrVcl&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DM4IxHTIGG_aD5SuX8sge7NAlokyQgioX128kNeurCJ2_SHaxvpGKs0glFyZ9_pA1QSKsHyZrhpQ5MOvo2rVfp-0CIihstDmmqk5DYLgel0rsZYgnoakQ-hRVRIlkY2l0pLDqZKIGvIqf6-2eyEW1bKW4_OfkzLYN8J15UK6BRnqmai&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4",
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJk-WrjEBy04kRYejX0M6tXKU"
     },
     {
         "id": "ChIJldVCP2xy04kRov-yzWuU4CE",
@@ -309,7 +347,8 @@
         "rating": 4.4,
         "rating_amount": 1009,
         "address": "1330 Niagara Falls Boulevard, Tonawanda",
-        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DOqVr2ByAL11D1aiu_vlWGO2NB2w4OD99oFf_pVVPumfV6eIO06N-onQrxipRJacim_wN9vCCgUksP_xtNydq_UYnrwWNMVnT19O-qtMEtrPoraakAc8a6-5Ww9h4C0xQ6ZFokDuK7lK6J_3_R1pPGYSesChtM-pBKGQT2cdAgIMeGi&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DPJ9tAbmsJ_B3AOHJG75-M5AfeP3rz1hSHHBBMDuRtb_4EUgxUMGeak_iSXcLfDxsmG9xeD4aOFCnvDdU1wzmsH1Z5FqJ2uXwss60grz3uu0jc5cDjceJUJv_c0zRYAqaq8aPoliOMzxCCeYSmJ5KN2IBGRVfgCkmWJ4HOQIQZtFM9-&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4",
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJldVCP2xy04kRov-yzWuU4CE"
     },
     {
         "id": "ChIJBS6XSBd004kRoCSxQDPRoes",
@@ -317,7 +356,8 @@
         "rating": 3.3,
         "rating_amount": 113,
         "address": "Millard Fillmore Suburban Hospital, 1540 Maple Road, Williamsville",
-        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DO-JVuJDhKyPWZeEWLZLFPByQP2oHSBkSGENC6eQ4_CZMHdCnCuTpI9DiLpgfk1fMz-HeztXP6nDqBLkHeVg_sapDJ10BJ0M68ogy4RECtGkGHvMEXZDgp0GbcwLzWlWaOmYV5cjbf_-YSOReBMry4J0F8olAIdU_yQBnsOwlcJtZI6&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DNQ7eDFXHpNBUpcXdFxxtRmiQqjMP6jqUgO0c05-4qW3514ljbZWWcbSyTM43iznWBr5JHPMIOsYW6IXxq2fwBqhfpcWZs2WmZmgiRmZLlT039UpLlJEVLsAsDkmfaodMEaKNJIdUWzgsxS8zeJ6ETf9P4weP1WPfgqFjvCOM1rvfsF&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4",
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJBS6XSBd004kRoCSxQDPRoes"
     },
     {
         "id": "ChIJp8_j5mZy04kR_iGfm3Px3Ro",
@@ -325,7 +365,8 @@
         "rating": 3.9,
         "rating_amount": 874,
         "address": "3192 Sheridan Drive, Buffalo",
-        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DNH0Er1GxI-EkLO21kf_in03RY7lthWtUkuExJBJ7a9FHN4KrE5xOQIS7uxvc_ssYdmyuN15ZEf1rngcQ3uV7gZiiW50AoNxVduaz9uHQYh0t5__fXD5nbDFFQttaNl_umEj3bX5RrkL18w9G9irK1r2-hN5DnpY5hksHdYOvKtQIAp&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DPloE-SxuT3KdKTywx0gOiwxaGcLs1YISO7QnMOv8JMA0oEA7RzLpvAE4xshVHXwDqLUGBlWiIw0TyJ0T41x3WYiYni35m7iKJtyBFtqeNZPotafL-xlQf5QRLLBIC7ff91xqaXebtd6xrYXGF15B-OgRrjR535n_IQZ82qjftrazbm&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4",
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJp8_j5mZy04kR_iGfm3Px3Ro"
     },
     {
         "id": "ChIJMVSk7Lxy04kRb76I6LP6szs",
@@ -333,7 +374,8 @@
         "rating": 4.5,
         "rating_amount": 1309,
         "address": "3234 Main Street, Buffalo",
-        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DNAYrKM06fYwzZp68_TlEhmZdnc970XffHs2qBUqm5STsWpLBEhFMEWc6JKoCyYclX8hjtEczl2nZDdybSMRIOesohS3Jlsy_mt-Li1HTOwGDm6bJKfKq3qinFvM6RDQBCEynioyu5dWU_8wcvcNH-6TSS6idPbiFRFzuVGJS1spzCz&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DOEtwgynmGo0m5TRxUoWxwsA45K9dyTRuiawXv0mQHp_5DCTrm5K8oKnVvSd1xH9iUhqYMX72BGii7WzGlok50Zw79pOPL3PvFWS0xIlX5Pv3-B-7CLYJVNiecir8QRMRv1rdFNgLWolvSU_XxZ_4juWKHCDCTW9eGOP5gsdyS4e3MM&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4",
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJMVSk7Lxy04kRb76I6LP6szs"
     },
     {
         "id": "ChIJAU1fV_Fx04kRNxpdoRr2_iI",
@@ -341,7 +383,8 @@
         "rating": 4.5,
         "rating_amount": 2132,
         "address": "2351 Niagara Falls Boulevard, Amherst",
-        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DPNFAPpPp0CQelqWWvtsblL576gDITujcc_U6mqwxeQz1Tpt4E81IyBMOqReYySMqyayA0PhFnPMB7nd2YR7U95vuONxUhLGXsR5QIlXHhaT_bnsoxnmhC8mU0uFSoG4Mg8mnPeDTXraJz90iX8vDk1CjCyzvkToHqjtXOhEkLo0R48&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DMiYpjfUu9rtEBtC0Yb1lCFLt9QNdtBqUwvj6jrURBW-CJKSHHONCM0b1ARETT4NUTSoxGs_37gtHZLDzcYRkhzf5cUocXywYAaPcE4hyIKLHyN5g81M7O3vUNab8oXwBAFCKuHzfG1-PRqY-bsIgGIEoDFXh9v8lFGAch8Joiq9Hok&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4",
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJAU1fV_Fx04kRNxpdoRr2_iI"
     },
     {
         "id": "ChIJ73XGQXBz04kRjl9qbDtcYw0",
@@ -349,7 +392,8 @@
         "rating": 4,
         "rating_amount": 674,
         "address": "5140 Main Street, Williamsville",
-        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DPPx-HZbmY7lsqnwAMgMnNEAFiMfzKX9ghPc-EDunrKsEKZE2vyLgDXQ__ezYB4qVCA7FitNz9JwLt5sqlHd2j2HKBAcR7K_5gusPoXU_pCwS_uIqhWoY-oL-aNH9KAlu-s970vxpydid2oUUWabzkgVCyDqaEnXMWztJBFlvtC2zyC&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DP8p3PYy_3qHlTT-qDC9Pe3A_k0dgBAnBdbVNDhpV5TqEg7034vfJK3a2x8FD1ARusJdEwt3tS6nHxR2NzDdp-VDIUNrMx4PvVHPnnPnaAxf-SUyF-zOOToNh2QGOYJhblZu0Mc3MPSKR-UUl9Vnz4K6SkyjgHOyBELbROt6m7GnmtQ&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4",
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ73XGQXBz04kRjl9qbDtcYw0"
     },
     {
         "id": "ChIJIfqJ6GZy04kRKe9g8ectjCs",
@@ -357,7 +401,8 @@
         "rating": 4.3,
         "rating_amount": 738,
         "address": "3055 Niagara Falls Boulevard, Amherst",
-        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DPtKM1CrmEPWqnONevGGeJ5Tyd0FxGunypIvCxy8UXZPXTCSeFrIx6JSH_69nt-zewSKSb6jOETJEAaaXgHvrHMIlj3M7gmnbt9fSgkFCPnLAQ4EenRBv2u3U2fjmDV52PxwzGsJzZyO8JuNYUKOHqabCfU9rEq-2mhDzvZ8Zo1uMcM&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DPpNyJ1ewC62xbxVK9uY7YykRwv9YiDtb5qwp4tEk2m2IzsLVjlc1Nff_ZeUSXZsShVEHs14Vvi_aE4ORjr-Qug-YKLOCV-bskYynM2up9hFjC6ZDtV8w6lY8CoE80d5bAuWbTJgMuPHyOD2RnWj3BLCxZo1FuxvG0WdP_fTSINS242&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4",
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJIfqJ6GZy04kRKe9g8ectjCs"
     },
     {
         "id": "ChIJV2F637d204kRPmAFUr5dpyo",
@@ -365,7 +410,8 @@
         "rating": 4.1,
         "rating_amount": 552,
         "address": "1614 Hopkins Road, Williamsville",
-        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DPHa9xXTzQRU5zlnDR_MXunQy-9k-dkVBsiUla14VGeWstgpl1JS1jnV3NKwtWRfSOQS87h2kLLEEvlrvClj1TXKEfz8T0YGj2-NQTRgrqtELlw1mf_68wJVGlAIlNbG8doQM6kMdxxBZs0HWAfM47tQ7eUOE4QZCBzqUa59XFAuipR&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DNICrQA90Qpaf6TBvRsAAuao-4m3Hy6KHLKWQCbWMjRVcga7rcwt7TZQ7jbHu4H6gLiJgkPUlxlYgBk64LMyW9wIW4iP_THXMa58TgNghudS0gaXFE09_I-84HKslicMyE4WYWxTFzmSHfsHmsZVonv-ZwRR4jP5zB7pFpxIOog2dJ-&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4",
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJV2F637d204kRPmAFUr5dpyo"
     },
     {
         "id": "ChIJ-fMk8G5004kRn6x4roawKBM",
@@ -373,7 +419,8 @@
         "rating": 4.5,
         "rating_amount": 60,
         "address": "5403 Sheridan Drive, Buffalo",
-        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DPlsTkhNpft7du3bME4qiW6fmk9BH1J08YpqyPj9_7ZOeWWX-b662HQlTZYY5E-vFt_0JPFGRiqkx1d8PSJgKqR1mu7HEejRyAmf3QxSc0Okuf0V078JdvwsEQgCgcpPtghqvQ9OodlAELnmdfA31_4fHhNSqEmMlwXPAW4IwAJ_O29&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DMdIIKDUtz1hvmi9SpyTE1UYhHJ-slCyl-JcRJoYyQzrtpPBVbtxqswlRD4qHIezjZXHTYk3bnTvSgEefxQZWZ1cj42aoMXsICszoOk8IMUsoP1G3-WPA3_2_Iv8hIX6QRtutXm0cJluOX9-Ae1TBUzHKpBiTcde0lY3ZmxN6dzfC3F&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4",
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ-fMk8G5004kRn6x4roawKBM"
     },
     {
         "id": "ChIJ3fSDYPVy04kRjvP0HoNh274",
@@ -381,7 +428,8 @@
         "rating": 4.3,
         "rating_amount": 1748,
         "address": "4346 Bailey Avenue, Amherst",
-        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DOXeA8le2D84ErSE1JZ5hlh-teCDZS4ZaurbX98IGAj5UszxEiqKbWGCTBmlFv7adOKuDX_MlcvBi37gH5Fk6zaW45_2xd-qw8SQYQCuTsE9Kpmcy7I0W5cWqgvBeOcu9BbjBLogPsdw80VHjgcWKSjUNzyrCB737aGF_qcYQZhkH-M&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DMkAVyLQJ2B-YAVtOJsPYap0Q5ohmXeqSSVXpTkMg2vRHcMDCz2TvTEl6rg7XzDnmpH6vxk8caZtmhLykikZrv_9SrHS02U4do8kPmLCrjSa5GWDXfxO7CmKFbvsjwGzhc2eoWfzKnXvIrDsezUGllXizwlVR7-b0RqznIzjLO5VVAe&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4",
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ3fSDYPVy04kRjvP0HoNh274"
     },
     {
         "id": "ChIJl1cGm1ty04kRgzyoOxuFmyA",
@@ -389,7 +437,8 @@
         "rating": 4,
         "rating_amount": 436,
         "address": "3336 Sheridan Drive, Buffalo",
-        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DPkneWZ0L9MHePC8Pm7rFzQwbHNZUf8j9cKNIJcABWptJHD1PEeRfyopwEzKRGKbwnKE_a1OhbF3UF60XUViypc_sz3fAXXyMvMV-ylkY0VrC2ukdTEPcAL7RjWr1B80Zmc2o5lR_O-9HJ4C2TgZojoM-cLLMV_DppuKmfHOS9DYLvU&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DPeue85zBOyo3IN3xsCPErWXd_P36H7nHslzmL8gkqS6SAsersnqw_fIFXZZrfS4CzoPXPrGGeTMhC5sHNV4axzjTlZgpUwHjANTUH7P0wbgcvPwaI0gTv77mlChwEunfvl4ayNkRaZ8zA6-_NfOoraRYcwQy8lJfrpEADO2uVaf_Sb&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4",
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJl1cGm1ty04kRgzyoOxuFmyA"
     },
     {
         "id": "ChIJ45lzRmRy04kRugkIy0sPvfs",
@@ -397,7 +446,8 @@
         "rating": 4.2,
         "rating_amount": 246,
         "address": "1010 Niagara Falls Boulevard, Tonawanda",
-        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DMk3uNnTL535xHBwjbK4d-BK1ELIqB8xC-2gONr-k7js4A3uO46f1707eGx3OPdmfBoC6nSd0F2DM-iqPEQnz8baDfC79gy_jA622hYHMm1Q34h20CzlZtw0WsvFN2BlrM0nsSb3QBEJ1iDoupfdST0TNVYukIgCJl6jIBRg3BMhJcl&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DPx7nEEaQJd8At1slgeP7Bmv3welP6boZDkQI8bnuXsd-0nsaEBfq_agAW-dz0-pl6WZzSSGu7UoZQf_DC9J9B_mZnRe0TENBN5f7KYmpUQ-gLBe889T43lam12YzrBGjrn5EvD6mX4wGRE3lf8QFOSpKoS6vn6jocfYa-7hSqDBhwr&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4",
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ45lzRmRy04kRugkIy0sPvfs"
     },
     {
         "id": "ChIJ9QnsyGxy04kR6MbYLy2Wp8E",
@@ -405,7 +455,8 @@
         "rating": 4.3,
         "rating_amount": 451,
         "address": "1436 Niagara Falls Boulevard, Tonawanda",
-        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DOBzrYBzj5a8bCk6Eo33SJ7hCQyU_PPJDZtORkRqG80fLp2HlkqK4bB_v6zbB908AioNBx_9rpaKi_LGGn9aalLsm48esfoyZDea_YvqSQJQ8SFSf5Eg2GzjSjbkPK4V8_HMIrXH9sGrWnrohf_dhiBE_G0swTo9qbXoK13uwhGAaly&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DN3JWqmFgUioIchqGbvNKiDQo6af1z58y8Vpj_39i5rLxvEjDzZotY6-aR5pUNE6_Zhs9Z3WocbzAisucvkgAN2IiwrgNTiPmSgOl-z1MDV1dymeEw3F10Ih8f2Og1ppNrkeguvKE6Powo8KpbYcxPSlQ7SeFlgMUokcao3i3m9JUK2&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4",
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ9QnsyGxy04kR6MbYLy2Wp8E"
     },
     {
         "id": "ChIJz3DOdKht04kRKtJLQPZ1RY0",
@@ -413,7 +464,8 @@
         "rating": 3.4,
         "rating_amount": 1216,
         "address": "1759 Sheridan Drive, Kenmore",
-        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DPTk4Kq1nwIh-Ce9GVxzp9qfCcoSKJ9BHQpdMblTD3Wnk7wjs1GqrGGemaCOSxL0TBQLGTmX2TPhBeqCetFwoIdFAmCy6_zUnLAfVJeDL_0TQsIjSg_cxCAek0KSYDZQtBgEkbIhjREmG5xEKJ2NYCPIayLn3MFt46Sl5fy7WHvOklW&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DPT-NhN8lZ61fxHgs2kxu5vCjYV9t9XrUlzuEeiGnCBXPlQgRW5fbrih2uotpJQae9_nS6B6_qxm80lbkFhaUEppaloS4yGElEDe6h_FMdgTGR3G__UwmeT-eweQevMo3g9PWXrp-ItLu-20ennjRHAuz2T-aP8fjg4EmD5imU6B4sf&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4",
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJz3DOdKht04kRKtJLQPZ1RY0"
     },
     {
         "id": "ChIJUSla08t104kRFmY2Cm40dKs",
@@ -421,7 +473,8 @@
         "rating": 4.3,
         "rating_amount": 983,
         "address": "7850 Transit Road, Williamsville",
-        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DPbXoZSnevJEn_3XIRzL2n97w6omCnUiCHgZ0ThT74Kzp_pqYqMUXHNnzz5HdCA5j_jZewpV3wYfepWw1MS0ffhM2qLXzxsSm_Yv_QLbNyBcWyhq5LYERoNqwKh7xFa2eAAJTDYp4MHAvhtbetia87ZAr-bIrmOJUdP-hUMC-EvYMbN&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DMGbZz-WgjE-BLh8SYSC0lB8Mp4ecvx6UcW8jXm-PXWRVytZMGgrh0chX91EGAfKTC2xTaSpyZ2zFgL7_JhkkCRJfN59r0AoGqv5OJNV9YUV2dGl8H8B_jlTldHpjg2afwAKv27THm8iTcs7Tmka8qkYyuMGEw9w6MSqBBrw7gCpRlY&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4",
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJUSla08t104kRFmY2Cm40dKs"
     },
     {
         "id": "ChIJBeaHjHpz04kRR4khgFE93so",
@@ -429,7 +482,8 @@
         "rating": 4.3,
         "rating_amount": 387,
         "address": "5229 Main Street, Buffalo",
-        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DPhrkFdbxsty57VdkR-lcEfIi1cXqYbXAC4xRXLl_4R54mfV-0oDzuDmxqnE3MFFQE36k_LC0aGDGZYc2buLgaFX3bYSbHv8EI4ALCGjhb0LFTDP80jI6k8JBoUoz4q-8diD8p5YhAJ2SXJWqwyDpEo3D1VdcCC74cKzJAjfRZWiKTe&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DOpRkjEnDQzfxzcQCtEfRqjARaJHk56fS9m6UJ88Sr2PVql3Ls2pIqhPj8UWWcqBHizya_EXJWxEH4TfmGpUgeiCU4vOfPpltsBRBaP7b5pG8u_VrBiEge-UwYQMv4ZSxLYaSHOepjQ04NTO6_JrPdZUzbZCm3VkK2DlEBVBaOzNHvB&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4",
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJBeaHjHpz04kRR4khgFE93so"
     },
     {
         "id": "ChIJ8YDwjXpz04kRGcH3bFd4DM8",
@@ -437,7 +491,8 @@
         "rating": 4.6,
         "rating_amount": 1535,
         "address": "1280 Sweet Home Road, Amherst",
-        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DNtQPj5YOwvAXARAAWepO6Lc8aGyfn0XoKf57VPkLKtAfJ12UAmZa8mODxSEBhOYSGt17LtT0TFJ0rsU_CmqVqNwBo9VqOCBdtW6QCZKWEu-cRVCQ7gFXNhCiwd7i1bEu_44xkZLcqmIMmlyfsQW2Gu-mFG_Y2YGdLFgEzAQ_yO1QGi&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DOZ41MsC8wCKbflJXq8tsB_qavABPeDPJ35gJHY7eGHP3-0-KpvbmqaDvSf4Yua79hx6zdaJXyeyYZRvoHVtKAS2_zKQ5nkDA4qki20uWRAZJJ_6k5dl74MwW-VroysuorSu-95bXYYRPPxXNZG0KxpgDQnI2LMUC7gcdMBRyhNY8cQ&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4",
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ8YDwjXpz04kRGcH3bFd4DM8"
     },
     {
         "id": "ChIJT7lyZHp004kRED2nUywxg4A",
@@ -445,7 +500,8 @@
         "rating": 4.3,
         "rating_amount": 501,
         "address": "402 Evans Street, Williamsville",
-        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DNWH9-TZWrf3sP1yb78TSlsVQwocTCM6T7yhe7BKo9JYxM6R0j8GjogPkufqNYoQUpNIQi1sRMB7weHEK4m6nlO4D283OEvg8npmUVX2MpFALEUOZMEEZIyLuqj1pvhD8yEoPUC17hyc5K-LvjNvvDXtkT1P2jXcnTwcT5C_YZaloFA&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DOlgzfr5x8D1T0UhnFnILzlLvhCXec3OdHFrZgAB1XS0gXCHbU0d-afdQOv8HI6uRBwGYsDrM7UK9sE01c9QyKCXfXQWV91HfqwXdHjmi_gYmvXspZVrLimRWrN1gLu27aZIC0FdSXvcNUllN2yZBHwXg0lF5GBpx-7vC7eMjvm-0St&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4",
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJT7lyZHp004kRED2nUywxg4A"
     },
     {
         "id": "ChIJobs27xNy04kRxMVPeWznia4",
@@ -453,7 +509,8 @@
         "rating": 4.2,
         "rating_amount": 1183,
         "address": "1593 Niagara Falls Boulevard Suite 100, Amherst",
-        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DMEQLx_R31bAVBV75WwmU5rT4URojK4jo1HRyAIcuOlz_TZ725-E3qJU2BYU7EvdAsojb55FhbErdUOK02uc1FNxopSgL7NP1qet3edx_FFbHHFSTjyM4yQy-mVuTxo3gG6FoZoQE2LK2FAY68mNw4NW1dqLwWPlfKJBBkCLhFeNOmJ&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DNXQZT-_Ex78_tpaAJb82UuigH_ZmwAW6-yxh2Oq7rsDZPWudNwy8IcrWirpJutHDR7kGZf5K3BKWRKjaZJVeUq5TZZzutFkryNRb6tOksFRcqY8sC0tNP0gAZZcWPEOUrdZOgN6rD7wX_WEN4Yj2H907ABnWUvJjCDeJRBF-vK57cl&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4",
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJobs27xNy04kRxMVPeWznia4"
     },
     {
         "id": "ChIJC5NKVfZt04kRhYHwMcznSII",
@@ -461,7 +518,8 @@
         "rating": 4.5,
         "rating_amount": 489,
         "address": "175 Brompton Road, Tonawanda",
-        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DOZEcHqwBsR5SR2fMIrnVt0YH5X5RFRC6sjkHzHUVMvOosnfZE4kiHm6PD_xlkJW5D2ulctRQUbEnEVwtBRCrlyyuJeZn1tS6MT1cVNmJPRipAo8uW2V5PI7M0E0TP867dwLUTaPHrKpDFkLYy4rK0ocotzJ6REaQy8ud4c7ITsxa4S&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DOerBzwa1tM6snnerx1mBd8WF4QR_1lYiuHzxZ_QKYtlEiw1HvbdWUGnYx02oGVOPf6wiZ_kCs7pUsPMligAo-WoM4gd2Vx-23BQyeOZ-lGeJQ0bhlYoam1XkXELHptLNBu80UKKsEuht9wC4s8L0ltyFqgfIe48_OiATB5qJieQLNf&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4",
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJC5NKVfZt04kRhYHwMcznSII"
     },
     {
         "id": "ChIJzTe-Fe1y04kRpBnCPWFzdYE",
@@ -469,7 +527,8 @@
         "rating": 3.2,
         "rating_amount": 866,
         "address": "3962 Bailey Avenue, Amherst",
-        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DP1OQIyoWYrXTheDNFhGgfshgvRSvIfhiICBTR45x25WLCGgEYcSvmBpqFUbG81VCQRkrUueC79pjIWhwl_cQ0VLZIU3RdYamD1Pw7lpJwTuMS4XJFzNRqxVS9PlrW5idR_hDgfYE5stwWc_jIy6w7xnG1xThFxxj8ornW6VS0PGkIn&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DMDt2fkRguMi6AooSsApYnNOYrC_PRse8BcB4lmlMgKTwrjzJ-dTqRTi5dfUNsae9ku3LY3rj7ozoEOXZoL4ytOpick6XN3OzsxdA0cphHOxed3v0qPg4VDYECxLkwEk42qZRMny5278y52qOZphBvp7bDfVOJCePiHJs7wJPTnzuez&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4",
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJzTe-Fe1y04kRpBnCPWFzdYE"
     },
     {
         "id": "ChIJI7_OzR1y04kR-cZ9UCXCUfo",
@@ -477,6 +536,7 @@
         "rating": 4.2,
         "rating_amount": 1865,
         "address": "2075 Niagara Falls Boulevard, Amherst",
-        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DNco7RbV52xAJ6ZONcOUG5aW_OK5d86WaNz-h9zUVHzCpVlsDUKnoIdI2mfaKFaHBXbqsq3ZcIZMvtDh5qbd6YaQXiXp1-QUqQDXIi7A1UzNiSiEDsPjMry2or8Xcs3m8QSfVvuPRGVDSuUYVPf8wximAb3ZD7mQvoWGvgcUPOBBoHi&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4"
+        "photo_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdCG2DPIFlhM98luuqoH4iBLPSFlESZ2-DwI-JzJDWWwsK3JflIE_W52rk6kxzL8vrqbn4iXk_UF-Njk0rIuCNSuC2cCtVUl9mXhC230lOmpNG4CdrwKi47HStOwxnyimHpbl5gtiBQxY_nkerPrdrmco5K9GbIK72i-HnfXajjCqEfkitEW&key=AIzaSyDy22Ey6hNZsAbtU99Ou21qcqok4F1Pwp4",
+        "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJI7_OzR1y04kR-cZ9UCXCUfo"
     }
 ]

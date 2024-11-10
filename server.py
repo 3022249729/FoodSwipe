@@ -96,6 +96,7 @@ def get_restaurants(latitude, longitude, radius=8000):
     
     restaurants = []
     while True:
+        print("fetching")
         response = requests.get(url, params=params)
         data = response.json()
         results = data.get('results', [])
@@ -121,7 +122,7 @@ def get_restaurants(latitude, longitude, radius=8000):
                 'rating_amount': rating_amount,
                 'address': address,
                 'photo_url': photo_url,
-                'maps_url': f"https://www.google.com/maps/place/?q=place_id:${id}"
+                'maps_url': f"https://www.google.com/maps/place/?q=place_id:{id}"
             })
 
 
@@ -132,8 +133,10 @@ def get_restaurants(latitude, longitude, radius=8000):
         else:
             break
         
-    with open('restaurants_info.txt', 'w') as file:
-        json.dump(restaurants, file, indent=4)
+    # with open('restaurants_info.txt', 'w') as file:
+    #     json.dump(restaurants, file, indent=4)
+    # to cache data!
+
     return restaurants
 
     
