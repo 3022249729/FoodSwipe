@@ -87,6 +87,7 @@ function updateUIForLoginStatus() {
         if (authButtons) authButtons.style.display = 'none';
 
         if (currentUser.is_guest) {
+            document.getElementById("please-login").style.display = 'none';
             if (guestJoinContainer) guestJoinContainer.style.display = 'block';
             if (createSessionBtn) createSessionBtn.style.display = 'none';
             if (joinSessionBtn) joinSessionBtn.style.display = 'none';
